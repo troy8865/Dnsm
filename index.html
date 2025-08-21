@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Canlı Yayın Bulucu</title>
+    <!-- Tailwind CSS'i projeye dahil ediyoruz -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts'tan Inter fontunu kullanıyoruz -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .loader {
+            border: 4px solid #f3f3f3;
+            border-radius: 50%;
+            border-top: 4px solid #ff0000;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body class="bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-gray-200 min-h-screen flex items-center justify-center p-4">
+
+    <div class="container mx-auto max-w-2xl w-full">
+        <div class="bg-white dark:bg-gray-800 shadow-lg rounded-2xl p-6 md:p-8">
+            <h1 id="page-title" class="text-2xl md:text-3xl font-bold text-center mb-6">YouTube Canlı Yayınları</h1>
+            
+            <!-- Sonuçların gösterileceği alan -->
+            <div id="result" class="mt-4">
+                <!-- Başlangıç mesajı, yükleniyor veya hata mesajı burada gösterilecek -->
+            </div>
+        </div>
+        <footer class="text-center mt-6 text-sm text-gray-500 dark:text-gray-400">
+            <p>YouTube Data API v3 kullanılarak oluşturulmuştur.</p>
+        </footer>
+    </div>
+
+    <script>
+        // --- AYARLAR ---
+        // LÜTFEN KENDİ YOUTUBE API ANAHTARINIZI AŞAĞIDAKİ TIRNAKLARIN İÇİNE YAPIŞTIRIN.
+        const API_KEY = 'SENIN_API_ANAHTARINI_BURAYA_YAPISTIR';
+        // --- BİTTİ ---
+
+        const resultDiv = document.getElementById('result');
+        const pageTitle = document.getElementById('page-title');
+
+        // Sayfa yüklendiğinde bu fonksiyon otomatik olarak çalışır
+        window.onload = function() {
+            // URL'deki parametreleri alıyoruz
+            const urlParams = new URLSearchParams(window.location.search);
+            const channelId = urlParams.get('ID'); // ?ID=... parametresini al
+
+            // API anahtarının girilip girilmediğini kontrol et
+            if (API_KEY === 'AIzaSyDvYDnvEciixHhYW3rFhT3Toc_pMlrEvas') {
+                showMessage('Hata: Lütfen index.html dosyasını düzenleyerek YouTube API anahtarınızı girin.', 'error');
+                return;
+            }
+
+            // URL'de bir Kanal ID'si var mı diye kontrol et
+            if (channelId) {
+                findLiveStreams(channelId);
+            } else {
+                showMessage('Kullanım: Adres çubuğunun sonuna `?ID=KANAL_ID` ekleyerek bir kanal arayın.', 'info');
+            }
+        };
+
+        // YouTube API'sinden canlı yayınları çekmek için asenkron bir fonksiyon
+        async function findLiveStreams(channelId) {
+            showLoading();
+
+            const apiUrl = `https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=${channelId}&eventType=live&type=video&key=${API_KEY}`;
+
+            try {
+                const response = await fetch(apiUrl);
+                const data = await response.json();
+
+                if (!response.ok) {
+                    const errorMessage = data.error?.message || 'Bilinmeyen bir API hatası oluştu.';
+                    throw new Error(`API Hatası: ${errorMessage}`);
+                }
+
+                if (data.items && data.items.length > 0) {
+                    // Kanal adını ilk videonun bilgisinden alıp başlığa ekliyoruz
+                    const channelName = data.items[0].snippet.channelTitle;
+                    pageTitle.textContent = `${channelName} - Canlı Yayınları`;
+                    displayStreams(data.items);
+                } else {
+                    // Kanal adını almak için ek bir API çağrısı yapıyoruz
+                    const channelInfoResponse = await fetch(`https://www.googleapis.com/youtube/v3/channels?part=snippet&id=${channelId}&key=${API_KEY}`);
+                    const channelInfoData = await channelInfoResponse.json();
+                    const channelName = channelInfoData.items[0]?.snippet?.title || 'Bilinmeyen Kanal';
+                    pageTitle.textContent = `${channelName} - Canlı Yayın Bulunamadı`;
+                    showMessage('Bu kanalda şu anda aktif bir canlı yayın bulunamadı.', 'info');
+                }
+
+            } catch (error) {
+                console.error(error);
+                showMessage(error.message, 'error');
+            }
+        }
+
+        function showLoading() {
+            resultDiv.innerHTML = `<div class="flex justify-center items-center py-8"><div class="loader"></div></div>`;
+        }
+        
+        function showMessage(message, type = 'info') {
+            const colorClass = type === 'error' ? 'text-red-500' : 'text-gray-500 dark:text-gray-400';
+            resultDiv.innerHTML = `<div class="text-center p-4 bg-gray-50 dark:bg-gray-700 rounded-lg ${colorClass}">${message}</div>`;
+        }
+
+        function displayStreams(streams) {
+            let streamsHTML = '<div class="space-y-4">';
+            streams.forEach(stream => {
+                const videoId = stream.id.videoId;
+                const title = stream.snippet.title;
+                const thumbnailUrl = stream.snippet.thumbnails.high.url;
+                const videoUrl = `https://www.youtube.com/watch?v=${videoId}`;
+
+                streamsHTML += `
+                    <a href="${videoUrl}" target="_blank" class="block bg-gray-50 dark:bg-gray-700 rounded-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                        <div class="flex flex-col sm:flex-row">
+                            <img src="${thumbnailUrl}" alt="${title}" class="w-full sm:w-48 h-auto object-cover">
+                            <div class="p-4 flex flex-col justify-center">
+                                <h3 class="font-bold text-lg">${title}</h3>
+                                <span class="mt-3 inline-block bg-red-600 text-white text-xs font-semibold px-2 py-1 rounded-full w-max">
+                                    CANLI
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+                `;
+            });
+            streamsHTML += '</div>';
+            resultDiv.innerHTML = streamsHTML;
+        }
+    </script>
+</body>
+</html>
