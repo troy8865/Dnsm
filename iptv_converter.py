@@ -1,7 +1,8 @@
 import requests
 import yaml
 import sys
-import os
+import re
+from collections import defaultdict
 
 # --- Yardımcı Fonksiyonlar ---
 
@@ -11,16 +12,11 @@ def load_config(config_path='config.yml'):
     """
     try:
         with open(config_path, 'r', encoding='utf-8') as f:
-            config = yaml.safe_load(f)
-            # Gerekli alanların varlığını kontrol et
-            if not all(key in config for key in ['base_url', 'source_playlist_url', 'output_file']):
-                print(f"HATA: '{config_path}' dosyasında 'base_url', 'source_playlist_url' veya 'output_file' anahtarlarından biri eksik.")
-                sys.exit(1)
-            return config
+            return yaml.safe_load(f)
     except FileNotFoundError:
         print(f"HATA: Yapılandırma dosyası bulunamadı: '{config_path}'")
         sys.exit(1)
-    except yaml.YAMLError as e:
+    except Exception as e:
         print(f"HATA: Yapılandırma dosyası okunurken bir hata oluştu: {e}")
         sys.exit(1)
 
@@ -30,9 +26,9 @@ def fetch_playlist(url):
     """
     try:
         print(f"Kaynak liste indiriliyor: {url}")
-        headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36'}
-        response = requests.get(url, timeout=15, headers=headers)
-        response.raise_for_status()  # HTTP 200 olmayan durumlar için hata fırlatır
+        headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'}
+        response = requests.get(url, timeout=20, headers=headers)
+        response.raise_for_status()
         return response.text
     except requests.exceptions.RequestException as e:
         print(f"HATA: Kaynak liste indirilemedi: {e}")
@@ -40,31 +36,82 @@ def fetch_playlist(url):
 
 def process_playlist(source_content, base_url):
     """
-    İndirilen M3U içeriğini işler ve yeni URL'leri oluşturur.
+    İndirilen M3U içeriğini işler, kanalları gruplar, Türk kanallarını
+    öne alır ve yeni URL'leri oluşturur.
     """
-    print("Liste işleniyor ve yeni URL'ler oluşturuluyor...")
-    new_lines = []
+    print("Liste işleniyor, kanallar gruplanıyor ve sıralanıyor...")
+    
+    # defaultdict, yeni bir grup eklendiğinde otomatik olarak boş bir liste oluşturur.
+    groups = defaultdict(list)
+    # Grupların orijinal sırasını korumak için bir liste
+    group_order = []
+    
     lines = source_content.splitlines()
-
-    if not lines or not lines[0].strip().startswith('#EXTM3U'):
-        print("UYARI: Kaynak dosya geçerli bir M3U dosyası gibi görünmüyor. Yine de işleme devam ediliyor.")
-        new_lines.append('#EXTM3U')
-    else:
-        new_lines.append(lines[0])
-
-    for i in range(1, len(lines)):
-        line = lines[i].strip()
+    
+    # --- 1. Adım: Kanalları ayrıştır ve gruplara ayır ---
+    current_extinf = None
+    for line in lines:
+        line = line.strip()
         if not line:
             continue
-        
+
         if line.startswith('#EXTINF:'):
-            new_lines.append(line)
-        elif not line.startswith('#'):
-            # URL'yi oluştur. Örnek: '6814' -> 'http://.../6814/index.m3u8'
-            new_url = f"{base_url.rstrip('/')}/{line}/index.m3u8"
-            new_lines.append(new_url)
+            # Bir sonraki satırın URL olacağını varsayarak #EXTINF bilgisini sakla
+            current_extinf = line
+            continue
+
+        # Bu satır bir URL ise ve bir önceki satır #EXTINF ise, kanalı işle
+        if current_extinf and not line.startswith('#'):
+            group_title = "Diğer Kanallar" # Varsayılan grup adı
             
-    return "\n".join(new_lines)
+            # Regex ile 'group-title' etiketini bul (büyük/küçük harf duyarsız)
+            match = re.search(r'group-title="([^"]*)"', current_extinf, re.IGNORECASE)
+            if match:
+                # Grup adı boş veya sadece boşluklardan oluşuyorsa varsayılanı kullan
+                title = match.group(1).strip()
+                if title:
+                    group_title = title
+
+            # Grubun adını daha önce görmediysek, sıralama listesine ekle
+            if group_title not in group_order:
+                group_order.append(group_title)
+
+            # Yeni kanal URL'sini oluştur
+            new_url = f"{base_url.rstrip('/')}/{line}/index.m3u8"
+            
+            # Kanal bilgilerini (#EXTINF) ve yeni URL'yi ilgili gruba ekle
+            groups[group_title].append(current_extinf)
+            groups[group_title].append(new_url)
+            
+            # Bir sonraki kanalı beklemek için sıfırla
+            current_extinf = None
+
+    # --- 2. Adım: Yeni M3U içeriğini oluştur ---
+    output_lines = ['#EXTM3U']
+    
+    turkish_group_keys = []
+    other_group_keys = []
+    
+    # Grupları Türk ve diğerleri olarak ikiye ayır
+    for key in group_order:
+        key_lower = key.lower()
+        if 'türk' in key_lower or 'turk' in key_lower:
+            turkish_group_keys.append(key)
+        else:
+            other_group_keys.append(key)
+            
+    # Önce Türk gruplarını (alfabetik sıralı) dosyaya ekle
+    turkish_group_keys.sort()
+    for group_name in turkish_group_keys:
+        output_lines.extend(groups[group_name])
+        
+    # Sonra diğer grupları (alfabetik sıralı) dosyaya ekle
+    other_group_keys.sort()
+    for group_name in other_group_keys:
+        output_lines.extend(groups[group_name])
+
+    print("Gruplama ve sıralama tamamlandı.")
+    return "\n".join(output_lines)
 
 def save_playlist(content, output_file):
     """
