@@ -1,8 +1,8 @@
 #EXTM3U
-#EXTINF:0 tvg-rec="7",Первый канал FHD
-http://cb286df8.rossteleccom.net/iptv/ZCWPCL9K3LR827/http://463758a0.ucomist.net/iptv/V4ZVP6G52HVXDE/2402/index.m3u8/index.m3u8
 #EXTINF:0 tvg-rec="0",ОТР HD
 http://cb286df8.rossteleccom.net/iptv/ZCWPCL9K3LR827/http://463758a0.ucomist.net/iptv/V4ZVP6G52HVXDE/20018/index.m3u8/index.m3u8
+#EXTINF:0 tvg-rec="7",Первый канал FHD
+http://cb286df8.rossteleccom.net/iptv/ZCWPCL9K3LR827/http://463758a0.ucomist.net/iptv/V4ZVP6G52HVXDE/2402/index.m3u8/index.m3u8
 #EXTINF:0 tvg-rec="7",Первый канал HD
 http://cb286df8.rossteleccom.net/iptv/ZCWPCL9K3LR827/http://463758a0.ucomist.net/iptv/V4ZVP6G52HVXDE/204/index.m3u8/index.m3u8
 #EXTINF:0 tvg-rec="7",Первый канал
@@ -4111,12 +4111,12 @@ http://cb286df8.rossteleccom.net/iptv/ZCWPCL9K3LR827/http://463758a0.ucomist.net
 http://cb286df8.rossteleccom.net/iptv/ZCWPCL9K3LR827/http://463758a0.ucomist.net/iptv/V4ZVP6G52HVXDE/20132/index.m3u8/index.m3u8
 #EXTINF:0 tvg-rec="0",Арис 24 HD (Башкортостан)
 http://cb286df8.rossteleccom.net/iptv/ZCWPCL9K3LR827/http://463758a0.ucomist.net/iptv/V4ZVP6G52HVXDE/20134/index.m3u8/index.m3u8
+#EXTINF:0 tvg-rec="0",Women`s Magazine HD
+http://cb286df8.rossteleccom.net/iptv/ZCWPCL9K3LR827/http://463758a0.ucomist.net/iptv/V4ZVP6G52HVXDE/20010/index.m3u8/index.m3u8
 #EXTINF:0 tvg-rec="7",Shopping Live
 http://cb286df8.rossteleccom.net/iptv/ZCWPCL9K3LR827/http://463758a0.ucomist.net/iptv/V4ZVP6G52HVXDE/860/index.m3u8/index.m3u8
 #EXTINF:0 tvg-rec="3",Мой Мир
 http://cb286df8.rossteleccom.net/iptv/ZCWPCL9K3LR827/http://463758a0.ucomist.net/iptv/V4ZVP6G52HVXDE/5008/index.m3u8/index.m3u8
-#EXTINF:0 tvg-rec="0",Women`s Magazine HD
-http://cb286df8.rossteleccom.net/iptv/ZCWPCL9K3LR827/http://463758a0.ucomist.net/iptv/V4ZVP6G52HVXDE/20010/index.m3u8/index.m3u8
 #EXTINF:0 tvg-rec="7",Leomax 24
 http://cb286df8.rossteleccom.net/iptv/ZCWPCL9K3LR827/http://463758a0.ucomist.net/iptv/V4ZVP6G52HVXDE/861/index.m3u8/index.m3u8
 #EXTINF:0 tvg-rec="3",Nano orig
@@ -4793,6 +4793,14 @@ http://cb286df8.rossteleccom.net/iptv/ZCWPCL9K3LR827/http://463758a0.ucomist.net
 http://cb286df8.rossteleccom.net/iptv/ZCWPCL9K3LR827/http://463758a0.ucomist.net/iptv/V4ZVP6G52HVXDE/19060/index.m3u8/index.m3u8
 #EXTINF:0 tvg-rec="0",ESPN 2 HD BR
 http://cb286df8.rossteleccom.net/iptv/ZCWPCL9K3LR827/http://463758a0.ucomist.net/iptv/V4ZVP6G52HVXDE/19061/index.m3u8/index.m3u8
+#EXTINF:0 tvg-rec="3",Sky Sports Main Event HD 50 UK
+http://cb286df8.rossteleccom.net/iptv/ZCWPCL9K3LR827/http://463758a0.ucomist.net/iptv/V4ZVP6G52HVXDE/9308/index.m3u8/index.m3u8
+#EXTINF:0 tvg-rec="0",Sky History HD UK
+http://cb286df8.rossteleccom.net/iptv/ZCWPCL9K3LR827/http://463758a0.ucomist.net/iptv/V4ZVP6G52HVXDE/16037/index.m3u8/index.m3u8
+#EXTINF:0 tvg-rec="3",Sky Sports Football HD 50 UK
+http://cb286df8.rossteleccom.net/iptv/ZCWPCL9K3LR827/http://463758a0.ucomist.net/iptv/V4ZVP6G52HVXDE/9289/index.m3u8/index.m3u8
+#EXTINF:0 tvg-rec="3",Sky Sports Cricket HD 50 UK
+http://cb286df8.rossteleccom.net/iptv/ZCWPCL9K3LR827/http://463758a0.ucomist.net/iptv/V4ZVP6G52HVXDE/9258/index.m3u8/index.m3u8
 #EXTINF:0 tvg-rec="3",Sky Sports Premier League HD 50 UK
 http://cb286df8.rossteleccom.net/iptv/ZCWPCL9K3LR827/http://463758a0.ucomist.net/iptv/V4ZVP6G52HVXDE/9334/index.m3u8/index.m3u8
 #EXTINF:0 tvg-rec="3",Sky Sports Action HD 50 UK
@@ -4813,14 +4821,6 @@ http://cb286df8.rossteleccom.net/iptv/ZCWPCL9K3LR827/http://463758a0.ucomist.net
 http://cb286df8.rossteleccom.net/iptv/ZCWPCL9K3LR827/http://463758a0.ucomist.net/iptv/V4ZVP6G52HVXDE/9248/index.m3u8/index.m3u8
 #EXTINF:0 tvg-rec="3",Sky Sports News HD 50 UK
 http://cb286df8.rossteleccom.net/iptv/ZCWPCL9K3LR827/http://463758a0.ucomist.net/iptv/V4ZVP6G52HVXDE/9314/index.m3u8/index.m3u8
-#EXTINF:0 tvg-rec="3",Sky Sports Main Event HD 50 UK
-http://cb286df8.rossteleccom.net/iptv/ZCWPCL9K3LR827/http://463758a0.ucomist.net/iptv/V4ZVP6G52HVXDE/9308/index.m3u8/index.m3u8
-#EXTINF:0 tvg-rec="0",Sky History HD UK
-http://cb286df8.rossteleccom.net/iptv/ZCWPCL9K3LR827/http://463758a0.ucomist.net/iptv/V4ZVP6G52HVXDE/16037/index.m3u8/index.m3u8
-#EXTINF:0 tvg-rec="3",Sky Sports Football HD 50 UK
-http://cb286df8.rossteleccom.net/iptv/ZCWPCL9K3LR827/http://463758a0.ucomist.net/iptv/V4ZVP6G52HVXDE/9289/index.m3u8/index.m3u8
-#EXTINF:0 tvg-rec="3",Sky Sports Cricket HD 50 UK
-http://cb286df8.rossteleccom.net/iptv/ZCWPCL9K3LR827/http://463758a0.ucomist.net/iptv/V4ZVP6G52HVXDE/9258/index.m3u8/index.m3u8
 #EXTINF:0 tvg-rec="0",ITVBe UK
 http://cb286df8.rossteleccom.net/iptv/ZCWPCL9K3LR827/http://463758a0.ucomist.net/iptv/V4ZVP6G52HVXDE/19190/index.m3u8/index.m3u8
 #EXTINF:0 tvg-rec="3",TNT Sports 2 HD UK
@@ -5403,18 +5403,18 @@ http://cb286df8.rossteleccom.net/iptv/ZCWPCL9K3LR827/http://463758a0.ucomist.net
 http://cb286df8.rossteleccom.net/iptv/ZCWPCL9K3LR827/http://463758a0.ucomist.net/iptv/V4ZVP6G52HVXDE/7358/index.m3u8/index.m3u8
 #EXTINF:0 tvg-rec="3",ONTime Sports EG
 http://cb286df8.rossteleccom.net/iptv/ZCWPCL9K3LR827/http://463758a0.ucomist.net/iptv/V4ZVP6G52HVXDE/2512/index.m3u8/index.m3u8
-#EXTINF:0 tvg-rec="0",5Sport 4K IL
-http://cb286df8.rossteleccom.net/iptv/ZCWPCL9K3LR827/http://463758a0.ucomist.net/iptv/V4ZVP6G52HVXDE/16019/index.m3u8/index.m3u8
-#EXTINF:0 tvg-rec="0",Turkish Dramas 2 HD IL
-http://cb286df8.rossteleccom.net/iptv/ZCWPCL9K3LR827/http://463758a0.ucomist.net/iptv/V4ZVP6G52HVXDE/14208/index.m3u8/index.m3u8
-#EXTINF:0 tvg-rec="3",HOT Cinema Family HD IL
-http://cb286df8.rossteleccom.net/iptv/ZCWPCL9K3LR827/http://463758a0.ucomist.net/iptv/V4ZVP6G52HVXDE/2151/index.m3u8/index.m3u8
 #EXTINF:0 tvg-rec="0",Turkish Dramas 3 HD IL
 http://cb286df8.rossteleccom.net/iptv/ZCWPCL9K3LR827/http://463758a0.ucomist.net/iptv/V4ZVP6G52HVXDE/14220/index.m3u8/index.m3u8
 #EXTINF:0 tvg-rec="0",Turkish Dramas Plus HD IL
 http://cb286df8.rossteleccom.net/iptv/ZCWPCL9K3LR827/http://463758a0.ucomist.net/iptv/V4ZVP6G52HVXDE/14207/index.m3u8/index.m3u8
 #EXTINF:0 tvg-rec="3",Keshet 12 HD IL
 http://cb286df8.rossteleccom.net/iptv/ZCWPCL9K3LR827/http://463758a0.ucomist.net/iptv/V4ZVP6G52HVXDE/2329/index.m3u8/index.m3u8
+#EXTINF:0 tvg-rec="0",5Sport 4K IL
+http://cb286df8.rossteleccom.net/iptv/ZCWPCL9K3LR827/http://463758a0.ucomist.net/iptv/V4ZVP6G52HVXDE/16019/index.m3u8/index.m3u8
+#EXTINF:0 tvg-rec="0",Turkish Dramas 2 HD IL
+http://cb286df8.rossteleccom.net/iptv/ZCWPCL9K3LR827/http://463758a0.ucomist.net/iptv/V4ZVP6G52HVXDE/14208/index.m3u8/index.m3u8
+#EXTINF:0 tvg-rec="3",HOT Cinema Family HD IL
+http://cb286df8.rossteleccom.net/iptv/ZCWPCL9K3LR827/http://463758a0.ucomist.net/iptv/V4ZVP6G52HVXDE/2151/index.m3u8/index.m3u8
 #EXTINF:0 tvg-rec="3",Reshet 13 HD IL
 http://cb286df8.rossteleccom.net/iptv/ZCWPCL9K3LR827/http://463758a0.ucomist.net/iptv/V4ZVP6G52HVXDE/2330/index.m3u8/index.m3u8
 #EXTINF:0 tvg-rec="3",Channel 9 IL
@@ -5849,6 +5849,12 @@ http://cb286df8.rossteleccom.net/iptv/ZCWPCL9K3LR827/http://463758a0.ucomist.net
 http://cb286df8.rossteleccom.net/iptv/ZCWPCL9K3LR827/http://463758a0.ucomist.net/iptv/V4ZVP6G52HVXDE/19108/index.m3u8/index.m3u8
 #EXTINF:0 tvg-rec="0",Super Tennis HD IT
 http://cb286df8.rossteleccom.net/iptv/ZCWPCL9K3LR827/http://463758a0.ucomist.net/iptv/V4ZVP6G52HVXDE/19111/index.m3u8/index.m3u8
+#EXTINF:0 tvg-rec="0",Ассамблея ТВ KZ
+http://cb286df8.rossteleccom.net/iptv/ZCWPCL9K3LR827/http://463758a0.ucomist.net/iptv/V4ZVP6G52HVXDE/15004/index.m3u8/index.m3u8
+#EXTINF:0 tvg-rec="0",Айгак KZ
+http://cb286df8.rossteleccom.net/iptv/ZCWPCL9K3LR827/http://463758a0.ucomist.net/iptv/V4ZVP6G52HVXDE/15002/index.m3u8/index.m3u8
+#EXTINF:0 tvg-rec="0",Otyrar KZ
+http://cb286df8.rossteleccom.net/iptv/ZCWPCL9K3LR827/http://463758a0.ucomist.net/iptv/V4ZVP6G52HVXDE/14237/index.m3u8/index.m3u8
 #EXTINF:0 tvg-rec="0",Jambyl KZ
 http://cb286df8.rossteleccom.net/iptv/ZCWPCL9K3LR827/http://463758a0.ucomist.net/iptv/V4ZVP6G52HVXDE/14232/index.m3u8/index.m3u8
 #EXTINF:0 tvg-rec="0",Qadam TV KZ
@@ -5863,12 +5869,6 @@ http://cb286df8.rossteleccom.net/iptv/ZCWPCL9K3LR827/http://463758a0.ucomist.net
 http://cb286df8.rossteleccom.net/iptv/ZCWPCL9K3LR827/http://463758a0.ucomist.net/iptv/V4ZVP6G52HVXDE/2210/index.m3u8/index.m3u8
 #EXTINF:0 tvg-rec="0",Ulytau KZ
 http://cb286df8.rossteleccom.net/iptv/ZCWPCL9K3LR827/http://463758a0.ucomist.net/iptv/V4ZVP6G52HVXDE/14231/index.m3u8/index.m3u8
-#EXTINF:0 tvg-rec="0",Ассамблея ТВ KZ
-http://cb286df8.rossteleccom.net/iptv/ZCWPCL9K3LR827/http://463758a0.ucomist.net/iptv/V4ZVP6G52HVXDE/15004/index.m3u8/index.m3u8
-#EXTINF:0 tvg-rec="0",Айгак KZ
-http://cb286df8.rossteleccom.net/iptv/ZCWPCL9K3LR827/http://463758a0.ucomist.net/iptv/V4ZVP6G52HVXDE/15002/index.m3u8/index.m3u8
-#EXTINF:0 tvg-rec="0",Otyrar KZ
-http://cb286df8.rossteleccom.net/iptv/ZCWPCL9K3LR827/http://463758a0.ucomist.net/iptv/V4ZVP6G52HVXDE/14237/index.m3u8/index.m3u8
 #EXTINF:0 tvg-rec="3",КТК HD KZ
 http://cb286df8.rossteleccom.net/iptv/ZCWPCL9K3LR827/http://463758a0.ucomist.net/iptv/V4ZVP6G52HVXDE/2211/index.m3u8/index.m3u8
 #EXTINF:0 tvg-rec="3",Первый канал Евразия KZ
@@ -6051,10 +6051,10 @@ http://cb286df8.rossteleccom.net/iptv/ZCWPCL9K3LR827/http://463758a0.ucomist.net
 http://cb286df8.rossteleccom.net/iptv/ZCWPCL9K3LR827/http://463758a0.ucomist.net/iptv/V4ZVP6G52HVXDE/6512/index.m3u8/index.m3u8
 #EXTINF:0 tvg-rec="0",CBC Toronto HD CA
 http://cb286df8.rossteleccom.net/iptv/ZCWPCL9K3LR827/http://463758a0.ucomist.net/iptv/V4ZVP6G52HVXDE/6513/index.m3u8/index.m3u8
-#EXTINF:0 tvg-rec="0",ICI Radio-Canada Télé CA
-http://cb286df8.rossteleccom.net/iptv/ZCWPCL9K3LR827/http://463758a0.ucomist.net/iptv/V4ZVP6G52HVXDE/6515/index.m3u8/index.m3u8
 #EXTINF:0 tvg-rec="0",FX
 http://cb286df8.rossteleccom.net/iptv/ZCWPCL9K3LR827/http://463758a0.ucomist.net/iptv/V4ZVP6G52HVXDE/6516/index.m3u8/index.m3u8
+#EXTINF:0 tvg-rec="0",ICI Radio-Canada Télé CA
+http://cb286df8.rossteleccom.net/iptv/ZCWPCL9K3LR827/http://463758a0.ucomist.net/iptv/V4ZVP6G52HVXDE/6515/index.m3u8/index.m3u8
 #EXTINF:0 tvg-rec="0",WNLO Buffalo CA
 http://cb286df8.rossteleccom.net/iptv/ZCWPCL9K3LR827/http://463758a0.ucomist.net/iptv/V4ZVP6G52HVXDE/6517/index.m3u8/index.m3u8
 #EXTINF:0 tvg-rec="0",History Television CA
@@ -6351,10 +6351,10 @@ http://cb286df8.rossteleccom.net/iptv/ZCWPCL9K3LR827/http://463758a0.ucomist.net
 http://cb286df8.rossteleccom.net/iptv/ZCWPCL9K3LR827/http://463758a0.ucomist.net/iptv/V4ZVP6G52HVXDE/15202/index.m3u8/index.m3u8
 #EXTINF:0 tvg-rec="0",Al Hadath AE
 http://cb286df8.rossteleccom.net/iptv/ZCWPCL9K3LR827/http://463758a0.ucomist.net/iptv/V4ZVP6G52HVXDE/15203/index.m3u8/index.m3u8
-#EXTINF:0 tvg-rec="0",Eurosport 2 HD PL
-http://cb286df8.rossteleccom.net/iptv/ZCWPCL9K3LR827/http://463758a0.ucomist.net/iptv/V4ZVP6G52HVXDE/20066/index.m3u8/index.m3u8
 #EXTINF:0 tvg-rec="0",Eurosport 1 HD PL
 http://cb286df8.rossteleccom.net/iptv/ZCWPCL9K3LR827/http://463758a0.ucomist.net/iptv/V4ZVP6G52HVXDE/20058/index.m3u8/index.m3u8
+#EXTINF:0 tvg-rec="0",Eurosport 2 HD PL
+http://cb286df8.rossteleccom.net/iptv/ZCWPCL9K3LR827/http://463758a0.ucomist.net/iptv/V4ZVP6G52HVXDE/20066/index.m3u8/index.m3u8
 #EXTINF:0 tvg-rec="0",Polsat Rodzina HD PL
 http://cb286df8.rossteleccom.net/iptv/ZCWPCL9K3LR827/http://463758a0.ucomist.net/iptv/V4ZVP6G52HVXDE/7301/index.m3u8/index.m3u8
 #EXTINF:0 tvg-rec="0",Canal+ Kuchnia PL
@@ -6491,10 +6491,10 @@ http://cb286df8.rossteleccom.net/iptv/ZCWPCL9K3LR827/http://463758a0.ucomist.net
 http://cb286df8.rossteleccom.net/iptv/ZCWPCL9K3LR827/http://463758a0.ucomist.net/iptv/V4ZVP6G52HVXDE/7062/index.m3u8/index.m3u8
 #EXTINF:0 tvg-rec="0",MTV 00's PT
 http://cb286df8.rossteleccom.net/iptv/ZCWPCL9K3LR827/http://463758a0.ucomist.net/iptv/V4ZVP6G52HVXDE/19159/index.m3u8/index.m3u8
-#EXTINF:0 tvg-rec="3",E! HD RO
-http://cb286df8.rossteleccom.net/iptv/ZCWPCL9K3LR827/http://463758a0.ucomist.net/iptv/V4ZVP6G52HVXDE/6093/index.m3u8/index.m3u8
 #EXTINF:0 tvg-rec="0",Cinethronix RO
 http://cb286df8.rossteleccom.net/iptv/ZCWPCL9K3LR827/http://463758a0.ucomist.net/iptv/V4ZVP6G52HVXDE/15251/index.m3u8/index.m3u8
+#EXTINF:0 tvg-rec="3",E! HD RO
+http://cb286df8.rossteleccom.net/iptv/ZCWPCL9K3LR827/http://463758a0.ucomist.net/iptv/V4ZVP6G52HVXDE/6093/index.m3u8/index.m3u8
 #EXTINF:0 tvg-rec="3",DIGI Sport 1 HD RO
 http://cb286df8.rossteleccom.net/iptv/ZCWPCL9K3LR827/http://463758a0.ucomist.net/iptv/V4ZVP6G52HVXDE/2523/index.m3u8/index.m3u8
 #EXTINF:0 tvg-rec="3",DIGI Sport 2 HD RO
