@@ -3,23 +3,19 @@ name: Update IPTV Playlist
 
 # Bu iş akışını neyin tetikleyeceğini belirler
 on:
-  # 1. Zamanlanmış olarak çalıştır (cron job)
-  # Bu örnek her 6 saatte bir çalışır. Günde bir kez çalıştırmak için '0 0 * * *' kullanabilirsiniz.
   schedule:
     - cron: '0 */6 * * *'
-
-  # 2. GitHub arayüzünden manuel olarak çalıştırmaya izin ver
   workflow_dispatch:
-
-  # 3. 'main' branch'ine her push yapıldığında çalıştır
-  # Bu, config.yml dosyasını güncellediğinizde listenin anında yenilenmesini sağlar.
   push:
     branches:
       - main
 
+# YENİ EKLENEN KISIM: İş akışına yazma izni veriyoruz
+permissions:
+  contents: write
+
 jobs:
   update-playlist:
-    # İşin çalışacağı sanal makine türü
     runs-on: ubuntu-latest
 
     steps:
@@ -44,13 +40,11 @@ jobs:
         run: python iptv_converter.py
 
       # 5. Adım: Oluşturulan yeni dosyayı depoya geri commit'ler
-      # Eğer betik çalıştıktan sonra 'donusturulmus_liste.m3u8' dosyasında bir değişiklik
-      # varsa, bu değişiklikler depoya otomatik olarak gönderilir.
       - name: Commit and push if there are changes
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "chore: Otomatik IPTV listesi güncellemesi"
-          file_pattern: "donusturulmus_liste.m3u8" # Sadece bu dosyadaki değişiklikleri kontrol et
+          file_pattern: "donusturulmus_liste.m3u8"
           commit_user_name: "GitHub Actions Bot"
           commit_user_email: "actions@github.com"
           commit_author: "GitHub Actions Bot <actions@github.com>"
