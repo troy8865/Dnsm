@@ -36,14 +36,12 @@ def fetch_playlist(url):
 
 def process_playlist(source_content, base_url):
     """
-    İndirilen M3U içeriğini işler, kanalları gruplar, Türk kanallarını
-    öne alır ve yeni URL'leri oluşturur.
+    İndirilen M3U içeriğini işler, kanalları ana kaynaktaki gruplara göre ayırır,
+    Türk kanallarını öne alır ve yeni URL'leri oluşturur.
     """
-    print("Liste işleniyor, kanallar gruplanıyor ve sıralanıyor...")
+    print("\n--- Liste İşleniyor ---")
     
-    # defaultdict, yeni bir grup eklendiğinde otomatik olarak boş bir liste oluşturur.
     groups = defaultdict(list)
-    # Grupların orijinal sırasını korumak için bir liste
     group_order = []
     
     lines = source_content.splitlines()
@@ -56,43 +54,43 @@ def process_playlist(source_content, base_url):
             continue
 
         if line.startswith('#EXTINF:'):
-            # Bir sonraki satırın URL olacağını varsayarak #EXTINF bilgisini sakla
             current_extinf = line
             continue
 
-        # Bu satır bir URL ise ve bir önceki satır #EXTINF ise, kanalı işle
         if current_extinf and not line.startswith('#'):
-            group_title = "Diğer Kanallar" # Varsayılan grup adı
+            # Varsayılan grup adı, eğer kaynakta bulunamazsa kullanılır.
+            group_title = "GRUPSUZ KANALLAR" 
             
-            # Regex ile 'group-title' etiketini bul (büyük/küçük harf duyarsız)
-            match = re.search(r'group-title="([^"]*)"', current_extinf, re.IGNORECASE)
+            # Kanal adını al (raporlama için)
+            channel_name_match = re.search(r',(.+)$', current_extinf)
+            channel_name = channel_name_match.group(1).strip() if channel_name_match else "Bilinmeyen Kanal"
+
+            # Hem tek hem çift tırnak ile 'group-title' etiketini ara
+            match = re.search(r'group-title=(["\'])(.*?)\1', current_extinf, re.IGNORECASE)
             if match:
-                # Grup adı boş veya sadece boşluklardan oluşuyorsa varsayılanı kullan
-                title = match.group(1).strip()
+                title = match.group(2).strip()
                 if title:
                     group_title = title
+            
+            print(f"-> Kanal: '{channel_name}' -> Grup: '{group_title}'")
 
-            # Grubun adını daha önce görmediysek, sıralama listesine ekle
             if group_title not in group_order:
                 group_order.append(group_title)
 
-            # Yeni kanal URL'sini oluştur
             new_url = f"{base_url.rstrip('/')}/{line}/index.m3u8"
             
-            # Kanal bilgilerini (#EXTINF) ve yeni URL'yi ilgili gruba ekle
             groups[group_title].append(current_extinf)
             groups[group_title].append(new_url)
             
-            # Bir sonraki kanalı beklemek için sıfırla
             current_extinf = None
 
-    # --- 2. Adım: Yeni M3U içeriğini oluştur ---
+    # --- 2. Adım: Yeni M3U içeriğini oluştur ve sırala ---
+    print("\n--- Gruplar Sıralanıyor ---")
     output_lines = ['#EXTM3U']
     
     turkish_group_keys = []
     other_group_keys = []
     
-    # Grupları Türk ve diğerleri olarak ikiye ayır
     for key in group_order:
         key_lower = key.lower()
         if 'türk' in key_lower or 'turk' in key_lower:
@@ -100,17 +98,17 @@ def process_playlist(source_content, base_url):
         else:
             other_group_keys.append(key)
             
-    # Önce Türk gruplarını (alfabetik sıralı) dosyaya ekle
     turkish_group_keys.sort()
+    other_group_keys.sort()
+    
+    print(f"Türk grupları başa alınıyor: {turkish_group_keys}")
     for group_name in turkish_group_keys:
         output_lines.extend(groups[group_name])
         
-    # Sonra diğer grupları (alfabetik sıralı) dosyaya ekle
-    other_group_keys.sort()
+    print(f"Diğer gruplar ekleniyor: {other_group_keys}")
     for group_name in other_group_keys:
         output_lines.extend(groups[group_name])
 
-    print("Gruplama ve sıralama tamamlandı.")
     return "\n".join(output_lines)
 
 def save_playlist(content, output_file):
@@ -127,13 +125,7 @@ def save_playlist(content, output_file):
         sys.exit(1)
 
 # --- Ana Fonksiyon ---
-
 def main():
-    """
-    Betiğin ana çalışma akışını yönetir.
-    """
-    print("--- M3U Playlist Dönüştürücü Başlatıldı ---")
-    
     config = load_config()
     source_content = fetch_playlist(config['source_playlist_url'])
     new_playlist_content = process_playlist(source_content, config['base_url'])
