@@ -7,24 +7,31 @@ from concurrent.futures import ThreadPoolExecutor
 from requests.exceptions import RequestException
 from time import sleep
 import codecs # ROT13 için eklendi
+import urllib3 # SSL uyarısını kapatmak için eklendi
+
+# --- SSL UYARILARINI KAPAT ---
+urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 # Log ayarları
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+
+# --- YENİ SİTE ADRESİ ---
+BASE_URL = "https://www.fullhdfilmizlesene.nl"
 
 # Ana Session objesi
 session = requests.Session()
 session.headers.update({
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36",
-    "Referer": "https://www.fullhdfilmizlesene.de/" # Referer'ı sabitliyoruz
+    "Referer": f"{BASE_URL}/"
 })
+# --- SSL DOĞRULAMASINI ATLA ---
+session.verify = False
 
 # --- YENİ DECODE FONKSİYONU ---
 def decode_scx_link(encoded_link):
     """ROT13 ve Base64 ile şifrelenmiş linki çözer."""
     try:
-        # rtt (rot13) işlemi
         rot13_decoded = codecs.decode(encoded_link, 'rot_13')
-        # atob (base64 decode) işlemi
         return base64.b64decode(rot13_decoded).decode('utf-8')
     except Exception as e:
         logging.error(f"SCX link decode edilemedi: {e}")
@@ -55,13 +62,10 @@ def get_rapidvid_link(url):
     """RapidVid/VidMoxy oynatıcısından M3U8 linkini çeker."""
     try:
         page_content = session.get(url).text
-        # Öncelikli olarak basit hex arama
         match = re.search(r'file": "((?:\\x[0-9a-fA-F]{2})+)"', page_content)
         if match:
             hex_string = match.group(1).replace("\\x", "")
             return bytes.fromhex(hex_string).decode('utf-8')
-        
-        # Eğer bulunamazsa karmaşık eval/unpack yöntemi (şimdilik basitleştirildi)
         logging.warning("RapidVid için karmaşık unpack yöntemi gerekiyor, şimdilik atlanıyor.")
         return None
     except Exception as e:
@@ -71,27 +75,22 @@ def get_rapidvid_link(url):
 # --- ANA VERİ ÇEKME FONKSİYONU ---
 def get_video_sources_from_slug(slug):
     """Film slug'ından tüm video kaynaklarını ve M3U8 linklerini çeker."""
-    film_url = f"https://www.fullhdfilmizlesene.de/film/{slug}"
+    film_url = f"{BASE_URL}/film/{slug}"
     try:
         response = session.get(film_url)
         response.raise_for_status()
         
-        # Script içindeki scx JSON verisini bul
         scx_match = re.search(r'scx = (\{.*?\});', response.text)
         if not scx_match:
             logging.warning(f"{slug}: SCX verisi bulunamadı.")
             return []
 
         scx_data = json.loads(scx_match.group(1))
-        
         video_links = []
         
-        # Tüm olası kaynakları (atom, proton, tr, en vb.) tara
         for source_key, source_data in scx_data.items():
             if isinstance(source_data, dict) and 'sx' in source_data and 't' in source_data['sx']:
                 encoded_links = source_data['sx']['t']
-                
-                # Bazen 't' bir liste, bazen bir sözlük olabilir
                 links_to_process = []
                 if isinstance(encoded_links, list):
                     links_to_process.extend(encoded_links)
@@ -100,27 +99,19 @@ def get_video_sources_from_slug(slug):
 
                 for encoded_link in links_to_process:
                     decoded_url = decode_scx_link(encoded_link)
-                    if not decoded_url:
-                        continue
+                    if not decoded_url: continue
 
-                    logging.info(f"Kaynak bulundu: {source_key} -> {decoded_url[:50]}...")
-                    
-                    # Oynatıcıya göre M3U8 linkini al
                     if "trstx.org" in decoded_url:
                         tr_links = get_trstx_links(decoded_url)
                         for link_info in tr_links:
                             video_links.append(link_info['url'])
                     elif "rapidvid.net" in decoded_url or "vidmoxy.com" in decoded_url:
                         rapid_link = get_rapidvid_link(decoded_url)
-                        if rapid_link:
-                            video_links.append(rapid_link)
-                    # Diğer oynatıcılar (sobreatsesuyp, turboimgz) buraya eklenebilir
-                    else:
-                        # Eğer doğrudan bir link ise (proton, fast vb.)
-                        if decoded_url.endswith('.m3u8'):
-                             video_links.append(decoded_url)
+                        if rapid_link: video_links.append(rapid_link)
+                    elif decoded_url.endswith('.m3u8'):
+                        video_links.append(decoded_url)
         
-        return list(set(video_links)) # Tekrarları kaldır
+        return list(set(video_links))
 
     except RequestException as e:
         logging.error(f"{slug} için veri alınamadı: {e}")
@@ -128,7 +119,7 @@ def get_video_sources_from_slug(slug):
 
 def get_film_details(slug):
     """Film slug'ından başlık, poster gibi detayları çeker."""
-    film_url = f"https://www.fullhdfilmizlesene.de/film/{slug}"
+    film_url = f"{BASE_URL}/film/{slug}"
     try:
         doc = session.get(film_url).text
         title = re.search(r'<div class="izle-titles">.*?<h1>(.*?)</h1>', doc, re.DOTALL).group(1).strip()
@@ -142,17 +133,15 @@ def get_film_details(slug):
 def build_m3u(pages=1, output_file="yelon.m3u", max_workers=10):
     """M3U çalma listesini oluşturur."""
     all_slugs = []
-    # Sayfaları gezerek film slug'larını topla
     for page_num in range(1, pages + 1):
         try:
-            page_url = f"https://www.fullhdfilmizlesene.de/yeni-filmler-izle/{page_num}"
+            page_url = f"{BASE_URL}/yeni-filmler/{page_num}"
             response = session.get(page_url)
-            slugs_on_page = re.findall(r'<a href="https://www.fullhdfilmizlesene.de/film/([^/]+)/"', response.text)
-            if not slugs_on_page:
-                break
+            slugs_on_page = re.findall(r'<a href="' + BASE_URL + r'/film/([^/]+)/"', response.text)
+            if not slugs_on_page: break
             all_slugs.extend(list(set(slugs_on_page)))
             logging.info(f"Sayfa {page_num}: {len(set(slugs_on_page))} slug bulundu.")
-            sleep(0.5) # Siteyi yormamak için bekle
+            sleep(0.5)
         except Exception as e:
             logging.error(f"Sayfa {page_num} taranırken hata: {e}")
 
@@ -164,7 +153,6 @@ def build_m3u(pages=1, output_file="yelon.m3u", max_workers=10):
             video_urls = get_video_sources_from_slug(slug)
             
             if video_urls:
-                # Sadece ilk bulunan videoyu alıyoruz, istersen hepsi eklenebilir
                 video_url = video_urls[0]
                 f.write(f'#EXTINF:-1 tvg-id="{slug}" tvg-logo="{poster}" group-title="{genre}",{title}\n')
                 f.write(video_url + "\n")
