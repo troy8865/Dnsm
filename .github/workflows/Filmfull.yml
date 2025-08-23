@@ -1,5 +1,5 @@
 # İş akışının adı
-name: M3U Çalma Listesi Oluşturucu
+name: filmfull Listesi Oluşturucu
 
 on:
   workflow_dispatch:
