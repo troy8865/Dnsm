@@ -9,6 +9,10 @@ def main():
         new_url = os.getenv("BASE_URL")
         output_file = os.getenv("OUTPUT_FILE")
 
+        print(f"Kaynak URL: {source_url}")
+        print(f"Yeni URL: {new_url}")
+        print(f"Çıktı dosyası: {output_file}")
+
         response = requests.get(source_url)
         response.raise_for_status()
 
@@ -20,12 +24,10 @@ def main():
         while i < len(lines):
             line = lines[i]
             if line.startswith("#EXTINF"):
-                # Satırdaki URL'yi değiştir
                 updated_lines.append(line.replace(old_url, new_url))
                 if i + 1 < len(lines):
                     updated_lines.append(lines[i + 1].replace(old_url, new_url))
             else:
-                # EXTINF olmayan satırları koru
                 updated_lines.append(line)
             i += 1
 
