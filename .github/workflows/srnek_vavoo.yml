@@ -1,39 +1,57 @@
-name: M3U Downloader and Commit
+import requests
+import os
 
-on:
-  push:
-    branches:
-      - main
-  schedule:
-    - cron: '0 8 * * *'  # Her gün saat 08:00'de çalışır
+# === AYARLAR ===
+url = "https://rideordie.serv00.net/iptv/vavoo/tr.php"
+output_file = "downloaded_list.m3u"
 
-jobs:
-  download-and-commit:
-    runs-on: ubuntu-latest
+# === M3U DOSYASINI İNDİR ===
+def m3u_indir():
+    try:
+        headers = {
+            "User-Agent": "Mozilla/5.0"
+        }
+        print("[*] M3U dosyası indiriliyor...")
+        r = requests.get(url, headers=headers, timeout=30)
+        r.raise_for_status()
 
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
+        with open(output_file, "w", encoding="utf-8") as f:
+            f.write(r.text)
 
-      - name: Set up Python
-        uses: actions/setup-python@v4
-        with:
-          python-version: '3.13'
+        print(f"[+] M3U dosyası başarıyla indirildi: {output_file}")
+        return True
+    except requests.exceptions.RequestException as e:
+        print(f"[!] Dosya indirilemedi: {e}")
+        return False
 
-      - name: Install dependencies
-        run: |
-          python -m pip install --upgrade pip
-          pip install requests
+# === M3U DOSYASINDAN KANAL LİSTESİ ÇIKAR ===
+def m3u_listele():
+    if not os.path.isfile(output_file):
+        print(f"[!] '{output_file}' dosyası bulunamadı.")
+        return
 
-      - name: Run M3U script
-        run: python srnek_vavoo.py
+    kanallar = []
 
-      - name: Commit and push M3U file
-        run: |
-          git config --global user.name "github-actions"
-          git config --global user.email "github-actions@github.com"
-          git add downloaded_list.m3u
-          git commit -m "Update M3U list [skip ci]" || echo "No changes to commit"
-          git push
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    with open(output_file, "r", encoding="utf-8") as f:
+        satirlar = f.readlines()
+
+    for i in range(len(satirlar)):
+        satir = satirlar[i].strip()
+        if satir.startswith("#EXTINF"):
+            kanal_adi = satir.split(",")[-1]
+            if i + 1 < len(satirlar):
+                url = satirlar[i + 1].strip()
+                kanallar.append((kanal_adi, url))
+
+    if not kanallar:
+        print("[!] M3U dosyasında kanal bulunamadı.")
+    else:
+        print(f"\n[+] Toplam {len(kanallar)} kanal bulundu:\n")
+        for index, (kanal, url) in enumerate(kanallar, start=1):
+            print(f"{index}. {kanal}")
+            print(f"   URL: {url}\n")
+
+# === ANA PROGRAM ===
+if __name__ == "__main__":
+    if m3u_indir():
+        m3u_listele()
