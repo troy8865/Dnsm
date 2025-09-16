@@ -74,7 +74,7 @@ def save_as_m3u(channels, filename="vavoo.m3u"):
         name = clean_channel_name(original_name)
         url = ch.get("url", "")
         # 🔁 URL DEĞİŞİKLİĞİ BURADA
-        url = url.replace("https://vavoo.to/vavoo-iptv/play/", "https://goldvod.org/tv/vavoo?id=")
+        url = url.replace("https://vavoo.to/vavoo-iptv/play/", "https://cors-anywhere.yidianzhishi.cn/https://goldvod.org/tv/vavoo?id=")
         category = ch.get("group", "Generale")
         if url:
             all_channels_flat.append({'name': name, 'url': url, 'category': category})
