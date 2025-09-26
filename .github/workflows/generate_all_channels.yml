@@ -1,34 +1,38 @@
-name: Generate M3U Playlist
+name: 📺 Otomatik M3U Playlist Oluşturucu
 
 on:
-  workflow_dispatch:
   schedule:
-    - cron: '0 */3 * * *' # Her 3 saatte bir çalıştırılır
+    - cron: '0 */3 * * *'  # Her 3 saatte bir
+  workflow_dispatch:
 
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
-    - name: Repo'yu klonla
-      uses: actions/checkout@v3
+      - name: 📥 Depoyu klonla
+        uses: actions/checkout@v3
 
-    - name: Python kur
-      uses: actions/setup-python@v5
-      with:
-        python-version: '3.10'
+      - name: 🐍 Python kurulumu
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
 
-    - name: Gerekli paketleri yükle
-      run: pip install requests
+      - name: 📦 Gerekli Python paketlerini kur
+        run: pip install requests
 
-    - name: M3U dosyasını oluştur
-      run: python generate_all_channels.py
+      - name: 🧠 M3U dosyasını oluştur
+        run: python generate_playlist.py
 
-    - name: Değişiklikleri commit et
-      run: |
-        git config --global user.name "GitHub Action"
-        git config --global user.email "action@github.com"
-        git add stream/all_channels.m3u
-        git commit -m "🎧 Otomatik güncellenmiş M3U playlist"
-        git push
-      continue-on-error: true
+      - name: ⚙ Git yapılandırması
+        run: |
+          git config --global user.name "GitHub Action"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: 🔄 Remote değişiklikleri çek
+        run: git pull --rebase origin main || true
+
+      - name: 💾 Değişiklikleri ekle, commit et ve pushla
+        run: |
+          git add stream/all_channels.m3u
+          git commit -m "🎧 Otomatik güncellenmiş M3U playlist" || echo "No changes to commit"
+          git push origin main
