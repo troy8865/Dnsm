@@ -1,23 +1,17 @@
-- tvg_id: "MyCustomChannel1.tr"
-kanal_adi: "Benim Özel Kanalım 1"
-url: "https://raw.githubusercontent.com/megasmartgence90/SPORT-TRGOALS/refs/heads/main/sports-selcuk-b1.m3u8"
-- tvg_id: "MyCustomChanne2.tr"
-kanal_adi: "Benim Özel Kanalım 2"
-url: "https://raw.githubusercontent.com/megasmartgence90/SPORT-TRGOALS/refs/heads/main/sports-trgolas-b1.m3u8"
-- tvg_id: "MyCustomChannel3.tr"
-kanal_adi: "Benim Özel Kanalım 3"
-url: "http://89.187.191.41/TRT-1-HD-TR/playlist.m3u8"
-- tvg_id: "MyCustomChannel4.tr"
-kanal_adi: "Benim Özel Kanalım 4"
-url: "http://89.187.191.41:80/ATV-HD-TR/playlist.m3u8"
-- tvg_id: "MyCustomChannel5.tr"
-kanal_adi: "Benim Özel Kanalım 5"
-url: "https://github.com/ipstreet312/freeiptv/raw/master/ressources/tur/star.m3u8"
-- tvg_id: "MyCustomChannel6.tr"
-kanal_adi: "Benim Özel Kanalım 6"
-url: "http://89.187.191.41/TV8-HD-TR/playlist.m3u8"
-- tvg_id: "MyCustomChannel7.tr"
-kanal_adi: "Benim Özel Kanalım 7"
-url: "https://rkhubpaomb.turknet.ercdn.net/fwjkgpasof/tv8bucuk/tv8bucuk.m3u8"
+#EXTINF:-1, Selcuk1
+https://raw.githubusercontent.com/megasmartgence90/SPORT-TRGOALS/refs/heads/main/sports-selcuk-b1.m3u8
+#EXTINF:-1, B11
+https://raw.githubusercontent.com/megasmartgence90/SPORT-TRGOALS/refs/heads/main/sports-trgolas-b1.m3u8
+#EXTINF:-1, TRT1
+http://89.187.191.41/TRT-1-HD-TR/playlist.m3u8
+#EXTINF:-1, ATV-1
+http://89.187.191.41:80/ATV-HD-TR/playlist.m3u8
+#EXTINF:-1, Star
+https://github.com/ipstreet312/freeiptv/raw/master/ressources/tur/star.m3u8
+#EXTINF:-1, 8
+http://89.187.191.41/TV8-HD-TR/playlist.m3u8
+#EXTINF:-1, 8bucuk
+https://rkhubpaomb.turknet.ercdn.net/fwjkgpasof/tv8bucuk/tv8bucuk.m3u8
 
   
+
