@@ -140,4 +140,18 @@ if __name__ == "__main__":
             web_links[name] = m3u8
             print(f"{GREEN}[✓] {name} eklendi.{RESET}")
         else:
-            print(f"{RED}[X] {name} bulun
+            print(f"{RED}[X] {name} bulunamadı.{RESET}")
+
+    print(f"{YELLOW}[*] TrGoals verisi toplanıyor...{RESET}")
+    site = siteyi_bul()
+    if not site:
+        exit(1)
+
+    base_url = find_baseurl(site + "/channel.html?id=yayinzirve")
+    if not base_url:
+        print(f"{RED}[X] Base URL alınamadı.{RESET}")
+        exit(1)
+
+    extra_channels = load_extra_channels("extra_channels.yaml")
+
+    write_combined_m3u8(output_file, web_links, base_url, site, "Mozilla/5.0", extra_channels)
