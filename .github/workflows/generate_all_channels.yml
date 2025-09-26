@@ -1,0 +1,34 @@
+name: Generate M3U Playlist
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 */3 * * *' # Her 3 saatte bir çalıştırılır
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Repo'yu klonla
+      uses: actions/checkout@v3
+
+    - name: Python kur
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.10'
+
+    - name: Gerekli paketleri yükle
+      run: pip install requests
+
+    - name: M3U dosyasını oluştur
+      run: python generate_all_channels.py
+
+    - name: Değişiklikleri commit et
+      run: |
+        git config --global user.name "GitHub Action"
+        git config --global user.email "action@github.com"
+        git add stream/all_channels.m3u
+        git commit -m "🎧 Otomatik güncellenmiş M3U playlist"
+        git push
+      continue-on-error: true
