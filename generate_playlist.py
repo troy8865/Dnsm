@@ -18,7 +18,7 @@ extra_yaml_path = "extra_channels.yaml"
 
 # === Kaynak 1: Webden çekilecek kanallar ===
 source_urls = {
-    "trt1": "https://www.tabii.com/tr/watch/live/trt1?trackId=150002",
+    "tabii": "https://www.tabii.com/tr/watch/live/trt1?trackId=150002",
     "nowtv": "https://www.nowtv.com.tr/canli-yayin",
     "showtv": "https://www.showtv.com.tr/canli-yayin",
     "startv": "https://www.startv.com.tr/canli-yayin",
@@ -32,7 +32,7 @@ source_urls = {
     "beyaztv": "https://www.beyaztv.com.tr/canli-yayin",
     "cnnturk": "https://www.cnnturk.com/canli-yayin",
     "szctv": "https://www.szctv.com.tr/canli-yayin-izle",
-    "krttv": "https://www.krttv.com.tr/canli-yayin",
+    "trt1": "https://www.canlitv.me/live/trt1canli-yayin-izle",
     "halktv": "https://halktv.com.tr/canli-yayin",
     "tv100": "https://www.tv100.com/canli-yayin"
 }
