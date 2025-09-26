@@ -1,11 +1,12 @@
 #EXTM3U
+
 # === Web Kaynaklı Kanallar ===
 #EXTINF:-1,trt1
 https://beert7sqimrk0bfdupfgn6qew.medya.trt.com.tr/master.m3u8
 #EXTINF:-1,trthaber
 https://beert7sqimrk0bfdupfgn6qew.medya.trt.com.tr/master.m3u8
 #EXTINF:-1,nowtv
-https://nowtv.daioncdn.net/nowtv/nowtv.m3u8?ce=3&app=mobile_web&st=9piShO7zM89Q-fkqcPuNzA&e=1758885185
+https://nowtv.daioncdn.net/nowtv/nowtv.m3u8?ce=3&app=mobile_web&st=ogvz2NJLUZ7njGh55qdB4w&e=1758887293
 #EXTINF:-1,showtv
 https://ciner.daioncdn.net/showtv/showtv.m3u8?ce=3&app=4bc856ef-4c68-4a94-bc87-37dfaaa66558&st=RBzhSuGauna0OGld-DJUVA&e=1664766175&tv=1
 #EXTINF:-1,kanald
@@ -13,7 +14,7 @@ https://demiroren.daioncdn.net/kanald/kanald.m3u8?app=kanald_web&amp;ce=3
 #EXTINF:-1,teve2
 https://teve2.duhnet.tv/S2/HLS_LIVE/teve2np/playlist.m3u8
 #EXTINF:-1,dmax
-https://dogus.daioncdn.net/dmax/dmax.m3u8?ce=3&app=5a02c599-d17e-4982-9b04-090934d51af7&token=M3pHRDFJamZoWGREbEwxMHU1eXpjdXJOeHpmOE5GNTdTMWF2Q202VzEyZz0=
+https://dogus.daioncdn.net/dmax/dmax.m3u8?ce=3&app=5a02c599-d17e-4982-9b04-090934d51af7&token=TFBnMGdPN2w2ZEw2YVhqZTk4SFBrTVpXOHZCc2d5eUdGOE5GMDV3RmI2TT0=
 #EXTINF:-1,tv360
 https://turkmedya-live.ercdn.net/tv360/tv360.m3u8
 #EXTINF:-1,beyaztv
@@ -148,3 +149,5 @@ https://eight.4928d54d950ee70q48.lat/yayinex7.m3u8
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 #EXTVLCOPT:http-referrer=https://trgoals1411.xyz/
 https://eight.4928d54d950ee70q48.lat/yayinex8.m3u8
+
+# === Manuel Eklenen Kanallar ===
