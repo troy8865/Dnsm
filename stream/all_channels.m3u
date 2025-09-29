@@ -3,7 +3,7 @@
 #EXTINF:-1,tabii
 https://beert7sqimrk0bfdupfgn6qew.medya.trt.com.tr/master.m3u8
 #EXTINF:-1,nowtv
-https://nowtv.daioncdn.net/nowtv/nowtv.m3u8?ce=3&app=mobile_web&st=-u8GMMaSRnhHKlBzVhGSrg&e=1759131469
+https://nowtv.daioncdn.net/nowtv/nowtv.m3u8?ce=3&app=mobile_web&st=c2lQt0y5hIYLFrD6IHnwzg&e=1759145020
 #EXTINF:-1,showtv
 https://ciner.daioncdn.net/showtv/showtv.m3u8?ce=3&app=4bc856ef-4c68-4a94-bc87-37dfaaa66558&st=RBzhSuGauna0OGld-DJUVA&e=1664766175&tv=1
 #EXTINF:-1,startv
@@ -13,7 +13,7 @@ https://demiroren.daioncdn.net/kanald/kanald.m3u8?app=kanald_web&amp;ce=3
 #EXTINF:-1,teve2
 https://teve2.duhnet.tv/S2/HLS_LIVE/teve2np/playlist.m3u8
 #EXTINF:-1,dmax
-https://dogus.daioncdn.net/dmax/dmax.m3u8?ce=3&app=5a02c599-d17e-4982-9b04-090934d51af7&token=ekptTGw2bUluYTlKK3EvWkpuNUZ5a1FOQ2JObkJtc05HbjJZMG5IUVQ2UT0=
+https://dogus.daioncdn.net/dmax/dmax.m3u8?ce=3&app=5a02c599-d17e-4982-9b04-090934d51af7&token=bG9UUTBRdWVFaysvM3JJTFZkWWV1M0ZvYUpaTUQ1RWZTWFFNdGN6azlhOD0=
 #EXTINF:-1,tv360
 https://turkmedya-live.ercdn.net/tv360/tv360.m3u8
 #EXTINF:-1,beyaztv
@@ -154,18 +154,3 @@ https://two.04bf112a615942b2.sbs/yayinex7.m3u8
 https://two.04bf112a615942b2.sbs/yayinex8.m3u8
 
 # === Extra Manuel Eklenen Kanallar ===
-#EXTINF:-1, Selcuk1
-https://raw.githubusercontent.com/megasmartgence90/SPORT-TRGOALS/refs/heads/main/sports-selcuk-b1.m3u8
-#EXTINF:-1, B11
-https://raw.githubusercontent.com/megasmartgence90/SPORT-TRGOALS/refs/heads/main/sports-trgolas-b1.m3u8
-#EXTINF:-1, TRT1
-http://89.187.191.41/TRT-1-HD-TR/playlist.m3u8
-#EXTINF:-1, ATV-1
-http://89.187.191.41:80/ATV-HD-TR/playlist.m3u8
-#EXTINF:-1, Star
-https://github.com/ipstreet312/freeiptv/raw/master/ressources/tur/star.m3u8
-#EXTINF:-1, 8
-http://89.187.191.41/TV8-HD-TR/playlist.m3u8
-#EXTINF:-1, 8bucuk
-https://rkhubpaomb.turknet.ercdn.net/fwjkgpasof/tv8bucuk/tv8bucuk.m3u8
-
