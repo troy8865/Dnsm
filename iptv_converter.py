@@ -1,148 +1,87 @@
-import requests
 import yaml
-import sys
-import re
+import requests
 
-# --- Yardımcı Fonksiyonlar ---
+def load_config(path='config.yaml'):
+    """YAML yapılandırma dosyasını oku."""
+    with open(path, 'r', encoding='utf-8') as f:
+        config = yaml.safe_load(f)
+    # Gerekli anahtarların var olduğundan emin ol
+    if 'source_playlist_url' not in config:
+        raise KeyError("config.yaml içinde 'source_playlist_url' tanımlı olmalı")
+    if 'output_file' not in config:
+        raise KeyError("config.yaml içinde 'output_file' tanımlı olmalı")
+    return config
 
-def load_config(config_path='config.yml'):
-    """
-    config.yml dosyasını okur ve ayarları bir sözlük olarak döndürür.
-    """
-    try:
-        with open(config_path, 'r', encoding='utf-8') as f:
-            return yaml.safe_load(f)
-    except FileNotFoundError:
-        print(f"HATA: Yapılandırma dosyası bulunamadı: '{config_path}'")
-        sys.exit(1)
-    except Exception as e:
-        print(f"HATA: Yapılandırma dosyası okunurken bir hata oluştu: {e}")
-        sys.exit(1)
+def download_playlist(url):
+    """Verilen URL’den M3U içeriğini indir."""
+    resp = requests.get(url)
+    resp.raise_for_status()
+    return resp.text
 
-def fetch_playlist(url):
+def parse_playlist(playlist_content):
     """
-    Verilen URL'den M3U listesinin içeriğini indirir.
+    Basit bir M3U parser. Örneğin:
+    #EXTINF:-1, Kanal Adı
+    http://stream.url/kanal1
     """
-    try:
-        print(f"Kaynak liste indiriliyor: {url}")
-        headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'}
-        response = requests.get(url, timeout=30, headers=headers)
-        response.raise_for_status()
-        # Kaynak dosyanın UTF-8 olduğundan emin olalım
-        response.encoding = 'utf-8'
-        return response.text
-    except requests.exceptions.RequestException as e:
-        print(f"HATA: Kaynak liste indirilemedi: {e}")
-        sys.exit(1)
-
-def parse_source_playlist(source_content):
-    """
-    Kaynak M3U içeriğini analiz eder ve yapılandırılmış bir kanal listesi döndürür.
-    Bu fonksiyon, formatlama hatalarına karşı daha dayanıklıdır.
-    """
-    print("\n--- Kaynak Liste Analiz Ediliyor (Geliştirilmiş Yöntem) ---")
+    lines = playlist_content.splitlines()
     channels = []
-    lines = source_content.splitlines()
-    
-    # Geçici olarak bir önceki #EXTINF satırını saklamak için
-    last_extinf = None
-
+    current_info = None
     for line in lines:
         line = line.strip()
         if not line:
             continue
-
-        if line.startswith('#EXTINF:'):
-            # Bir kanal bilgi satırı bulduk, bunu sakla
-            last_extinf = line
-        elif last_extinf and not line.startswith('#'):
-            # Bu satır bir URL ve bir önceki satır #EXTINF bilgisi içeriyor.
-            # Bu, geçerli bir kanal demektir.
-            
-            # Grup adını bul
-            group_title = "GRUPSUZ KANALLAR"
-            match = re.search(r'group-title=(["\'])(.*?)\1', last_extinf, re.IGNORECASE)
-            if match:
-                title = match.group(2).strip()
-                if title:
-                    group_title = title
-            
-            # Kanal objesini listeye ekle
+        if line.startswith("#EXTINF"):
+            # Kanal ismi al
+            # Örnek: "#EXTINF:-1, Kanal Adı"
+            parts = line.split(',', 1)
+            if len(parts) == 2:
+                current_info = parts[1].strip()
+            else:
+                current_info = None
+        elif line.startswith("http://") or line.startswith("https://"):
+            # URL satırı
+            url = line
             channels.append({
-                'group': group_title,
-                'extinf': last_extinf,
-                'url': line
+                'name': current_info,
+                'url': url
             })
-            
-            # Bu bilgiyi kullandığımız için sıfırla, böylece aynı kanalı tekrar eklemeyiz
-            last_extinf = None
-
-    print(f"\nAnaliz tamamlandı. Toplam {len(channels)} kanal bulundu.")
-    if len(channels) == 0:
-        print("UYARI: Kaynak listeden hiç kanal ayrıştırılamadı. Lütfen kaynak URL'yi ve içeriğini kontrol edin.")
+            current_info = None
+        else:
+            # Diğer yorum ya da # ile başlayan satırlar
+            pass
     return channels
 
-def build_new_playlist(channels, base_url):
+def build_new_playlist(channels_list):
     """
-    Yapılandırılmış kanal listesini kullanarak yeni M3U içeriğini oluşturur.
-    Grupları sıralar ve Türk gruplarını başa alır.
+    Yeni M3U içeriği oluştur.
+    Burada her kanal için:
+    #EXTINF satırı + kanal adı
+    URL satırı (orijinal URL’yi kullanıyoruz)
     """
-    if not channels:
-        return "#EXTM3U\n# UYARI: İşlenecek hiç kanal bulunamadı."
+    lines = ["#EXTM3U"]
+    for ch in channels_list:
+        name = ch.get('name') or "Unnamed"
+        url = ch.get('url')
+        lines.append(f"#EXTINF:-1,{name}")
+        lines.append(url)
+    return "\n".join(lines)
 
-    print("\n--- Yeni Liste Oluşturuluyor ve Sıralanıyor ---")
-    
-    # Kanalları önce grup adına, sonra kanal adına göre sırala
-    channels.sort(key=lambda x: (x['group'].lower(), x['extinf'].lower()))
+def save_playlist(content, filepath):
+    """Metni verilen dosyaya kaydet."""
+    with open(filepath, 'w', encoding='utf-8') as f:
+        f.write(content)
 
-    turkish_channels = []
-    other_channels = []
-
-    for channel in channels:
-        group_lower = channel['group'].lower()
-        if 'türk' in group_lower or 'turk' in group_lower:
-            turkish_channels.append(channel)
-        else:
-            other_channels.append(channel)
-
-    print(f"Türk kanalları içeren gruplar başa alınıyor.")
-    
-    output_lines = ['#EXTM3U']
-    
-    # Önce Türk kanallarını ekle
-    for channel in turkish_channels:
-        output_lines.append(channel['extinf'])
-        new_url = f"{base_url.rstrip('/')}/{channel['url']}/index.m3u8"
-        output_lines.append(new_url)
-        
-    # Sonra diğer kanalları ekle
-    for channel in other_channels:
-        output_lines.append(channel['extinf'])
-        new_url = f"{base_url.rstrip('/')}/{channel['url']}/index.m3u8"
-        output_lines.append(new_url)
-        
-    return "\n".join(output_lines)
-
-def save_playlist(content, output_file):
-    """
-    Oluşturulan yeni M3U içeriğini dosyaya kaydeder.
-    """
-    try:
-        with open(output_file, 'w', encoding='utf-8') as f:
-            f.write(content)
-        print(f"\nİşlem başarıyla tamamlandı!")
-        print(f"Yeni liste '{output_file}' adıyla kaydedildi.")
-    except IOError as e:
-        print(f"HATA: Sonuç dosyası yazılamadı: {e}")
-        sys.exit(1)
-
-# --- Ana Fonksiyon ---
 def main():
     config = load_config()
-    source_content = fetch_playlist(config['source_playlist_url'])
-    channels_list = parse_source_playlist(source_content)
-    new_playlist_content = build_new_playlist(channels_list, config['base_url'])
-    save_playlist(new_playlist_content, config['output_file'])
+    print("Kaynak liste indiriliyor:", config['source_playlist_url'])
+    playlist_text = download_playlist(config['source_playlist_url'])
+    print("Analiz ediliyor...")
+    channels = parse_playlist(playlist_text)
+    print(f"Toplam {len(channels)} kanal bulundu.")
+    new_content = build_new_playlist(channels)
+    save_playlist(new_content, config['output_file'])
+    print("Yeni liste kaydedildi:", config['output_file'])
 
 if __name__ == "__main__":
     main()
