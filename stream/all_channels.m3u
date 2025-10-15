@@ -3,7 +3,7 @@
 #EXTINF:-1,tabii
 https://beert7sqimrk0bfdupfgn6qew.medya.trt.com.tr/master.m3u8
 #EXTINF:-1,nowtv
-https://nowtv.daioncdn.net/nowtv/nowtv.m3u8?ce=3&app=mobile_web&st=4SOUfTfH1r5ppue_ii43ZQ&e=1760553728
+https://nowtv.daioncdn.net/nowtv/nowtv.m3u8?ce=3&app=mobile_web&st=tZrDHe3D_WwGldMOZMs2Vg&e=1760555534
 #EXTINF:-1,showtv
 https://ciner.daioncdn.net/showtv/showtv.m3u8?ce=3&app=4bc856ef-4c68-4a94-bc87-37dfaaa66558&st=RBzhSuGauna0OGld-DJUVA&e=1664766175&tv=1
 #EXTINF:-1,startv
@@ -13,7 +13,7 @@ https://demiroren.daioncdn.net/kanald/kanald.m3u8?app=kanald_web&amp;ce=3
 #EXTINF:-1,teve2
 https://teve2.duhnet.tv/S2/HLS_LIVE/teve2np/playlist.m3u8
 #EXTINF:-1,dmax
-https://dogus.daioncdn.net/dmax/dmax.m3u8?ce=3&app=5a02c599-d17e-4982-9b04-090934d51af7&token=eERPWitvdkMzREx3SS96Y1o5SHFmOHYyRm1QVDJ1UFl2OEFtRmN5MGlqcz0=
+https://dogus.daioncdn.net/dmax/dmax.m3u8?ce=3&app=5a02c599-d17e-4982-9b04-090934d51af7&token=cTZycHhiMEdlenoyVTVSYUhCeURTNDhzT1gzUDBpb0RQYzJkVjJBWHRQbz0=
 #EXTINF:-1,tv360
 https://turkmedya-live.ercdn.net/tv360/tv360.m3u8
 #EXTINF:-1,beyaztv
@@ -23,7 +23,7 @@ https://live.duhnet.tv//S2/HLS_LIVE/cnnturknp/playlist.m3u8
 #EXTINF:-1,ntv
 https://dogus.daioncdn.net/ntv/ntv.m3u8?ce=3
 #EXTINF:-1,kralpop
-https://dygedge.radyotvonline.net/radyovoyage/playlist.m3u8?token=Ulk3c2tOb3M5RzdRa1grWWNzNFFQcCt6OWhDeFpEWWc4STYxa3RQVWFoOD0=\u0026token_type=openssl
+https://dogus.daioncdn.net/ntv/ntv.m3u8?ce=3
 #EXTINF:-1,halktv
 https://halktv.daioncdn.net/halktv/halktv.m3u8?app=c86957d3-74a7-44da-9ad2-dc358c769609&ce=3
 
