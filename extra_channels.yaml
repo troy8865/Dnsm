@@ -1,35 +1,104 @@
 extra_channels:
-  - tvg_id: "Selcuk1.tr"
-    kanal_adi: "Selcuk1"
-    url: "https://raw.githubusercontent.com/megasmartgence90/SPORT-TRGOALS/refs/heads/main/sports-selcuk-b1.m3u8"
-  - tvg_id: "B11.tr"
-    kanal_adi: "B11"
-    url: "https://raw.githubusercontent.com/megasmartgence90/SPORT-TRGOALS/refs/heads/main/sports-trgolas-b1.m3u8"
   - tvg_id: "TRT1.tr"
     kanal_adi: "TRT1"
     url: "http://89.187.191.41/TRT-1-HD-TR/playlist.m3u8"
-  - tvg_id: "ATV-1.tr"
-    kanal_adi: "ATV-1"
+
+  - tvg_id: "Atv.tr"
+    kanal_adi: "Atv"
     url: "http://89.187.191.41:80/ATV-HD-TR/playlist.m3u8"
+
   - tvg_id: "Star.tr"
     kanal_adi: "Star"
     url: "https://github.com/ipstreet312/freeiptv/raw/master/ressources/tur/star.m3u8"
+
   - tvg_id: "TV8.tr"
     kanal_adi: "8"
     url: "https://raw.githubusercontent.com/utd2001/tv/refs/heads/main/m3u8/TV8.m3u8"
+
   - tvg_id: "TV8.5.tr"
     kanal_adi: "8bucuk"
     url: "https://raw.githubusercontent.com/utd2001/tv/refs/heads/main/m3u8/TV8.5.m3u8"
+
   - tvg_id: "TEVE2.tr"
     kanal_adi: "Teve2"
     url: "https://raw.githubusercontent.com/utd2001/tv/refs/heads/main/m3u8/TEVE2.m3u8"
+
   - tvg_id: "HalkTv.tr"
     kanal_adi: "Halktv"
     url: "https://raw.githubusercontent.com/utd2001/tv/refs/heads/main/m3u8/HALK_TV.m3u8"
+
   - tvg_id: "Tele1.tr"
     kanal_adi: "Tele1"
     url: "https://raw.githubusercontent.com/utd2001/tv/refs/heads/main/m3u8/TELE1.m3u8"
+
   - tvg_id: "Sozcutv.tr"
     kanal_adi: "Sozcutv"
     url: "https://raw.githubusercontent.com/utd2001/tv/refs/heads/main/m3u8/SOZCU_TV.m3u8"
 
+  - tvg_id: "Ahaber.tr"
+    kanal_adi: "A Haber"
+    url: "http://65.108.239.207:80/ahaber/index.m3u8"
+
+  - tvg_id: "yssinema.tr"
+    kanal_adi: "yssinema"
+    url: "https://raw.githubusercontent.com/megasmartgence90/RESTREAM/refs/heads/main/MEGAKINO/yssinema.m3u8"
+
+  - tvg_id: "filmscreen.tr"
+    kanal_adi: "Film Screen"
+    url: "https://edge-e3.evrideo.tv/f2dcbecf-5af0-47db-a82e-032112050a23_1000027346_HLS/manifest.m3u8"
+
+  - tvg_id: "muz.tr"
+    kanal_adi: "muz"
+    url: "https://raw.githubusercontent.com/megasmartgence90/SPORT-TRGOALS/refs/heads/main/sports-selcuk-b1.m3u8"
+
+  - tvg_id: "nar.tr"
+    kanal_adi: "nar"
+    url: "https://raw.githubusercontent.com/megasmartgence90/SPORT-TRGOALS/refs/heads/main/sports-trgolas-b1.m3u8"
+
+  - tvg_id: "elma.tr"
+    kanal_adi: "elma"
+    url: "http://65.108.239.207:80/b11/playlist.m3u8"
+
+  - tvg_id: "armut.tr"
+    kanal_adi: "armut"
+    url: "http://65.108.239.207:80/b1/playlist.m3u8"
+
+  - tvg_id: "meyve2.tr"
+    kanal_adi: "meyve 2"
+    url: "http://65.108.239.207:80/b2/playlist.m3u8"
+
+  - tvg_id: "meyve3.tr"
+    kanal_adi: "meyve 3"
+    url: "http://65.108.239.207:80/b3/playlist.m3u8"
+
+  - tvg_id: "tab1.tr"
+    kanal_adi: "TAB 1"
+    url: "https://beert7sqimrk0bfdupfgn6qew.medya.trt.com.tr/master.m3u8"
+
+  - tvg_id: "tab2.tr"
+    kanal_adi: "TAB 2"
+    url: "https://iaqzu4szhtzeqd0edpsayinle.medya.trt.com.tr/master.m3u8"
+
+  - tvg_id: "tab3.tr"
+    kanal_adi: "TAB 3"
+    url: "https://klublsslubcgyiz7zqt5bz8il.medya.trt.com.tr/master.m3u8"
+
+  - tvg_id: "tab4.tr"
+    kanal_adi: "TAB 4"
+    url: "https://uJnF69oP16X2fiIyWxCNx41Q8.medya.trt.com.tr/master.m3u8"
+
+  - tvg_id: "tab5.tr"
+    kanal_adi: "TAB 5"
+    url: "https://bfxy3jgeydpbphtk8qfqwm3hr.medya.trt.com.tr/master.m3u8"
+
+  - tvg_id: "tab6.tr"
+    kanal_adi: "TAB 6"
+    url: "https://z3mmimwz148csv0vaxtphqspf.medya.trt.com.tr/master.m3u8"
+
+  - tvg_id: "tab7.tr"
+    kanal_adi: "TAB 7"
+    url: "https://vbtob9hyq58eiophct5qctxr2.medya.trt.com.tr/master.m3u8"
+
+  - tvg_id: "tab8.tr"
+    kanal_adi: "TAB 8"
+    url: "https://rxnE77JupTdEYKE3TytvGQWYh.medya.trt.com.tr/master.m3u8"
