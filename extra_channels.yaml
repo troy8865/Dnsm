@@ -71,6 +71,58 @@ extra_channels:
     kanal_adi: "meyve 3"
     url: "http://65.108.239.207:80/b3/playlist.m3u8"
 
+  - tvg_id: "meyvetac.tr"
+    kanal_adi: "meyvetac"
+    url: "https://raw.githubusercontent.com/megasmartgence90/SPORT-TRGOALS/refs/heads/main/sports-trgolas-bm1.m3u8"
+
+  - tvg_id: "seker1.tr"
+    kanal_adi: "seker 1"
+    url: "https://raw.githubusercontent.com/megasmartgence90/SPORT-TRGOALS/refs/heads/main/sports-trgolas-ss1.m3u8"
+
+  - tvg_id: "seker2.tr"
+    kanal_adi: "seker 2"
+    url: "https://raw.githubusercontent.com/megasmartgence90/SPORT-TRGOALS/refs/heads/main/sports-trgolas-ss2.m3u8"
+
+  - tvg_id: "sekercuk.tr"
+    kanal_adi: "sekercuk"
+    url: "https://raw.githubusercontent.com/megasmartgence90/SPORT-TRGOALS/refs/heads/main/sports-trgolas-ss1plus.m3u8"
+
+  - tvg_id: "simarik1.tr"
+    kanal_adi: "sımarık 1"
+    url: "https://raw.githubusercontent.com/megasmartgence90/SPORT-TRGOALS/refs/heads/main/sports-trgolas-ssmart1.m3u8"
+
+  - tvg_id: "simarik2.tr"
+    kanal_adi: "sımarık 2"
+    url: "https://raw.githubusercontent.com/megasmartgence90/SPORT-TRGOALS/refs/heads/main/sports-trgolas-ssmart2.m3u8"
+
+  - tvg_id: "tr1.tr"
+    kanal_adi: "tr1"
+    url: "https://raw.githubusercontent.com/megasmartgence90/SPORT-TRGOALS/refs/heads/main/sports-trgolas-tr1.m3u8"
+
+  - tvg_id: "ters1.tr"
+    kanal_adi: "ters1"
+    url: "https://raw.githubusercontent.com/megasmartgence90/SPORT-TRGOALS/refs/heads/main/sports-trgolas-trs1.m3u8"
+
+  - tvg_id: "as.tr"
+    kanal_adi: "A Spor"
+    url: "https://raw.githubusercontent.com/megasmartgence90/AUTO-UPDATE-LINK/refs/heads/main/channels_files/A_Spor.m3u8"
+
+  - tvg_id: "tramvay1.tr"
+    kanal_adi: "Tivibu Sports 1"
+    url: "https://raw.githubusercontent.com/megasmartgence90/AUTO-UPDATE-LINK/refs/heads/main/channels_files/Tivibu_Sports_1.m3u8"
+
+  - tvg_id: "tramvay2.tr"
+    kanal_adi: "Tivibu Sports 2"
+    url: "https://raw.githubusercontent.com/megasmartgence90/AUTO-UPDATE-LINK/refs/heads/main/channels_files/Tivibu_Sports_2.m3u8"
+
+  - tvg_id: "tramvay3.tr"
+    kanal_adi: "Tivibu Sports 3"
+    url: "https://raw.githubusercontent.com/megasmartgence90/AUTO-UPDATE-LINK/refs/heads/main/channels_files/Tivibu_Sports_3.m3u8"
+
+  - tvg_id: "tramvay4.tr"
+    kanal_adi: "Tivibu Sports 4"
+    url: "https://raw.githubusercontent.com/megasmartgence90/AUTO-UPDATE-LINK/refs/heads/main/channels_files/Tivibu_Sports_4.m3u8"
+
   - tvg_id: "tab1.tr"
     kanal_adi: "TAB 1"
     url: "https://beert7sqimrk0bfdupfgn6qew.medya.trt.com.tr/master.m3u8"
