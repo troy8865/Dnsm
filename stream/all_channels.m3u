@@ -3,7 +3,7 @@
 #EXTINF:-1,tabii
 https://beert7sqimrk0bfdupfgn6qew.medya.trt.com.tr/master.m3u8
 #EXTINF:-1,nowtv
-https://nowtv.daioncdn.net/nowtv/nowtv.m3u8?ce=3&app=mobile_web&st=gjZXhql8-BbFC-pVrFK_RA&e=1761125825
+https://nowtv.daioncdn.net/nowtv/nowtv.m3u8?ce=3&app=mobile_web&st=xtqPZptnkgRdVSxXH6rDsg&e=1761127630
 #EXTINF:-1,showtv
 https://ciner.daioncdn.net/showtv/showtv.m3u8?ce=3&app=4bc856ef-4c68-4a94-bc87-37dfaaa66558&st=RBzhSuGauna0OGld-DJUVA&e=1664766175&tv=1
 #EXTINF:-1,startv
@@ -13,7 +13,7 @@ https://demiroren.daioncdn.net/kanald/kanald.m3u8?app=kanald_web&amp;ce=3
 #EXTINF:-1,teve2
 https://teve2.duhnet.tv/S2/HLS_LIVE/teve2np/playlist.m3u8
 #EXTINF:-1,dmax
-https://dogus.daioncdn.net/dmax/dmax.m3u8?ce=3&app=5a02c599-d17e-4982-9b04-090934d51af7&token=VW41VDI5YjBEWnpBQm8yS2hZSXVjeGRxUW56ZkEvMVM3WExXeExmdUFPVT0=
+https://dogus.daioncdn.net/dmax/dmax.m3u8?ce=3&app=5a02c599-d17e-4982-9b04-090934d51af7&token=YTU2MXV6SzBzdkM1Vzh3bnhaeVNQMVg0SlhjN3JSa3krL2ZUZmVrSitCND0=
 #EXTINF:-1,tv360
 https://turkmedya-live.ercdn.net/tv360/tv360.m3u8
 #EXTINF:-1,beyaztv
@@ -190,6 +190,32 @@ http://65.108.239.207:80/b1/playlist.m3u8
 http://65.108.239.207:80/b2/playlist.m3u8
 #EXTINF:-1 tvg-id="meyve3.tr" tvg-name="meyve 3",meyve 3
 http://65.108.239.207:80/b3/playlist.m3u8
+#EXTINF:-1 tvg-id="meyvetac.tr" tvg-name="meyvetac",meyvetac
+https://raw.githubusercontent.com/megasmartgence90/SPORT-TRGOALS/refs/heads/main/sports-trgolas-bm1.m3u8
+#EXTINF:-1 tvg-id="seker1.tr" tvg-name="seker 1",seker 1
+https://raw.githubusercontent.com/megasmartgence90/SPORT-TRGOALS/refs/heads/main/sports-trgolas-ss1.m3u8
+#EXTINF:-1 tvg-id="seker2.tr" tvg-name="seker 2",seker 2
+https://raw.githubusercontent.com/megasmartgence90/SPORT-TRGOALS/refs/heads/main/sports-trgolas-ss2.m3u8
+#EXTINF:-1 tvg-id="sekercuk.tr" tvg-name="sekercuk",sekercuk
+https://raw.githubusercontent.com/megasmartgence90/SPORT-TRGOALS/refs/heads/main/sports-trgolas-ss1plus.m3u8
+#EXTINF:-1 tvg-id="simarik1.tr" tvg-name="sımarık 1",sımarık 1
+https://raw.githubusercontent.com/megasmartgence90/SPORT-TRGOALS/refs/heads/main/sports-trgolas-ssmart1.m3u8
+#EXTINF:-1 tvg-id="simarik2.tr" tvg-name="sımarık 2",sımarık 2
+https://raw.githubusercontent.com/megasmartgence90/SPORT-TRGOALS/refs/heads/main/sports-trgolas-ssmart2.m3u8
+#EXTINF:-1 tvg-id="tr1.tr" tvg-name="tr1",tr1
+https://raw.githubusercontent.com/megasmartgence90/SPORT-TRGOALS/refs/heads/main/sports-trgolas-tr1.m3u8
+#EXTINF:-1 tvg-id="ters1.tr" tvg-name="ters1",ters1
+https://raw.githubusercontent.com/megasmartgence90/SPORT-TRGOALS/refs/heads/main/sports-trgolas-trs1.m3u8
+#EXTINF:-1 tvg-id="as.tr" tvg-name="A Spor",A Spor
+https://raw.githubusercontent.com/megasmartgence90/AUTO-UPDATE-LINK/refs/heads/main/channels_files/A_Spor.m3u8
+#EXTINF:-1 tvg-id="tramvay1.tr" tvg-name="Tivibu Sports 1",Tivibu Sports 1
+https://raw.githubusercontent.com/megasmartgence90/AUTO-UPDATE-LINK/refs/heads/main/channels_files/Tivibu_Sports_1.m3u8
+#EXTINF:-1 tvg-id="tramvay2.tr" tvg-name="Tivibu Sports 2",Tivibu Sports 2
+https://raw.githubusercontent.com/megasmartgence90/AUTO-UPDATE-LINK/refs/heads/main/channels_files/Tivibu_Sports_2.m3u8
+#EXTINF:-1 tvg-id="tramvay3.tr" tvg-name="Tivibu Sports 3",Tivibu Sports 3
+https://raw.githubusercontent.com/megasmartgence90/AUTO-UPDATE-LINK/refs/heads/main/channels_files/Tivibu_Sports_3.m3u8
+#EXTINF:-1 tvg-id="tramvay4.tr" tvg-name="Tivibu Sports 4",Tivibu Sports 4
+https://raw.githubusercontent.com/megasmartgence90/AUTO-UPDATE-LINK/refs/heads/main/channels_files/Tivibu_Sports_4.m3u8
 #EXTINF:-1 tvg-id="tab1.tr" tvg-name="TAB 1",TAB 1
 https://beert7sqimrk0bfdupfgn6qew.medya.trt.com.tr/master.m3u8
 #EXTINF:-1 tvg-id="tab2.tr" tvg-name="TAB 2",TAB 2
