@@ -18,7 +18,7 @@ extra_yaml_path = "extra_channels.yaml"
 
 # === Kaynak 1: Webden çekilecek kanallar ===
 source_urls = {
-    "tabii": "https://www.tabii.com/tr/watch/live/trt1?trackId=150002",
+     "tabii": "https://www.tabii.com/tr/watch/live/trt1?trackId=150002",
     "nowtv": "https://www.nowtv.com.tr/canli-yayin",
     "showtv": "https://www.showtv.com.tr/canli-yayin",
     "startv": "https://puhutv.com/star-tv-canli-yayin",
@@ -31,9 +31,11 @@ source_urls = {
     "tv360": "https://www.tv360.com.tr/canli-yayin",
     "beyaztv": "https://www.beyaztv.com.tr/canli-yayin",
     "Tivi6": "https://tivi6.com.tr/canli-yayin",
+    "ntv": "https://puhutv.com/ntv-canli-yayin",
     "ekolspor": "https://www.ekoltv.com.tr/canli-yayin",
     "ulketv": "https://www.ulketv.com/ulke-tv-canli-yayin",
     "htspor": "https://www.htspor.com/canli-yayin",
+    "haberturk": "https://www.haberturk.com/canliyayin",
 }
 
 # === Kaynak 2: TrGoals Kanalları ===
