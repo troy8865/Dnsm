@@ -32,9 +32,10 @@ source_urls = {
     "beyaztv": "https://www.beyaztv.com.tr/canli-yayin",
     "cnnturk": "https://www.cnnturk.com/canli-yayin",
     "ntv": "https://puhutv.com/ntv-canli-yayin",
-    "kralpop": "https://puhutv.com/kral-pop-tv-canli-yayin",
-    "halktv": "https://halktv.com.tr/canli-yayin",
-    "tv100": "https://www.tv100.com/canli-yayin"
+    "ekolspor": "https://www.ekoltv.com.tr/canli-yayin",
+    "ulketv": "https://www.ulketv.com/ulke-tv-canli-yayin",
+    "htspor": "https://www.htspor.com/canli-yayin",
+    "haberturk": "https://www.haberturk.com/canliyayin",
 }
 
 # === Kaynak 2: TrGoals Kanalları ===
