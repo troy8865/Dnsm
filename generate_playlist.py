@@ -31,11 +31,11 @@ source_urls = {
     "tv360": "https://www.tv360.com.tr/canli-yayin",
     "beyaztv": "https://www.beyaztv.com.tr/canli-yayin",
     "Tivi6": "https://tivi6.com.tr/canli-yayin",
-    "ntv": "https://puhutv.com/ntv-canli-yayin",
+    "ntvspor": "https://www.ntvspor.net/ntvspor-canli-yayin",
     "ekolspor": "https://www.ekoltv.com.tr/canli-yayin",
     "ulketv": "https://www.ulketv.com/ulke-tv-canli-yayin",
     "htspor": "https://www.htspor.com/canli-yayin",
-    "haberturk": "https://www.haberturk.com/canliyayin",
+    "powerturk": "https://www.powerapp.com.tr/tvs/power-tvs/powerturktv",
 }
 
 # === Kaynak 2: TrGoals Kanalları ===
