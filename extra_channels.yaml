@@ -35,9 +35,9 @@ extra_channels:
     kanal_adi: "Sozcutv"
     url: "https://raw.githubusercontent.com/utd2001/tv/refs/heads/main/m3u8/SOZCU_TV.m3u8"
 
-  - tvg_id: "Ahaber.tr"
-    kanal_adi: "A Haber"
-    url: "http://65.108.239.207:80/ahaber/index.m3u8"
+  - tvg_id: "AAtvv.tr"
+    kanal_adi: "AAtvv"
+    url: "https://raw.githubusercontent.com/Kutlu0319/garibims/refs/heads/main/channels_files/ATV.m3u8"
 
   - tvg_id: "yssinema.tr"
     kanal_adi: "yssinema"
@@ -51,37 +51,41 @@ extra_channels:
     kanal_adi: "muz"
     url: "https://raw.githubusercontent.com/megasmartgence90/SPORT-TRGOALS/refs/heads/main/sports-selcuk-b1.m3u8"
 
-  - tvg_id: "nar.tr"
-    kanal_adi: "nar"
+  - tvg_id: "muz1"
+    kanal_adi: "muz1"
     url: "https://raw.githubusercontent.com/megasmartgence90/SPORT-TRGOALS/refs/heads/main/sports-trgolas-b1.m3u8"
 
-  - tvg_id: "elma.tr"
-    kanal_adi: "elma"
-    url: "http://65.108.239.207:80/b11/playlist.m3u8"
+  - tvg_id: "muz2"
+    kanal_adi: "muz2"
+    url: "https://raw.githubusercontent.com/Kutlu0319/garibims/refs/heads/main/channels_files/beIN_Sports_1__.m3u8"
 
-  - tvg_id: "armut.tr"
-    kanal_adi: "armut"
-    url: "http://65.108.239.207:80/b1/playlist.m3u8"
+  - tvg_id: "muz3"
+    kanal_adi: "muz3"
+    url: "https://raw.githubusercontent.com/Kutlu0319/garibims/refs/heads/main/channels_files/beIN_Sports_1___.m3u8"
 
   - tvg_id: "meyve2.tr"
     kanal_adi: "meyve 2"
-    url: "http://65.108.239.207:80/b2/playlist.m3u8"
+    url: "https://raw.githubusercontent.com/Kutlu0319/garibims/refs/heads/main/channels_files/beIN_Sports_2.m3u8"
 
   - tvg_id: "meyve3.tr"
     kanal_adi: "meyve 3"
-    url: "http://65.108.239.207:80/b3/playlist.m3u8"
+    url: "https://raw.githubusercontent.com/Kutlu0319/garibims/refs/heads/main/channels_files/beIN_Sports_3.m3u8"
 
   - tvg_id: "meyvetac.tr"
     kanal_adi: "meyvetac"
-    url: "https://raw.githubusercontent.com/megasmartgence90/SPORT-TRGOALS/refs/heads/main/sports-trgolas-bm1.m3u8"
+    url: "https://raw.githubusercontent.com/Kutlu0319/garibims/refs/heads/main/channels_files/beIN_Sports_1_Max.m3u8"
+
+  - tvg_id: "meyvetac2.tr"
+    kanal_adi: "meyvetac2"
+    url: "https://raw.githubusercontent.com/Kutlu0319/garibims/refs/heads/main/channels_files/beIN_Sports_2_Max.m3u8"
 
   - tvg_id: "seker1.tr"
     kanal_adi: "seker 1"
-    url: "https://raw.githubusercontent.com/megasmartgence90/SPORT-TRGOALS/refs/heads/main/sports-trgolas-ss1.m3u8"
+    url: "https://raw.githubusercontent.com/Kutlu0319/garibims/refs/heads/main/channels_files/Saran_Sports_1.m3u8"
 
   - tvg_id: "seker2.tr"
     kanal_adi: "seker 2"
-    url: "https://raw.githubusercontent.com/megasmartgence90/SPORT-TRGOALS/refs/heads/main/sports-trgolas-ss2.m3u8"
+    url: "https://raw.githubusercontent.com/Kutlu0319/garibims/refs/heads/main/channels_files/Saran_Sports_2.m3u8"
 
   - tvg_id: "sekercuk.tr"
     kanal_adi: "sekercuk"
@@ -89,68 +93,148 @@ extra_channels:
 
   - tvg_id: "simarik1.tr"
     kanal_adi: "sımarık 1"
-    url: "https://raw.githubusercontent.com/megasmartgence90/SPORT-TRGOALS/refs/heads/main/sports-trgolas-ssmart1.m3u8"
+    url: "https://raw.githubusercontent.com/Kutlu0319/garibims/refs/heads/main/channels_files/Smart_Sports.m3u8"
 
   - tvg_id: "simarik2.tr"
     kanal_adi: "sımarık 2"
-    url: "https://raw.githubusercontent.com/megasmartgence90/SPORT-TRGOALS/refs/heads/main/sports-trgolas-ssmart2.m3u8"
+    url: "https://raw.githubusercontent.com/Kutlu0319/garibims/refs/heads/main/channels_files/Smart_Sports_2.m3u8"
 
-  - tvg_id: "tr1.tr"
-    kanal_adi: "tr1"
-    url: "https://raw.githubusercontent.com/megasmartgence90/SPORT-TRGOALS/refs/heads/main/sports-trgolas-tr1.m3u8"
+  - tvg_id: "ters.tr"
+    kanal_adi: "ters"
+    url: "https://raw.githubusercontent.com/Kutlu0319/garibims/refs/heads/main/channels_files/TRT_Spor.m3u8"
 
-  - tvg_id: "ters1.tr"
-    kanal_adi: "ters1"
-    url: "https://raw.githubusercontent.com/megasmartgence90/SPORT-TRGOALS/refs/heads/main/sports-trgolas-trs1.m3u8"
+  - tvg_id: "ters2.tr"
+    kanal_adi: "ters2"
+    url: "https://raw.githubusercontent.com/Kutlu0319/garibims/refs/heads/main/channels_files/TRT_Spor_2.m3u8"
 
   - tvg_id: "as.tr"
     kanal_adi: "A Spor"
-    url: "https://raw.githubusercontent.com/megasmartgence90/AUTO-UPDATE-LINK/refs/heads/main/channels_files/A_Spor.m3u8"
+    url: "https://raw.githubusercontent.com/Kutlu0319/garibims/refs/heads/main/channels_files/A_Spor.m3u8"
 
   - tvg_id: "tramvay1.tr"
-    kanal_adi: "Tivibu Sports 1"
-    url: "https://raw.githubusercontent.com/megasmartgence90/AUTO-UPDATE-LINK/refs/heads/main/channels_files/Tivibu_Sports_1.m3u8"
+    kanal_adi: "tramvay1"
+    url: "https://raw.githubusercontent.com/Kutlu0319/garibims/refs/heads/main/channels_files/Tivibu_Sports_1.m3u8"
 
   - tvg_id: "tramvay2.tr"
-    kanal_adi: "Tivibu Sports 2"
-    url: "https://raw.githubusercontent.com/megasmartgence90/AUTO-UPDATE-LINK/refs/heads/main/channels_files/Tivibu_Sports_2.m3u8"
+    kanal_adi: "tramvay2"
+    url: "https://raw.githubusercontent.com/Kutlu0319/garibims/refs/heads/main/channels_files/Tivibu_Sports_2.m3u8"
 
   - tvg_id: "tramvay3.tr"
-    kanal_adi: "Tivibu Sports 3"
-    url: "https://raw.githubusercontent.com/megasmartgence90/AUTO-UPDATE-LINK/refs/heads/main/channels_files/Tivibu_Sports_3.m3u8"
+    kanal_adi: "tramvay3"
+    url: "https://raw.githubusercontent.com/Kutlu0319/garibims/refs/heads/main/channels_files/Tivibu_Sports_3.m3u8"
 
   - tvg_id: "tramvay4.tr"
-    kanal_adi: "Tivibu Sports 4"
-    url: "https://raw.githubusercontent.com/megasmartgence90/AUTO-UPDATE-LINK/refs/heads/main/channels_files/Tivibu_Sports_4.m3u8"
+    kanal_adi: "tramvay4"
+    url: "https://raw.githubusercontent.com/Kutlu0319/garibims/refs/heads/main/channels_files/Tivibu_Sports_4.m3u8"
 
   - tvg_id: "tab1.tr"
     kanal_adi: "TAB 1"
-    url: "https://beert7sqimrk0bfdupfgn6qew.medya.trt.com.tr/master.m3u8"
+    url: "https://raw.githubusercontent.com/Kutlu0319/garibims/refs/heads/main/channels_files/T%C3%A2bii_1.m3u8"
 
   - tvg_id: "tab2.tr"
     kanal_adi: "TAB 2"
-    url: "https://iaqzu4szhtzeqd0edpsayinle.medya.trt.com.tr/master.m3u8"
+    url: "https://raw.githubusercontent.com/Kutlu0319/garibims/refs/heads/main/channels_files/T%C3%A2bii_2.m3u8"
 
   - tvg_id: "tab3.tr"
     kanal_adi: "TAB 3"
-    url: "https://klublsslubcgyiz7zqt5bz8il.medya.trt.com.tr/master.m3u8"
+    url: "https://raw.githubusercontent.com/Kutlu0319/garibims/refs/heads/main/channels_files/T%C3%A2bii_3.m3u8"
 
   - tvg_id: "tab4.tr"
     kanal_adi: "TAB 4"
-    url: "https://uJnF69oP16X2fiIyWxCNx41Q8.medya.trt.com.tr/master.m3u8"
+    url: "https://raw.githubusercontent.com/Kutlu0319/garibims/refs/heads/main/channels_files/T%C3%A2bii_4.m3u8"
 
   - tvg_id: "tab5.tr"
     kanal_adi: "TAB 5"
-    url: "https://bfxy3jgeydpbphtk8qfqwm3hr.medya.trt.com.tr/master.m3u8"
+    url: "https://raw.githubusercontent.com/Kutlu0319/garibims/refs/heads/main/channels_files/T%C3%A2bii_5.m3u8"
 
   - tvg_id: "tab6.tr"
     kanal_adi: "TAB 6"
-    url: "https://z3mmimwz148csv0vaxtphqspf.medya.trt.com.tr/master.m3u8"
+    url: "https://raw.githubusercontent.com/Kutlu0319/garibims/refs/heads/main/channels_files/T%C3%A2bii_6.m3u8"
 
   - tvg_id: "tab7.tr"
     kanal_adi: "TAB 7"
-    url: "https://vbtob9hyq58eiophct5qctxr2.medya.trt.com.tr/master.m3u8"
+    url: "https://raw.githubusercontent.com/Kutlu0319/garibims/refs/heads/main/channels_files/T%C3%A2bii_7.m3u8"
 
   - tvg_id: "tab8.tr"
     kanal_adi: "TAB 8"
-    url: "https://rxnE77JupTdEYKE3TytvGQWYh.medya.trt.com.tr/master.m3u8"
+    url: "https://raw.githubusercontent.com/Kutlu0319/garibims/refs/heads/main/channels_files/T%C3%A2bii_8.m3u8"
+
+  - tvg_id: "cbcsport.az"
+    kanal_adi: "CBC Sport"
+    url: "https://raw.githubusercontent.com/megasmartgence90/RESTREAM/refs/heads/main/MEGA-GROUP-AZE/cbcsport.m3u8"
+
+  - tvg_id: "viasatsport"
+    kanal_adi: "Viasat Sport"
+    url: "https://raw.githubusercontent.com/megasmartgence90/STREAM-php/refs/heads/main/output/viasatsport.m3u8"
+
+  - tvg_id: "setanta_georgia"
+    kanal_adi: "Setanta Georgia"
+    url: "https://raw.githubusercontent.com/megasmartgence90/STREAM-php/refs/heads/main/output/setanta_georgia.m3u8"
+
+  - tvg_id: "setanta_sports_3"
+    kanal_adi: "Setanta Sports 3"
+    url: "https://raw.githubusercontent.com/megasmartgence90/STREAM-php/refs/heads/main/output/setanta_sports_3.m3u8"
+
+  - tvg_id: "setanta_sports_plus_georgia"
+    kanal_adi: "Setanta Sports Plus Georgia"
+    url: "https://raw.githubusercontent.com/megasmartgence90/STREAM-php/refs/heads/main/output/setanta_sports_plus_georgia.m3u8"
+
+  - tvg_id: "silk_sport4"
+    kanal_adi: "Silk Sport 4"
+    url: "https://raw.githubusercontent.com/megasmartgence90/STREAM-php/refs/heads/main/output/silk_sport4.m3u8"
+
+  - tvg_id: "matchplaneta"
+    kanal_adi: "Match Planeta"
+    url: "https://raw.githubusercontent.com/megasmartgence90/STREAM-php/refs/heads/main/output/matchplaneta.m3u8"
+
+  - tvg_id: "matchfutbol1hd"
+    kanal_adi: "МАТЧ! ФУТБОЛ 1 HD"
+    url: "http://tv.ttk.mx:9114"
+
+  - tvg_id: "matchfutbol1"
+    kanal_adi: "Матч! футбол 1"
+    url: "http://tv.ttk.mx:9108"
+
+  - tvg_id: "matchfutbol2hd"
+    kanal_adi: "МАТЧ! ФУТБОЛ 2 HD"
+    url: "http://tv.ttk.mx:9111"
+
+  - tvg_id: "matchfutbol3"
+    kanal_adi: "Матч! Футбол 3"
+    url: "http://tv.ttk.mx:9112"
+
+  - tvg_id: "matchfutbol3hd"
+    kanal_adi: "МАТЧ! ФУТБОЛ 3 HD"
+    url: "http://tv.ttk.mx:9116"
+
+  - tvg_id: "futbol"
+    kanal_adi: "Футбол"
+    url: "http://tv.ttk.mx:9065"
+
+  - tvg_id: "vijusport"
+    kanal_adi: "viju+ Sport"
+    url: "http://tv.ttk.mx:9187"
+
+  - tvg_id: "matchhd"
+    kanal_adi: "МАТЧ HD"
+    url: "http://tv.ttk.mx:9094"
+
+  - tvg_id: "matchtv"
+    kanal_adi: "Матч ТВ"
+    url: "http://tv.ttk.mx:9002"
+
+  - tvg_id: "matcharena"
+    kanal_adi: "Матч! Арена"
+    url: "http://tv.ttk.mx:9153"
+
+  - tvg_id: "matchstrana"
+    kanal_adi: "Матч! Страна"
+    url: "http://tv.ttk.mx:9154"
+
+  - tvg_id: "matchigra"
+    kanal_adi: "Матч! Игра"
+    url: "http://tv.ttk.mx:9152"
+
+  - tvg_id: "matchboec"
+    kanal_adi: "МАТЧ! БОЕЦ"
+    url: "http://tv.ttk.mx:9107"
