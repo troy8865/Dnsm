@@ -127,12 +127,117 @@ extra_channels:
     kanal_adi: "Tramvay 4"
     url: "https://raw.githubusercontent.com/Kutlu0319/garibims/refs/heads/main/channels_files/Tivibu_Sports_4.m3u8"
 
+  - tvg_id: "tab1.tr"
+    kanal_adi: "Tabii 1"
+    url: "https://raw.githubusercontent.com/Kutlu0319/garibims/refs/heads/main/channels_files/Tâbii_1.m3u8"
+
+  - tvg_id: "tab2.tr"
+    kanal_adi: "Tabii 2"
+    url: "https://raw.githubusercontent.com/Kutlu0319/garibims/refs/heads/main/channels_files/Tâbii_2.m3u8"
+
+  - tvg_id: "tab3.tr"
+    kanal_adi: "Tabii 3"
+    url: "https://raw.githubusercontent.com/Kutlu0319/garibims/refs/heads/main/channels_files/Tâbii_3.m3u8"
+
+  - tvg_id: "tab4.tr"
+    kanal_adi: "Tabii 4"
+    url: "https://raw.githubusercontent.com/Kutlu0319/garibims/refs/heads/main/channels_files/Tâbii_4.m3u8"
+
+  - tvg_id: "tab5.tr"
+    kanal_adi: "Tabii 5"
+    url: "https://raw.githubusercontent.com/Kutlu0319/garibims/refs/heads/main/channels_files/Tâbii_5.m3u8"
+
+  - tvg_id: "tab6.tr"
+    kanal_adi: "Tabii 6"
+    url: "https://raw.githubusercontent.com/Kutlu0319/garibims/refs/heads/main/channels_files/Tâbii_6.m3u8"
+
+  - tvg_id: "tab7.tr"
+    kanal_adi: "Tabii 7"
+    url: "https://raw.githubusercontent.com/Kutlu0319/garibims/refs/heads/main/channels_files/Tâbii_7.m3u8"
+
+  - tvg_id: "tab8.tr"
+    kanal_adi: "Tabii 8"
+    url: "https://raw.githubusercontent.com/Kutlu0319/garibims/refs/heads/main/channels_files/Tâbii_8.m3u8"
+
   - tvg_id: "cbcsport.az"
     kanal_adi: "CBC Sport"
     url: "https://raw.githubusercontent.com/megasmartgence90/RESTREAM/refs/heads/main/MEGA-GROUP-AZE/cbcsport.m3u8"
 
-  # Yeni eklenenler ↓↓↓
+  - tvg_id: "viasatsport"
+    kanal_adi: "Viasat Sport"
+    url: "https://raw.githubusercontent.com/megasmartgence90/STREAM-php/refs/heads/main/output/viasatsport.m3u8"
 
+  - tvg_id: "setanta_georgia"
+    kanal_adi: "Setanta Georgia"
+    url: "https://raw.githubusercontent.com/megasmartgence90/STREAM-php/refs/heads/main/output/setanta_georgia.m3u8"
+
+  - tvg_id: "setanta_sports_3"
+    kanal_adi: "Setanta Sports 3"
+    url: "https://raw.githubusercontent.com/megasmartgence90/STREAM-php/refs/heads/main/output/setanta_sports_3.m3u8"
+
+  - tvg_id: "setanta_sports_plus_georgia"
+    kanal_adi: "Setanta Sports Plus Georgia"
+    url: "https://raw.githubusercontent.com/megasmartgence90/STREAM-php/refs/heads/main/output/setanta_sports_plus_georgia.m3u8"
+
+  - tvg_id: "silk_sport4"
+    kanal_adi: "Silk Sport 4"
+    url: "https://raw.githubusercontent.com/megasmartgence90/STREAM-php/refs/heads/main/output/silk_sport4.m3u8"
+
+  - tvg_id: "matchplaneta"
+    kanal_adi: "Match Planeta"
+    url: "https://raw.githubusercontent.com/megasmartgence90/STREAM-php/refs/heads/main/output/matchplaneta.m3u8"
+
+  - tvg_id: "matchfutbol1hd"
+    kanal_adi: "МАТЧ! ФУТБОЛ 1 HD"
+    url: "http://tv.ttk.mx:9114"
+
+  - tvg_id: "matchfutbol1"
+    kanal_adi: "Матч! Футбол 1"
+    url: "http://tv.ttk.mx:9108"
+
+  - tvg_id: "matchfutbol2hd"
+    kanal_adi: "МАТЧ! ФУТБОЛ 2 HD"
+    url: "http://tv.ttk.mx:9111"
+
+  - tvg_id: "matchfutbol3"
+    kanal_adi: "Матч! Футбол 3"
+    url: "http://tv.ttk.mx:9112"
+
+  - tvg_id: "matchfutbol3hd"
+    kanal_adi: "МАТЧ! ФУТБОЛ 3 HD"
+    url: "http://tv.ttk.mx:9116"
+
+  - tvg_id: "futbol"
+    kanal_adi: "Футбол"
+    url: "http://tv.ttk.mx:9065"
+
+  - tvg_id: "vijusport"
+    kanal_adi: "viju+ Sport"
+    url: "http://tv.ttk.mx:9187"
+
+  - tvg_id: "matchhd"
+    kanal_adi: "МАТЧ HD"
+    url: "http://tv.ttk.mx:9094"
+
+  - tvg_id: "matchtv"
+    kanal_adi: "Матч ТВ"
+    url: "http://tv.ttk.mx:9002"
+
+  - tvg_id: "matcharena"
+    kanal_adi: "Матч! Арена"
+    url: "http://tv.ttk.mx:9153"
+
+  - tvg_id: "matchstrana"
+    kanal_adi: "Матч! Страна"
+    url: "http://tv.ttk.mx:9154"
+
+  - tvg_id: "matchigra"
+    kanal_adi: "Матч! Игра"
+    url: "http://tv.ttk.mx:9152"
+
+  - tvg_id: "matchboec"
+    kanal_adi: "МАТЧ! БОЕЦ"
+    url: "http://tv.ttk.mx:9107"
   - tvg_id: "dolu1.tr"
     kanal_adi: "beIN Sports 1 HD"
     url: "https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/beIN_Sport_1_HD.m3u8"
@@ -173,6 +278,26 @@ extra_channels:
     kanal_adi: "Exxen 3 HD"
     url: "https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/Exxen_3_HD.m3u8"
 
+  - tvg_id: "texax4.tr"
+    kanal_adi: "Exxen 4 HD"
+    url: "https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/Exxen_4_HD.m3u8"
+
+  - tvg_id: "texax5.tr"
+    kanal_adi: "Exxen 5 HD"
+    url: "https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/Exxen_5_HD.m3u8"
+
+  - tvg_id: "texax6.tr"
+    kanal_adi: "Exxen 6 HD"
+    url: "https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/Exxen_6_HD.m3u8"
+
+  - tvg_id: "texax7.tr"
+    kanal_adi: "Exxen 7 HD"
+    url: "https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/Exxen_7_HD.m3u8"
+
+  - tvg_id: "texax8.tr"
+    kanal_adi: "Exxen 8 HD"
+    url: "https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/Exxen_8_HD.m3u8"
+
   - tvg_id: "sort1.tr"
     kanal_adi: "S Sport 1 HD"
     url: "https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/S_Sport_1_HD.m3u8"
@@ -181,10 +306,69 @@ extra_channels:
     kanal_adi: "S Sport 2 HD"
     url: "https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/S_Sport_2_HD.m3u8"
 
+  - tvg_id: "srtm1.tr"
+    kanal_adi: "Smart Sport 1 HD"
+    url: "https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/Smart_Sport_1_HD.m3u8"
+
+  - tvg_id: "srtm2.tr"
+    kanal_adi: "Smart Sport 2 HD"
+    url: "https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/Smart_Sport_1_HD.m3u8"
+
+  - tvg_id: "tvb.tr"
+    kanal_adi: "Tivibu Sport HD"
+    url: "https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/Tivibu_Sport_HD.m3u8"
+
   - tvg_id: "tvb1.tr"
     kanal_adi: "Tivibu Sport 1 HD"
     url: "https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/Tivibu_Sport_1_HD.m3u8"
 
+  - tvg_id: "tvb2.tr"
+    kanal_adi: "Tivibu Sport 2 HD"
+    url: "https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/Tivibu_Sport_2_HD.m3u8"
+
+  - tvg_id: "tvb3.tr"
+    kanal_adi: "Tivibu Sport 3 HD"
+    url: "https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/Tivibu_Sport_3_HD.m3u8"
+
+  - tvg_id: "tvb4.tr"
+    kanal_adi: "Tivibu Sport 4 HD"
+    url: "https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/Tivibu_Sport_4_HD.m3u8"
+
+  - tvg_id: "terk.tr"
+    kanal_adi: "Tabii HD"
+    url: "https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/Tabii_HD.m3u8"
+
   - tvg_id: "terk1.tr"
     kanal_adi: "Tabii 1 HD"
     url: "https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/Tabii_1_HD.m3u8"
+
+  - tvg_id: "terk2.tr"
+    kanal_adi: "Tabii 2 HD"
+    url: "https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/Tabii_2_HD.m3u8"
+
+  - tvg_id: "terk3.tr"
+    kanal_adi: "Tabii 3 HD"
+    url: "https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/Tabii_3_HD.m3u8"
+
+  - tvg_id: "terk4.tr"
+    kanal_adi: "Tabii 4 HD"
+    url: "https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/Tabii_4_HD.m3u8"
+
+  - tvg_id: "terk5.tr"
+    kanal_adi: "Tabii 5 HD"
+    url: "https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/Tabii_5_HD.m3u8"
+
+  - tvg_id: "terk6.tr"
+    kanal_adi: "Tabii 6 HD"
+    url: "https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/Tabii_6_HD.m3u8"
+
+  - tvg_id: "terk7.tr"
+    kanal_adi: "Tabii 7 HD"
+    url: "https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/Tabii_7_HD.m3u8"
+
+  - tvg_id: "terk8.tr"
+    kanal_adi: "Tabii 8 HD"
+    url: "https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/Tabii_8_HD.m3u8"
+
+
+
