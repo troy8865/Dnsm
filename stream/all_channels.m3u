@@ -3,15 +3,17 @@
 #EXTINF:-1,tabii
 https://beert7sqimrk0bfdupfgn6qew.medya.trt.com.tr/master.m3u8
 #EXTINF:-1,nowtv
-https://nowtv.daioncdn.net/nowtv/nowtv.m3u8?ce=3&app=mobile_web&st=-iLVIFQy0TDCwQVfMXvWPg&e=1761399717
+https://nowtv.daioncdn.net/nowtv/nowtv.m3u8?ce=3&app=mobile_web&st=43oo_WzJr_ZLmVUgbxtvlA&e=1761400020
 #EXTINF:-1,showtv
 https://ciner.daioncdn.net/showtv/showtv.m3u8?ce=3&app=4bc856ef-4c68-4a94-bc87-37dfaaa66558&st=RBzhSuGauna0OGld-DJUVA&e=1664766175&tv=1
+#EXTINF:-1,htspor
+https://ciner.daioncdn.net/ht-spor/ht-spor.m3u8?app=web
 #EXTINF:-1,kanald
 https://demiroren.daioncdn.net/kanald/kanald.m3u8?app=kanald_web&amp;ce=3
 #EXTINF:-1,teve2
 https://teve2.duhnet.tv/S2/HLS_LIVE/teve2np/playlist.m3u8
 #EXTINF:-1,dmax
-https://dogus.daioncdn.net/dmax/dmax.m3u8?ce=3&app=5a02c599-d17e-4982-9b04-090934d51af7&token=TzBhSnppYWtnWWt3dDcvSjFqeWh2U0N6UXZHY0xEZmFvWmtxeHc3eS9MMD0=
+https://dogus.daioncdn.net/dmax/dmax.m3u8?ce=3&app=5a02c599-d17e-4982-9b04-090934d51af7&token=VG8rY2lzaFVnQkdiRml5RFdWUndIUFlTN2YxTWJaaU0xS2Q4V04vWnhCbz0=
 #EXTINF:-1,tv360
 https://turkmedya-live.ercdn.net/tv360/tv360.m3u8
 #EXTINF:-1,beyaztv
@@ -212,8 +214,62 @@ https://raw.githubusercontent.com/Kutlu0319/garibims/refs/heads/main/channels_fi
 https://raw.githubusercontent.com/Kutlu0319/garibims/refs/heads/main/channels_files/Tivibu_Sports_3.m3u8
 #EXTINF:-1 tvg-id="tramvay4.tr" tvg-name="Tramvay 4",Tramvay 4
 https://raw.githubusercontent.com/Kutlu0319/garibims/refs/heads/main/channels_files/Tivibu_Sports_4.m3u8
+#EXTINF:-1 tvg-id="tab1.tr" tvg-name="Tabii 1",Tabii 1
+https://raw.githubusercontent.com/Kutlu0319/garibims/refs/heads/main/channels_files/Tâbii_1.m3u8
+#EXTINF:-1 tvg-id="tab2.tr" tvg-name="Tabii 2",Tabii 2
+https://raw.githubusercontent.com/Kutlu0319/garibims/refs/heads/main/channels_files/Tâbii_2.m3u8
+#EXTINF:-1 tvg-id="tab3.tr" tvg-name="Tabii 3",Tabii 3
+https://raw.githubusercontent.com/Kutlu0319/garibims/refs/heads/main/channels_files/Tâbii_3.m3u8
+#EXTINF:-1 tvg-id="tab4.tr" tvg-name="Tabii 4",Tabii 4
+https://raw.githubusercontent.com/Kutlu0319/garibims/refs/heads/main/channels_files/Tâbii_4.m3u8
+#EXTINF:-1 tvg-id="tab5.tr" tvg-name="Tabii 5",Tabii 5
+https://raw.githubusercontent.com/Kutlu0319/garibims/refs/heads/main/channels_files/Tâbii_5.m3u8
+#EXTINF:-1 tvg-id="tab6.tr" tvg-name="Tabii 6",Tabii 6
+https://raw.githubusercontent.com/Kutlu0319/garibims/refs/heads/main/channels_files/Tâbii_6.m3u8
+#EXTINF:-1 tvg-id="tab7.tr" tvg-name="Tabii 7",Tabii 7
+https://raw.githubusercontent.com/Kutlu0319/garibims/refs/heads/main/channels_files/Tâbii_7.m3u8
+#EXTINF:-1 tvg-id="tab8.tr" tvg-name="Tabii 8",Tabii 8
+https://raw.githubusercontent.com/Kutlu0319/garibims/refs/heads/main/channels_files/Tâbii_8.m3u8
 #EXTINF:-1 tvg-id="cbcsport.az" tvg-name="CBC Sport",CBC Sport
 https://raw.githubusercontent.com/megasmartgence90/RESTREAM/refs/heads/main/MEGA-GROUP-AZE/cbcsport.m3u8
+#EXTINF:-1 tvg-id="viasatsport" tvg-name="Viasat Sport",Viasat Sport
+https://raw.githubusercontent.com/megasmartgence90/STREAM-php/refs/heads/main/output/viasatsport.m3u8
+#EXTINF:-1 tvg-id="setanta_georgia" tvg-name="Setanta Georgia",Setanta Georgia
+https://raw.githubusercontent.com/megasmartgence90/STREAM-php/refs/heads/main/output/setanta_georgia.m3u8
+#EXTINF:-1 tvg-id="setanta_sports_3" tvg-name="Setanta Sports 3",Setanta Sports 3
+https://raw.githubusercontent.com/megasmartgence90/STREAM-php/refs/heads/main/output/setanta_sports_3.m3u8
+#EXTINF:-1 tvg-id="setanta_sports_plus_georgia" tvg-name="Setanta Sports Plus Georgia",Setanta Sports Plus Georgia
+https://raw.githubusercontent.com/megasmartgence90/STREAM-php/refs/heads/main/output/setanta_sports_plus_georgia.m3u8
+#EXTINF:-1 tvg-id="silk_sport4" tvg-name="Silk Sport 4",Silk Sport 4
+https://raw.githubusercontent.com/megasmartgence90/STREAM-php/refs/heads/main/output/silk_sport4.m3u8
+#EXTINF:-1 tvg-id="matchplaneta" tvg-name="Match Planeta",Match Planeta
+https://raw.githubusercontent.com/megasmartgence90/STREAM-php/refs/heads/main/output/matchplaneta.m3u8
+#EXTINF:-1 tvg-id="matchfutbol1hd" tvg-name="МАТЧ! ФУТБОЛ 1 HD",МАТЧ! ФУТБОЛ 1 HD
+http://tv.ttk.mx:9114
+#EXTINF:-1 tvg-id="matchfutbol1" tvg-name="Матч! Футбол 1",Матч! Футбол 1
+http://tv.ttk.mx:9108
+#EXTINF:-1 tvg-id="matchfutbol2hd" tvg-name="МАТЧ! ФУТБОЛ 2 HD",МАТЧ! ФУТБОЛ 2 HD
+http://tv.ttk.mx:9111
+#EXTINF:-1 tvg-id="matchfutbol3" tvg-name="Матч! Футбол 3",Матч! Футбол 3
+http://tv.ttk.mx:9112
+#EXTINF:-1 tvg-id="matchfutbol3hd" tvg-name="МАТЧ! ФУТБОЛ 3 HD",МАТЧ! ФУТБОЛ 3 HD
+http://tv.ttk.mx:9116
+#EXTINF:-1 tvg-id="futbol" tvg-name="Футбол",Футбол
+http://tv.ttk.mx:9065
+#EXTINF:-1 tvg-id="vijusport" tvg-name="viju+ Sport",viju+ Sport
+http://tv.ttk.mx:9187
+#EXTINF:-1 tvg-id="matchhd" tvg-name="МАТЧ HD",МАТЧ HD
+http://tv.ttk.mx:9094
+#EXTINF:-1 tvg-id="matchtv" tvg-name="Матч ТВ",Матч ТВ
+http://tv.ttk.mx:9002
+#EXTINF:-1 tvg-id="matcharena" tvg-name="Матч! Арена",Матч! Арена
+http://tv.ttk.mx:9153
+#EXTINF:-1 tvg-id="matchstrana" tvg-name="Матч! Страна",Матч! Страна
+http://tv.ttk.mx:9154
+#EXTINF:-1 tvg-id="matchigra" tvg-name="Матч! Игра",Матч! Игра
+http://tv.ttk.mx:9152
+#EXTINF:-1 tvg-id="matchboec" tvg-name="МАТЧ! БОЕЦ",МАТЧ! БОЕЦ
+http://tv.ttk.mx:9107
 #EXTINF:-1 tvg-id="dolu1.tr" tvg-name="beIN Sports 1 HD",beIN Sports 1 HD
 https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/beIN_Sport_1_HD.m3u8
 #EXTINF:-1 tvg-id="dolu2.tr" tvg-name="beIN Sports 2 HD",beIN Sports 2 HD
@@ -234,11 +290,49 @@ https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/
 https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/Exxen_2_HD.m3u8
 #EXTINF:-1 tvg-id="texax3.tr" tvg-name="Exxen 3 HD",Exxen 3 HD
 https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/Exxen_3_HD.m3u8
+#EXTINF:-1 tvg-id="texax4.tr" tvg-name="Exxen 4 HD",Exxen 4 HD
+https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/Exxen_4_HD.m3u8
+#EXTINF:-1 tvg-id="texax5.tr" tvg-name="Exxen 5 HD",Exxen 5 HD
+https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/Exxen_5_HD.m3u8
+#EXTINF:-1 tvg-id="texax6.tr" tvg-name="Exxen 6 HD",Exxen 6 HD
+https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/Exxen_6_HD.m3u8
+#EXTINF:-1 tvg-id="texax7.tr" tvg-name="Exxen 7 HD",Exxen 7 HD
+https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/Exxen_7_HD.m3u8
+#EXTINF:-1 tvg-id="texax8.tr" tvg-name="Exxen 8 HD",Exxen 8 HD
+https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/Exxen_8_HD.m3u8
 #EXTINF:-1 tvg-id="sort1.tr" tvg-name="S Sport 1 HD",S Sport 1 HD
 https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/S_Sport_1_HD.m3u8
 #EXTINF:-1 tvg-id="sort2.tr" tvg-name="S Sport 2 HD",S Sport 2 HD
 https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/S_Sport_2_HD.m3u8
+#EXTINF:-1 tvg-id="srtm1.tr" tvg-name="Smart Sport 1 HD",Smart Sport 1 HD
+https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/Smart_Sport_1_HD.m3u8
+#EXTINF:-1 tvg-id="srtm2.tr" tvg-name="Smart Sport 2 HD",Smart Sport 2 HD
+https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/Smart_Sport_1_HD.m3u8
+#EXTINF:-1 tvg-id="tvb.tr" tvg-name="Tivibu Sport HD",Tivibu Sport HD
+https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/Tivibu_Sport_HD.m3u8
 #EXTINF:-1 tvg-id="tvb1.tr" tvg-name="Tivibu Sport 1 HD",Tivibu Sport 1 HD
 https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/Tivibu_Sport_1_HD.m3u8
+#EXTINF:-1 tvg-id="tvb2.tr" tvg-name="Tivibu Sport 2 HD",Tivibu Sport 2 HD
+https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/Tivibu_Sport_2_HD.m3u8
+#EXTINF:-1 tvg-id="tvb3.tr" tvg-name="Tivibu Sport 3 HD",Tivibu Sport 3 HD
+https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/Tivibu_Sport_3_HD.m3u8
+#EXTINF:-1 tvg-id="tvb4.tr" tvg-name="Tivibu Sport 4 HD",Tivibu Sport 4 HD
+https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/Tivibu_Sport_4_HD.m3u8
+#EXTINF:-1 tvg-id="terk.tr" tvg-name="Tabii HD",Tabii HD
+https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/Tabii_HD.m3u8
 #EXTINF:-1 tvg-id="terk1.tr" tvg-name="Tabii 1 HD",Tabii 1 HD
 https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/Tabii_1_HD.m3u8
+#EXTINF:-1 tvg-id="terk2.tr" tvg-name="Tabii 2 HD",Tabii 2 HD
+https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/Tabii_2_HD.m3u8
+#EXTINF:-1 tvg-id="terk3.tr" tvg-name="Tabii 3 HD",Tabii 3 HD
+https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/Tabii_3_HD.m3u8
+#EXTINF:-1 tvg-id="terk4.tr" tvg-name="Tabii 4 HD",Tabii 4 HD
+https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/Tabii_4_HD.m3u8
+#EXTINF:-1 tvg-id="terk5.tr" tvg-name="Tabii 5 HD",Tabii 5 HD
+https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/Tabii_5_HD.m3u8
+#EXTINF:-1 tvg-id="terk6.tr" tvg-name="Tabii 6 HD",Tabii 6 HD
+https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/Tabii_6_HD.m3u8
+#EXTINF:-1 tvg-id="terk7.tr" tvg-name="Tabii 7 HD",Tabii 7 HD
+https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/Tabii_7_HD.m3u8
+#EXTINF:-1 tvg-id="terk8.tr" tvg-name="Tabii 8 HD",Tabii 8 HD
+https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/Tabii_8_HD.m3u8
