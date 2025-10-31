@@ -4,11 +4,9 @@
 #EXTINF:-1,tabii
 https://beert7sqimrk0bfdupfgn6qew.medya.trt.com.tr/master.m3u8
 #EXTINF:-1,nowtv
-https://nowtv.daioncdn.net/nowtv/nowtv.m3u8?ce=3&app=mobile_web&st=LJKTEeEpjeXf_SO3niCe1Q&e=1761924742
+https://nowtv.daioncdn.net/nowtv/nowtv.m3u8?ce=3&app=mobile_web&st=jAfxjl63x8k-NqwAesNnHw&e=1761926544
 #EXTINF:-1,showtv
 https://ciner.daioncdn.net/showtv/showtv.m3u8?ce=3&app=4bc856ef-4c68-4a94-bc87-37dfaaa66558&st=RBzhSuGauna0OGld-DJUVA&e=1664766175&tv=1
-#EXTINF:-1,htspor
-https://ciner.daioncdn.net/ht-spor/ht-spor.m3u8?app=web
 #EXTINF:-1,tv8
 https://tv8-tb-live.ercdn.net/tv8-geo/playlist.m3u8?st=BzpvJLJ9hDX-H3W1sQWquA&e=1639061641
 #EXTINF:-1,kanald
@@ -16,7 +14,7 @@ https://demiroren.daioncdn.net/kanald/kanald.m3u8?app=kanald_web&amp;ce=3
 #EXTINF:-1,teve2
 https://teve2.duhnet.tv/S2/HLS_LIVE/teve2np/playlist.m3u8
 #EXTINF:-1,dmax
-https://dogus.daioncdn.net/dmax/dmax.m3u8?ce=3&app=5a02c599-d17e-4982-9b04-090934d51af7&token=VjlBc3pieWs1ZjlVOXY5blEwdVBiOVpPa0lUOTV3SWxHRnM3L1hLYno4MD0=
+https://dogus.daioncdn.net/dmax/dmax.m3u8?ce=3&app=5a02c599-d17e-4982-9b04-090934d51af7&token=Z3RMUE1iQXM2TFBjUi9nSVozNXpNZ1F1Ny93cS9nVUZENDVuT0tMdi9STT0=
 #EXTINF:-1,tv360
 https://turkmedya-live.ercdn.net/tv360/tv360.m3u8
 #EXTINF:-1,beyaztv
@@ -219,26 +217,26 @@ https://github.com/ipstreet312/freeiptv/raw/master/ressources/tur/star.m3u8
 https://raw.githubusercontent.com/utd2001/tv/refs/heads/main/m3u8/TV8.m3u8
 #EXTINF:-1 tvg-id="TV8.5.tr" tvg-name="TV8.5",TV8.5
 https://raw.githubusercontent.com/utd2001/tv/refs/heads/main/m3u8/TV8.5.m3u8
-#EXTINF:-1 tvg-id="TEVE2.tr" tvg-name="Teve2",Teve2
-https://raw.githubusercontent.com/utd2001/tv/refs/heads/main/m3u8/TEVE2.m3u8
+#EXTINF:-1 tvg-id="BEIN_SPORTS_USA.tr" tvg-name="BEIN_SPORTS_USA",BEIN_SPORTS_USA
+https://fl30.moveonjoy.com/BEIN_SPORTS/index.m3u8
 #EXTINF:-1 tvg-id="HalkTv.tr" tvg-name="Halk TV",Halk TV
 https://raw.githubusercontent.com/utd2001/tv/refs/heads/main/m3u8/HALK_TV.m3u8
 #EXTINF:-1 tvg-id="Tele1.tr" tvg-name="Tele 1",Tele 1
 https://raw.githubusercontent.com/utd2001/tv/refs/heads/main/m3u8/TELE1.m3u8
 #EXTINF:-1 tvg-id="Sozcutv.tr" tvg-name="Sözcü TV",Sözcü TV
 https://raw.githubusercontent.com/utd2001/tv/refs/heads/main/m3u8/SOZCU_TV.m3u8
-#EXTINF:-1 tvg-id="AAtvv.tr" tvg-name="AAtvv",AAtvv
-https://raw.githubusercontent.com/Kutlu0319/garibims/refs/heads/main/channels_files/ATV.m3u8
+#EXTINF:-1 tvg-id="Yesilcam.tr" tvg-name="Yesilcam",Yesilcam
+https://raw.githubusercontent.com/tecotv2025/tecotv/main/playlist/Yesilcam_Tv.m3u8
 #EXTINF:-1 tvg-id="yssinema.tr" tvg-name="YS Sinema",YS Sinema
 https://raw.githubusercontent.com/megasmartgence90/RESTREAM/refs/heads/main/MEGAKINO/yssinema.m3u8
 #EXTINF:-1 tvg-id="filmscreen.tr" tvg-name="Film Screen",Film Screen
 https://edge-e3.evrideo.tv/f2dcbecf-5af0-47db-a82e-032112050a23_1000027346_HLS/manifest.m3u8
 #EXTINF:-1 tvg-id="sıfır.tr" tvg-name="Sıfır tv",Sıfır tv
 https://github.com/tecotv2025/tecotv/raw/main/playlist/Sifir_Tv.m3u8
-#EXTINF:-1 tvg-id="tv4.tr" tvg-name="tv4",tv4
-https://turkmedya-live.ercdn.net/tv4/tv4.m3u8
-#EXTINF:-1 tvg-id="tv100.tr" tvg-name="tv100",tv100
-https://tabiptv.short.gy/tv100.m3u8
+#EXTINF:-1 tvg-id="Ht_Spor.tr" tvg-name="Ht_Spor",Ht_Spor
+https://raw.githubusercontent.com/tecotv2025/tecotv/main/playlist/Ht_Spor.m3u8
+#EXTINF:-1 tvg-id="Ekol_Spor.tr" tvg-name="Ekol_Spor",Ekol_Spor
+https://raw.githubusercontent.com/tecotv2025/tecotv/main/playlist/Ekol_Spor.m3u8
 #EXTINF:-1 tvg-id="EuroD.tr" tvg-name="EuroD",EuroD
 https://tabiptv.short.gy/eurod.m3u8
 #EXTINF:-1 tvg-id="trthaber.tr" tvg-name="trthaber",trthaber
@@ -311,8 +309,8 @@ http://tv.ttk.mx:9153
 http://tv.ttk.mx:9154
 #EXTINF:-1 tvg-id="matchigra" tvg-name="Матч! Игра",Матч! Игра
 http://tv.ttk.mx:9152
-#EXTINF:-1 tvg-id="matchboec" tvg-name="МАТЧ! БОЕЦ",МАТЧ! БОЕЦ
-http://tv.ttk.mx:9107
+#EXTINF:-1 tvg-id="Kemal_Sunal_Tv" tvg-name="Kemal_Sunal_Tv",Kemal_Sunal_Tv
+https://raw.githubusercontent.com/tecotv2025/tecotv/main/playlist/Kemal_Sunal_Tv.m3u8
 #EXTINF:-1 tvg-id="dolu1.tr" tvg-name="beIN Sports 1 HD",beIN Sports 1 HD
 https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/beIN_Sport_1_HD.m3u8
 #EXTINF:-1 tvg-id="dolu2.tr" tvg-name="beIN Sports 2 HD",beIN Sports 2 HD
