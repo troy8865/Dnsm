@@ -4,7 +4,7 @@
 #EXTINF:-1,tabii
 https://beert7sqimrk0bfdupfgn6qew.medya.trt.com.tr/master.m3u8
 #EXTINF:-1,nowtv
-https://nowtv.daioncdn.net/nowtv/nowtv.m3u8?ce=3&app=mobile_web&st=ZB7H7MW9JxNbd4Bb0AxYLw&e=1761916615
+https://nowtv.daioncdn.net/nowtv/nowtv.m3u8?ce=3&app=mobile_web&st=pLb4B5bQrYzpp64MvheCAQ&e=1761917219
 #EXTINF:-1,showtv
 https://ciner.daioncdn.net/showtv/showtv.m3u8?ce=3&app=4bc856ef-4c68-4a94-bc87-37dfaaa66558&st=RBzhSuGauna0OGld-DJUVA&e=1664766175&tv=1
 #EXTINF:-1,htspor
@@ -16,7 +16,7 @@ https://demiroren.daioncdn.net/kanald/kanald.m3u8?app=kanald_web&amp;ce=3
 #EXTINF:-1,teve2
 https://teve2.duhnet.tv/S2/HLS_LIVE/teve2np/playlist.m3u8
 #EXTINF:-1,dmax
-https://dogus.daioncdn.net/dmax/dmax.m3u8?ce=3&app=5a02c599-d17e-4982-9b04-090934d51af7&token=OVdOb0cwTkJjZ0NnR1JOMHgyY1hLc21ZRkdpYnp3U0RLaEhnelBmUWJZND0=
+https://dogus.daioncdn.net/dmax/dmax.m3u8?ce=3&app=5a02c599-d17e-4982-9b04-090934d51af7&token=YXlVQkF5NHBiVWNjMTVCMFNCdlZ6T3kyWmZlWDdkTGxlY05pQ1VuWE9yUT0=
 #EXTINF:-1,tv360
 https://turkmedya-live.ercdn.net/tv360/tv360.m3u8
 #EXTINF:-1,beyaztv
@@ -273,22 +273,6 @@ https://trt.daioncdn.net/trtspor/master.m3u8?app=web#
 https://trt.daioncdn.net/trtspor-yildiz/master.m3u8?app=web#
 #EXTINF:-1 tvg-id="trt-1.tr" tvg-name="trt-1",trt-1
 https://trt.daioncdn.net/trt-1/master.m3u8?app=web
-#EXTINF:-1 tvg-id="tab1.tr" tvg-name="Tabii 1",Tabii 1
-https://raw.githubusercontent.com/Kutlu0319/garibims/refs/heads/main/channels_files/Tâbii_1.m3u8
-#EXTINF:-1 tvg-id="tab2.tr" tvg-name="Tabii 2",Tabii 2
-https://raw.githubusercontent.com/Kutlu0319/garibims/refs/heads/main/channels_files/Tâbii_2.m3u8
-#EXTINF:-1 tvg-id="tab3.tr" tvg-name="Tabii 3",Tabii 3
-https://raw.githubusercontent.com/Kutlu0319/garibims/refs/heads/main/channels_files/Tâbii_3.m3u8
-#EXTINF:-1 tvg-id="tab4.tr" tvg-name="Tabii 4",Tabii 4
-https://raw.githubusercontent.com/Kutlu0319/garibims/refs/heads/main/channels_files/Tâbii_4.m3u8
-#EXTINF:-1 tvg-id="tab5.tr" tvg-name="Tabii 5",Tabii 5
-https://raw.githubusercontent.com/Kutlu0319/garibims/refs/heads/main/channels_files/Tâbii_5.m3u8
-#EXTINF:-1 tvg-id="tab6.tr" tvg-name="Tabii 6",Tabii 6
-https://raw.githubusercontent.com/Kutlu0319/garibims/refs/heads/main/channels_files/Tâbii_6.m3u8
-#EXTINF:-1 tvg-id="tab7.tr" tvg-name="Tabii 7",Tabii 7
-https://raw.githubusercontent.com/Kutlu0319/garibims/refs/heads/main/channels_files/Tâbii_7.m3u8
-#EXTINF:-1 tvg-id="tab8.tr" tvg-name="Tabii 8",Tabii 8
-https://raw.githubusercontent.com/Kutlu0319/garibims/refs/heads/main/channels_files/Tâbii_8.m3u8
 #EXTINF:-1 tvg-id="cbcsport.az" tvg-name="CBC Sport",CBC Sport
 https://raw.githubusercontent.com/megasmartgence90/RESTREAM/refs/heads/main/MEGA-GROUP-AZE/cbcsport.m3u8
 #EXTINF:-1 tvg-id="viasatsport" tvg-name="Viasat Sport",Viasat Sport
