@@ -127,38 +127,6 @@ extra_channels:
     kanal_adi: "trt-1"
     url: "https://trt.daioncdn.net/trt-1/master.m3u8?app=web"
 
-  - tvg_id: "tab1.tr"
-    kanal_adi: "Tabii 1"
-    url: "https://raw.githubusercontent.com/Kutlu0319/garibims/refs/heads/main/channels_files/Tâbii_1.m3u8"
-
-  - tvg_id: "tab2.tr"
-    kanal_adi: "Tabii 2"
-    url: "https://raw.githubusercontent.com/Kutlu0319/garibims/refs/heads/main/channels_files/Tâbii_2.m3u8"
-
-  - tvg_id: "tab3.tr"
-    kanal_adi: "Tabii 3"
-    url: "https://raw.githubusercontent.com/Kutlu0319/garibims/refs/heads/main/channels_files/Tâbii_3.m3u8"
-
-  - tvg_id: "tab4.tr"
-    kanal_adi: "Tabii 4"
-    url: "https://raw.githubusercontent.com/Kutlu0319/garibims/refs/heads/main/channels_files/Tâbii_4.m3u8"
-
-  - tvg_id: "tab5.tr"
-    kanal_adi: "Tabii 5"
-    url: "https://raw.githubusercontent.com/Kutlu0319/garibims/refs/heads/main/channels_files/Tâbii_5.m3u8"
-
-  - tvg_id: "tab6.tr"
-    kanal_adi: "Tabii 6"
-    url: "https://raw.githubusercontent.com/Kutlu0319/garibims/refs/heads/main/channels_files/Tâbii_6.m3u8"
-
-  - tvg_id: "tab7.tr"
-    kanal_adi: "Tabii 7"
-    url: "https://raw.githubusercontent.com/Kutlu0319/garibims/refs/heads/main/channels_files/Tâbii_7.m3u8"
-
-  - tvg_id: "tab8.tr"
-    kanal_adi: "Tabii 8"
-    url: "https://raw.githubusercontent.com/Kutlu0319/garibims/refs/heads/main/channels_files/Tâbii_8.m3u8"
-
   - tvg_id: "cbcsport.az"
     kanal_adi: "CBC Sport"
     url: "https://raw.githubusercontent.com/megasmartgence90/RESTREAM/refs/heads/main/MEGA-GROUP-AZE/cbcsport.m3u8"
@@ -369,6 +337,7 @@ extra_channels:
   - tvg_id: "terk8.tr"
     kanal_adi: "Tabii 8 HD"
     url: "https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/Tabii_8_HD.m3u8"
+
 
 
 
