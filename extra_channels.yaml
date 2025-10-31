@@ -19,9 +19,9 @@ extra_channels:
     kanal_adi: "TV8.5"
     url: "https://raw.githubusercontent.com/utd2001/tv/refs/heads/main/m3u8/TV8.5.m3u8"
 
-  - tvg_id: "TEVE2.tr"
-    kanal_adi: "Teve2"
-    url: "https://raw.githubusercontent.com/utd2001/tv/refs/heads/main/m3u8/TEVE2.m3u8"
+  - tvg_id: "BEIN_SPORTS_USA.tr"
+    kanal_adi: "BEIN_SPORTS_USA"
+    url: "https://fl30.moveonjoy.com/BEIN_SPORTS/index.m3u8"
 
   - tvg_id: "HalkTv.tr"
     kanal_adi: "Halk TV"
@@ -35,9 +35,9 @@ extra_channels:
     kanal_adi: "Sözcü TV"
     url: "https://raw.githubusercontent.com/utd2001/tv/refs/heads/main/m3u8/SOZCU_TV.m3u8"
 
-  - tvg_id: "AAtvv.tr"
-    kanal_adi: "AAtvv"
-    url: "https://raw.githubusercontent.com/Kutlu0319/garibims/refs/heads/main/channels_files/ATV.m3u8"
+  - tvg_id: "Yesilcam.tr"
+    kanal_adi: "Yesilcam"
+    url: "https://raw.githubusercontent.com/tecotv2025/tecotv/main/playlist/Yesilcam_Tv.m3u8"
 
   - tvg_id: "yssinema.tr"
     kanal_adi: "YS Sinema"
@@ -51,13 +51,13 @@ extra_channels:
     kanal_adi: "Sıfır tv"
     url: "https://github.com/tecotv2025/tecotv/raw/main/playlist/Sifir_Tv.m3u8"
 
-  - tvg_id: "tv4.tr"
-    kanal_adi: "tv4"
-    url: "https://turkmedya-live.ercdn.net/tv4/tv4.m3u8"
+  - tvg_id: "Ht_Spor.tr"
+    kanal_adi: "Ht_Spor"
+    url: "https://raw.githubusercontent.com/tecotv2025/tecotv/main/playlist/Ht_Spor.m3u8"
 
-  - tvg_id: "tv100.tr"
-    kanal_adi: "tv100"
-    url: "https://tabiptv.short.gy/tv100.m3u8"
+  - tvg_id: "Ekol_Spor.tr"
+    kanal_adi: "Ekol_Spor"
+    url: "https://raw.githubusercontent.com/tecotv2025/tecotv/main/playlist/Ekol_Spor.m3u8"
 
   - tvg_id: "EuroD.tr"
     kanal_adi: "EuroD"
@@ -203,9 +203,10 @@ extra_channels:
     kanal_adi: "Матч! Игра"
     url: "http://tv.ttk.mx:9152"
 
-  - tvg_id: "matchboec"
-    kanal_adi: "МАТЧ! БОЕЦ"
-    url: "http://tv.ttk.mx:9107"
+  - tvg_id: "Kemal_Sunal_Tv"
+    kanal_adi: "Kemal_Sunal_Tv"
+    url: "https://raw.githubusercontent.com/tecotv2025/tecotv/main/playlist/Kemal_Sunal_Tv.m3u8"
+    
   - tvg_id: "dolu1.tr"
     kanal_adi: "beIN Sports 1 HD"
     url: "https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/beIN_Sport_1_HD.m3u8"
@@ -337,6 +338,7 @@ extra_channels:
   - tvg_id: "terk8.tr"
     kanal_adi: "Tabii 8 HD"
     url: "https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/Tabii_8_HD.m3u8"
+
 
 
 
