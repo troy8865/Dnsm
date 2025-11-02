@@ -4,11 +4,9 @@
 #EXTINF:-1,tabii
 https://beert7sqimrk0bfdupfgn6qew.medya.trt.com.tr/master.m3u8
 #EXTINF:-1,nowtv
-https://nowtv.daioncdn.net/nowtv/nowtv.m3u8?ce=3&app=mobile_web&st=r7behh8qOVbiF2CH_6o1Kg&e=1762096187
+https://nowtv.daioncdn.net/nowtv/nowtv.m3u8?ce=3&app=mobile_web&st=SuZMAVnB9UkTvw1FBQUtZw&e=1762097691
 #EXTINF:-1,showtv
 https://ciner.daioncdn.net/showtv/showtv.m3u8?ce=3&app=4bc856ef-4c68-4a94-bc87-37dfaaa66558&st=RBzhSuGauna0OGld-DJUVA&e=1664766175&tv=1
-#EXTINF:-1,htspor
-https://ciner.daioncdn.net/ht-spor/ht-spor.m3u8?app=web
 #EXTINF:-1,tv8
 https://tv8-tb-live.ercdn.net/tv8-geo/playlist.m3u8?st=BzpvJLJ9hDX-H3W1sQWquA&e=1639061641
 #EXTINF:-1,kanald
@@ -16,7 +14,7 @@ https://demiroren.daioncdn.net/kanald/kanald.m3u8?app=kanald_web&amp;ce=3
 #EXTINF:-1,teve2
 https://teve2.duhnet.tv/S2/HLS_LIVE/teve2np/playlist.m3u8
 #EXTINF:-1,dmax
-https://dogus.daioncdn.net/dmax/dmax.m3u8?ce=3&app=5a02c599-d17e-4982-9b04-090934d51af7&token=WXlkSEVtRWFseUNEa1d3MVUwbTlwMkhPS254eFRFbkJkOEhiUUQwYVlOST0=
+https://dogus.daioncdn.net/dmax/dmax.m3u8?ce=3&app=5a02c599-d17e-4982-9b04-090934d51af7&token=cGwxVkdpV2RmU1YyaVZXUFdLNHlmZDFqU0JVb3BlQ1ZqLzUydVduYzcvZz0=
 #EXTINF:-1,tv360
 https://turkmedya-live.ercdn.net/tv360/tv360.m3u8
 #EXTINF:-1,beyaztv
@@ -164,7 +162,7 @@ https://dga1op10s1u4lep.f80fcd777993c210.live/live/selcukbeinsports2/playlist.m3
 https://dga1op10s1u4lep.f80fcd777993c210.live/live/selcukbeinsports3/playlist.m3u8
 #EXTINF:-1 tvg-id="bein4" tvg-name="BeIN Sports 4" tvg-logo="https://r2.thesportsdb.com/images/media/channel/logo/2ktmcp1628798841.png" group-title="Spor",BeIN Sports 4
 #EXTVLCOPT:http-referrer=https://www.sporcafe6.xyz/
-https://dga1op10s1u4lep.f80fcd777993c210.live/live/selcukbeinsports4/playlist.m3u8
+https://dga1op10s1u4lep.09c85951d0dbb5.live/live/selcukbeinsports4/playlist.m3u8
 #EXTINF:-1 tvg-id="bein5" tvg-name="BeIN Sports 5" tvg-logo="https://r2.thesportsdb.com/images/media/channel/logo/BeIn_Sports_5_US.png" group-title="Spor",BeIN Sports 5
 #EXTVLCOPT:http-referrer=https://www.sporcafe6.xyz/
 https://dga1op10s1u4lep.f80fcd777993c210.live/live/selcukbeinsports5/playlist.m3u8
@@ -206,7 +204,7 @@ https://dga1op10s1u4lep.f80fcd777993c210.live/live/selcukaspor/playlist.m3u8
 https://dga1op10s1u4lep.f80fcd777993c210.live/live/selcukeurosport1/playlist.m3u8
 #EXTINF:-1 tvg-id="eurosport2" tvg-name="Eurosport 2" tvg-logo="https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/0/0/Vod/HLS/a4cbdd15-1509-408f-a108-65b8f88f2066.png" group-title="Spor",Eurosport 2
 #EXTVLCOPT:http-referrer=https://www.sporcafe6.xyz/
-https://dga1op10s1u4lep.f80fcd777993c210.live/live/selcukeurosport2/playlist.m3u8
+https://dga1op10s1u3lep.09c85951d0dbb5.click/live/selcukeurosport2/playlist.m3u8
 
 # === Extra Manuel Kanallar ===
 #EXTINF:-1 tvg-id="TRT1.tr" tvg-name="TRT 1",TRT 1
