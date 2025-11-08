@@ -21,7 +21,7 @@ extra_channels:
 
   - tvg_id: "BEIN_SPORTS_USA.tr"
     kanal_adi: "BEIN_SPORTS_USA"
-    url: "https://fl30.moveonjoy.com/BEIN_SPORTS/index.m3u8"
+    url: "https://fl1.moveonjoy.com/BEIN_SPORTS/index.m3u8"
 
   - tvg_id: "HalkTv.tr"
     kanal_adi: "Halk TV"
@@ -338,6 +338,7 @@ extra_channels:
   - tvg_id: "terk8.tr"
     kanal_adi: "Tabii 8 HD"
     url: "https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/Tabii_8_HD.m3u8"
+
 
 
 
