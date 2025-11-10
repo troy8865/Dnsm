@@ -13,11 +13,11 @@ extra_channels:
 
   - tvg_id: "TV8.tr"
     kanal_adi: "TV8"
-    url: "https://raw.githubusercontent.com/utd2001/tv/refs/heads/main/m3u8/TV8.m3u8"
+    url: "https://tv8.daioncdn.net/tv8/tv8_720p.m3u8?app=tv8_web"
 
   - tvg_id: "TV8.5.tr"
     kanal_adi: "TV8.5"
-    url: "https://raw.githubusercontent.com/utd2001/tv/refs/heads/main/m3u8/TV8.5.m3u8"
+    url: "https://tv8.daioncdn.net/tv8bucuk/tv8bucuk_720p.m3u8?app=tv8bucuk_web"
 
   - tvg_id: "BEIN_SPORTS_USA.tr"
     kanal_adi: "BEIN_SPORTS_USA"
@@ -53,7 +53,7 @@ extra_channels:
 
   - tvg_id: "Ht_Spor.tr"
     kanal_adi: "Ht_Spor"
-    url: "https://raw.githubusercontent.com/tecotv2025/tecotv/main/playlist/Ht_Spor.m3u8"
+    url: "https://ciner.daioncdn.net/ht-spor/ht-spor.m3u8?app=web"
 
   - tvg_id: "Ekol_Spor.tr"
     kanal_adi: "Ekol_Spor"
@@ -69,7 +69,7 @@ extra_channels:
 
   - tvg_id: "halktv.tr"
     kanal_adi: "halktv"
-    url: "https://halktv.daioncdn.net/halktv/halktv_1080p.m3u8?app=c86957d3-74a7-44da-9ad2-dc358c769609&ce=2"
+    url: "hhttps://raw.githubusercontent.com/utd2001/tv-no-server/main/m3u8/HALK_TV.m3u8"
 
   - tvg_id: "natgeo.tr"
     kanal_adi: "natgeo"
@@ -155,9 +155,9 @@ extra_channels:
     kanal_adi: "Match Planeta"
     url: "https://raw.githubusercontent.com/megasmartgence90/STREAM-php/refs/heads/main/output/matchplaneta.m3u8"
 
-  - tvg_id: "matchfutbol1hd"
-    kanal_adi: "МАТЧ! ФУТБОЛ 1 HD"
-    url: "http://tv.ttk.mx:9114"
+  - tvg_id: "TRT 1"
+    kanal_adi: "TRT 1 HDD"
+    url: "https://tv-trt1-dash.medya.trt.com.tr/master.mpd"
 
   - tvg_id: "matchfutbol1"
     kanal_adi: "Матч! Футбол 1"
@@ -175,33 +175,33 @@ extra_channels:
     kanal_adi: "МАТЧ! ФУТБОЛ 3 HD"
     url: "http://tv.ttk.mx:9116"
 
-  - tvg_id: "futbol"
-    kanal_adi: "Футбол"
-    url: "http://tv.ttk.mx:9065"
+  - tvg_id: "TLC"
+    kanal_adi: "TLC"
+    url: "https://dogus.daioncdn.net/tlc/tlc.m3u8?app=tlc_web"
 
-  - tvg_id: "vijusport"
+  - tvg_id: "DMAX"
     kanal_adi: "viju+ Sport"
-    url: "http://tv.ttk.mx:9187"
+    url: "https://dogus.daioncdn.net/dmax/dmax.m3u8?app=dmax_web"
 
-  - tvg_id: "matchhd"
-    kanal_adi: "МАТЧ HD"
+  - tvg_id: "TV4"
+    kanal_adi: "TV4"
     url: "http://tv.ttk.mx:9094"
 
-  - tvg_id: "matchtv"
-    kanal_adi: "Матч ТВ"
-    url: "http://tv.ttk.mx:9002"
+  - tvg_id: "TELEON"
+    kanal_adi: "TELEON"
+    url: "https://raw.githubusercontent.com/UzunMuhalefet/yayinlar/refs/heads/main/streams/best/teleon.m3u8"
 
-  - tvg_id: "matcharena"
-    kanal_adi: "Матч! Арена"
-    url: "http://tv.ttk.mx:9153"
+  - tvg_id: "BEYAZ TV"
+    kanal_adi: "BEYAZ TV"
+    url: "https://beyaztv-live.daioncdn.net/beyaztv/beyaztv_720p.m3u8"
 
-  - tvg_id: "matchstrana"
-    kanal_adi: "Матч! Страна"
-    url: "http://tv.ttk.mx:9154"
+  - tvg_id: "FOX"
+    kanal_adi: "FOX"
+    url: "http://95.174.71.114:80/TR-FOX/tracks-v1a1/mono.m3u8"
 
-  - tvg_id: "matchigra"
-    kanal_adi: "Матч! Игра"
-    url: "http://tv.ttk.mx:9152"
+  - tvg_id: "TEVE_2"
+    kanal_adi: "TEVE_2"
+    url: "https://raw.githubusercontent.com/utd2001/tv/refs/heads/main/m3u8/TEVE2.m3u8"
 
   - tvg_id: "Kemal_Sunal_Tv"
     kanal_adi: "Kemal_Sunal_Tv"
@@ -338,6 +338,7 @@ extra_channels:
   - tvg_id: "terk8.tr"
     kanal_adi: "Tabii 8 HD"
     url: "https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/Tabii_8_HD.m3u8"
+
 
 
 
