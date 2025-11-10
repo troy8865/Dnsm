@@ -185,7 +185,7 @@ extra_channels:
 
   - tvg_id: "TV4"
     kanal_adi: "TV4"
-    url: "http://tv.ttk.mx:9094"
+    url: "https://turkmedya-live.ercdn.net/tv4/tv4.m3u8"
 
   - tvg_id: "TELEON"
     kanal_adi: "TELEON"
@@ -338,6 +338,7 @@ extra_channels:
   - tvg_id: "terk8.tr"
     kanal_adi: "Tabii 8 HD"
     url: "https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/Tabii_8_HD.m3u8"
+
 
 
 
