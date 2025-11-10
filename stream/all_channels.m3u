@@ -7,8 +7,6 @@ https://beert7sqimrk0bfdupfgn6qew.medya.trt.com.tr/master.m3u8
 https://nowtv.daioncdn.net/nowtv/nowtv.m3u8?ce=3&app=mobile_web&st=hvgZyIJFXsBRLRLz05rduw&e=1762796982
 #EXTINF:-1,showtv
 https://ciner.daioncdn.net/showtv/showtv.m3u8?ce=3&app=4bc856ef-4c68-4a94-bc87-37dfaaa66558&st=RBzhSuGauna0OGld-DJUVA&e=1664766175&tv=1
-#EXTINF:-1,htspor
-https://ciner.daioncdn.net/ht-spor/ht-spor.m3u8?app=web
 #EXTINF:-1,tv8
 https://tv8-tb-live.ercdn.net/tv8-geo/playlist.m3u8?st=BzpvJLJ9hDX-H3W1sQWquA&e=1639061641
 #EXTINF:-1,kanald
@@ -299,7 +297,7 @@ http://tv.ttk.mx:9112
 http://tv.ttk.mx:9116
 #EXTINF:-1 tvg-id="TLC" tvg-name="TLC",TLC
 https://dogus.daioncdn.net/tlc/tlc.m3u8?app=tlc_web
-#EXTINF:-1 tvg-id="DMAX" tvg-name="viju+ Sport",viju+ Sport
+#EXTINF:-1 tvg-id="DMAX" tvg-name="DMAX",DMAX
 https://dogus.daioncdn.net/dmax/dmax.m3u8?app=dmax_web
 #EXTINF:-1 tvg-id="TV4" tvg-name="TV4",TV4
 http://tv.ttk.mx:9094
