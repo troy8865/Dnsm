@@ -180,7 +180,7 @@ extra_channels:
     url: "https://dogus.daioncdn.net/tlc/tlc.m3u8?app=tlc_web"
 
   - tvg_id: "DMAX"
-    kanal_adi: "viju+ Sport"
+    kanal_adi: "DMAX"
     url: "https://dogus.daioncdn.net/dmax/dmax.m3u8?app=dmax_web"
 
   - tvg_id: "TV4"
@@ -338,6 +338,7 @@ extra_channels:
   - tvg_id: "terk8.tr"
     kanal_adi: "Tabii 8 HD"
     url: "https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/Tabii_8_HD.m3u8"
+
 
 
 
