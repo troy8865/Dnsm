@@ -4,7 +4,7 @@
 #EXTINF:-1,tabii
 https://beert7sqimrk0bfdupfgn6qew.medya.trt.com.tr/master.m3u8
 #EXTINF:-1,nowtv
-https://nowtv.daioncdn.net/nowtv/nowtv.m3u8?ce=3&app=mobile_web&st=NLPVONM24ESbxXUu9GHlwA&e=1762796680
+https://nowtv.daioncdn.net/nowtv/nowtv.m3u8?ce=3&app=mobile_web&st=hvgZyIJFXsBRLRLz05rduw&e=1762796982
 #EXTINF:-1,showtv
 https://ciner.daioncdn.net/showtv/showtv.m3u8?ce=3&app=4bc856ef-4c68-4a94-bc87-37dfaaa66558&st=RBzhSuGauna0OGld-DJUVA&e=1664766175&tv=1
 #EXTINF:-1,htspor
@@ -16,7 +16,7 @@ https://demiroren.daioncdn.net/kanald/kanald.m3u8?app=kanald_web&amp;ce=3
 #EXTINF:-1,teve2
 https://teve2.duhnet.tv/S2/HLS_LIVE/teve2np/playlist.m3u8
 #EXTINF:-1,dmax
-https://dogus.daioncdn.net/dmax/dmax.m3u8?ce=3&app=5a02c599-d17e-4982-9b04-090934d51af7&token=TVRaeTJwQmYybldpTHVYV0JJbDlIdnVqNjdnemFhMXJBQ2F3OHRNT1ZjTT0=
+https://dogus.daioncdn.net/dmax/dmax.m3u8?ce=3&app=5a02c599-d17e-4982-9b04-090934d51af7&token=WHlqdkxKaVVJdS9xcXRDS2pJUjBWSHBLcWRLYWxyTnExQzBoR29VV3Mrcz0=
 #EXTINF:-1,tv360
 https://turkmedya-live.ercdn.net/tv360/tv360.m3u8
 #EXTINF:-1,beyaztv
@@ -216,9 +216,9 @@ http://89.187.191.41:80/ATV-HD-TR/playlist.m3u8
 #EXTINF:-1 tvg-id="Star.tr" tvg-name="Star TV",Star TV
 https://github.com/ipstreet312/freeiptv/raw/master/ressources/tur/star.m3u8
 #EXTINF:-1 tvg-id="TV8.tr" tvg-name="TV8",TV8
-https://raw.githubusercontent.com/utd2001/tv/refs/heads/main/m3u8/TV8.m3u8
+https://tv8.daioncdn.net/tv8/tv8_720p.m3u8?app=tv8_web
 #EXTINF:-1 tvg-id="TV8.5.tr" tvg-name="TV8.5",TV8.5
-https://raw.githubusercontent.com/utd2001/tv/refs/heads/main/m3u8/TV8.5.m3u8
+https://tv8.daioncdn.net/tv8bucuk/tv8bucuk_720p.m3u8?app=tv8bucuk_web
 #EXTINF:-1 tvg-id="BEIN_SPORTS_USA.tr" tvg-name="BEIN_SPORTS_USA",BEIN_SPORTS_USA
 https://fl1.moveonjoy.com/BEIN_SPORTS/index.m3u8
 #EXTINF:-1 tvg-id="HalkTv.tr" tvg-name="Halk TV",Halk TV
@@ -236,7 +236,7 @@ https://edge-e3.evrideo.tv/f2dcbecf-5af0-47db-a82e-032112050a23_1000027346_HLS/m
 #EXTINF:-1 tvg-id="sıfır.tr" tvg-name="Sıfır tv",Sıfır tv
 https://github.com/tecotv2025/tecotv/raw/main/playlist/Sifir_Tv.m3u8
 #EXTINF:-1 tvg-id="Ht_Spor.tr" tvg-name="Ht_Spor",Ht_Spor
-https://raw.githubusercontent.com/tecotv2025/tecotv/main/playlist/Ht_Spor.m3u8
+https://ciner.daioncdn.net/ht-spor/ht-spor.m3u8?app=web
 #EXTINF:-1 tvg-id="Ekol_Spor.tr" tvg-name="Ekol_Spor",Ekol_Spor
 https://raw.githubusercontent.com/tecotv2025/tecotv/main/playlist/Ekol_Spor.m3u8
 #EXTINF:-1 tvg-id="EuroD.tr" tvg-name="EuroD",EuroD
@@ -244,7 +244,7 @@ https://tabiptv.short.gy/eurod.m3u8
 #EXTINF:-1 tvg-id="trthaber.tr" tvg-name="trthaber",trthaber
 https://tabiptv.short.gy/trthaber.m3u8
 #EXTINF:-1 tvg-id="halktv.tr" tvg-name="halktv",halktv
-https://halktv.daioncdn.net/halktv/halktv_1080p.m3u8?app=c86957d3-74a7-44da-9ad2-dc358c769609&ce=2
+hhttps://raw.githubusercontent.com/utd2001/tv-no-server/main/m3u8/HALK_TV.m3u8
 #EXTINF:-1 tvg-id="natgeo.tr" tvg-name="natgeo",natgeo
 https://tabiptv.short.gy/natgeo
 #EXTINF:-1 tvg-id="Showturk.tr" tvg-name="Showturk",Showturk
@@ -287,8 +287,8 @@ https://raw.githubusercontent.com/megasmartgence90/STREAM-php/refs/heads/main/ou
 https://raw.githubusercontent.com/megasmartgence90/STREAM-php/refs/heads/main/output/silk_sport4.m3u8
 #EXTINF:-1 tvg-id="matchplaneta" tvg-name="Match Planeta",Match Planeta
 https://raw.githubusercontent.com/megasmartgence90/STREAM-php/refs/heads/main/output/matchplaneta.m3u8
-#EXTINF:-1 tvg-id="matchfutbol1hd" tvg-name="МАТЧ! ФУТБОЛ 1 HD",МАТЧ! ФУТБОЛ 1 HD
-http://tv.ttk.mx:9114
+#EXTINF:-1 tvg-id="TRT 1" tvg-name="TRT 1 HDD",TRT 1 HDD
+https://tv-trt1-dash.medya.trt.com.tr/master.mpd
 #EXTINF:-1 tvg-id="matchfutbol1" tvg-name="Матч! Футбол 1",Матч! Футбол 1
 http://tv.ttk.mx:9108
 #EXTINF:-1 tvg-id="matchfutbol2hd" tvg-name="МАТЧ! ФУТБОЛ 2 HD",МАТЧ! ФУТБОЛ 2 HD
@@ -297,20 +297,20 @@ http://tv.ttk.mx:9111
 http://tv.ttk.mx:9112
 #EXTINF:-1 tvg-id="matchfutbol3hd" tvg-name="МАТЧ! ФУТБОЛ 3 HD",МАТЧ! ФУТБОЛ 3 HD
 http://tv.ttk.mx:9116
-#EXTINF:-1 tvg-id="futbol" tvg-name="Футбол",Футбол
-http://tv.ttk.mx:9065
-#EXTINF:-1 tvg-id="vijusport" tvg-name="viju+ Sport",viju+ Sport
-http://tv.ttk.mx:9187
-#EXTINF:-1 tvg-id="matchhd" tvg-name="МАТЧ HD",МАТЧ HD
+#EXTINF:-1 tvg-id="TLC" tvg-name="TLC",TLC
+https://dogus.daioncdn.net/tlc/tlc.m3u8?app=tlc_web
+#EXTINF:-1 tvg-id="DMAX" tvg-name="viju+ Sport",viju+ Sport
+https://dogus.daioncdn.net/dmax/dmax.m3u8?app=dmax_web
+#EXTINF:-1 tvg-id="TV4" tvg-name="TV4",TV4
 http://tv.ttk.mx:9094
-#EXTINF:-1 tvg-id="matchtv" tvg-name="Матч ТВ",Матч ТВ
-http://tv.ttk.mx:9002
-#EXTINF:-1 tvg-id="matcharena" tvg-name="Матч! Арена",Матч! Арена
-http://tv.ttk.mx:9153
-#EXTINF:-1 tvg-id="matchstrana" tvg-name="Матч! Страна",Матч! Страна
-http://tv.ttk.mx:9154
-#EXTINF:-1 tvg-id="matchigra" tvg-name="Матч! Игра",Матч! Игра
-http://tv.ttk.mx:9152
+#EXTINF:-1 tvg-id="TELEON" tvg-name="TELEON",TELEON
+https://raw.githubusercontent.com/UzunMuhalefet/yayinlar/refs/heads/main/streams/best/teleon.m3u8
+#EXTINF:-1 tvg-id="BEYAZ TV" tvg-name="BEYAZ TV",BEYAZ TV
+https://beyaztv-live.daioncdn.net/beyaztv/beyaztv_720p.m3u8
+#EXTINF:-1 tvg-id="FOX" tvg-name="FOX",FOX
+http://95.174.71.114:80/TR-FOX/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-id="TEVE_2" tvg-name="TEVE_2",TEVE_2
+https://raw.githubusercontent.com/utd2001/tv/refs/heads/main/m3u8/TEVE2.m3u8
 #EXTINF:-1 tvg-id="Kemal_Sunal_Tv" tvg-name="Kemal_Sunal_Tv",Kemal_Sunal_Tv
 https://raw.githubusercontent.com/tecotv2025/tecotv/main/playlist/Kemal_Sunal_Tv.m3u8
 #EXTINF:-1 tvg-id="dolu1.tr" tvg-name="beIN Sports 1 HD",beIN Sports 1 HD
