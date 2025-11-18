@@ -7,9 +7,9 @@ extra_channels:
     kanal_adi: "TRT 1 HDD"
     url: "https://tv-trt1-dash.medya.trt.com.tr/master.mpd"
 
-  - tvg_id: "trt-1.tr"
-    kanal_adi: "trt-1"
-    url: "https://trt.daioncdn.net/trt-1/master.m3u8?app=web"
+  - tvg_id: "Kanal_d.tr"
+    kanal_adi: "Kanal_d"
+    url: "https://live.duhnet.tv/S2/HLS_LIVE/kanalddainp/track_4_1250/playlist.m3u8"
 
   - tvg_id: "EuroD.tr"
     kanal_adi: "EuroD"
@@ -362,3 +362,4 @@ extra_channels:
   - tvg_id: "Tabii8.tr"
     kanal_adi: "Tabii 8 HD"
     url: "https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/Tabii_8_HD.m3u8"
+
