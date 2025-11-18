@@ -3,9 +3,37 @@ extra_channels:
     kanal_adi: "TRT 1"
     url: "http://89.187.191.41/TRT-1-HD-TR/playlist.m3u8"
 
+  - tvg_id: "TRT1"
+    kanal_adi: "TRT 1 HDD"
+    url: "https://tv-trt1-dash.medya.trt.com.tr/master.mpd"
+
+  - tvg_id: "trt-1.tr"
+    kanal_adi: "trt-1"
+    url: "https://trt.daioncdn.net/trt-1/master.m3u8?app=web"
+
+  - tvg_id: "EuroD.tr"
+    kanal_adi: "EuroD"
+    url: "https://tabiptv.short.gy/eurod.m3u8"
+
   - tvg_id: "Atv.tr"
     kanal_adi: "ATV"
     url: "http://89.187.191.41:80/ATV-HD-TR/playlist.m3u8"
+
+  - tvg_id: "Atv1.tr"
+    kanal_adi: "ATV-1"
+    url: "http://95.174.71.114:80/TR-ATV/tracks-v1a1/mono.m3u8"
+
+  - tvg_id: "FOX"
+    kanal_adi: "FOX"
+    url: "http://95.174.71.114:80/TR-FOX/tracks-v1a1/mono.m3u8"
+
+  - tvg_id: "SHOW"
+    kanal_adi: "SHOW"
+    url: "http://95.174.71.114:80/TR-SHOW/tracks-v1a1/mono.m3u8"
+
+  - tvg_id: "Showturk.tr"
+    kanal_adi: "Showturk"
+    url: "https://raw.githubusercontent.com/ipstreet312/freeiptv/master/ressources/tur/shturk.m3u8"
 
   - tvg_id: "Star.tr"
     kanal_adi: "Star TV"
@@ -15,25 +43,53 @@ extra_channels:
     kanal_adi: "TV8"
     url: "https://tv8.daioncdn.net/tv8/tv8_720p.m3u8?app=tv8_web"
 
+  - tvg_id: "TV8-1.tr"
+    kanal_adi: "TV8-1"
+    url: "http://95.174.71.114:80/TR-TV8/tracks-v1a1/mono.m3u8"
+
   - tvg_id: "TV8.5.tr"
     kanal_adi: "TV8.5"
     url: "https://tv8.daioncdn.net/tv8bucuk/tv8bucuk_720p.m3u8?app=tv8bucuk_web"
 
-  - tvg_id: "BEIN_SPORTS_USA.tr"
-    kanal_adi: "BEIN_SPORTS_USA"
-    url: "https://fl1.moveonjoy.com/BEIN_SPORTS/index.m3u8"
+  - tvg_id: "BEYAZ TV"
+    kanal_adi: "BEYAZ TV"
+    url: "https://beyaztv-live.daioncdn.net/beyaztv/beyaztv_720p.m3u8"
 
-  - tvg_id: "HalkTv.tr"
-    kanal_adi: "Halk TV"
-    url: "https://raw.githubusercontent.com/utd2001/tv/refs/heads/main/m3u8/HALK_TV.m3u8"
+  - tvg_id: "TEVE_2"
+    kanal_adi: "TEVE_2"
+    url: "https://raw.githubusercontent.com/utd2001/tv/refs/heads/main/m3u8/TEVE2.m3u8"
 
-  - tvg_id: "Tele1.tr"
-    kanal_adi: "Tele 1"
-    url: "https://raw.githubusercontent.com/utd2001/tv/refs/heads/main/m3u8/TELE1.m3u8"
+  - tvg_id: "A2.tr"
+    kanal_adi: "A2"
+    url: "http://95.174.71.114:80/TR-A2/tracks-v1a1/mono.m3u8"
 
-  - tvg_id: "Sozcutv.tr"
-    kanal_adi: "Sözcü TV"
-    url: "https://raw.githubusercontent.com/utd2001/tv/refs/heads/main/m3u8/SOZCU_TV.m3u8"
+  - tvg_id: "360.tr"
+    kanal_adi: "360"
+    url: "http://95.174.71.114:80/TR-TV-360/tracks-v1a1/mono.m3u8"
+
+  - tvg_id: "TV4"
+    kanal_adi: "TV4"
+    url: "https://turkmedya-live.ercdn.net/tv4/tv4.m3u8"
+
+  - tvg_id: "TELEON"
+    kanal_adi: "TELEON"
+    url: "https://raw.githubusercontent.com/UzunMuhalefet/yayinlar/refs/heads/main/streams/best/teleon.m3u8"
+
+  - tvg_id: "natgeo.tr"
+    kanal_adi: "natgeo"
+    url: "https://tabiptv.short.gy/natgeo"
+
+  - tvg_id: "TLC"
+    kanal_adi: "TLC"
+    url: "https://dogus.daioncdn.net/tlc/tlc.m3u8?app=tlc_web"
+
+  - tvg_id: "DMAX"
+    kanal_adi: "DMAX"
+    url: "https://dogus.daioncdn.net/dmax/dmax.m3u8?app=dmax_web"
+
+  - tvg_id: "fx.tr"
+    kanal_adi: "fx"
+    url: "https://saran-live.ercdn.net/fx/index.m3u8"
 
   - tvg_id: "Yesilcam.tr"
     kanal_adi: "Yesilcam"
@@ -47,6 +103,50 @@ extra_channels:
     kanal_adi: "Film Screen"
     url: "https://edge-e3.evrideo.tv/f2dcbecf-5af0-47db-a82e-032112050a23_1000027346_HLS/manifest.m3u8"
 
+  - tvg_id: "Kemal_Sunal_Tv"
+    kanal_adi: "Kemal_Sunal_Tv"
+    url: "https://raw.githubusercontent.com/tecotv2025/tecotv/main/playlist/Kemal_Sunal_Tv.m3u8"
+
+  - tvg_id: "TabiiTv.tr"
+    kanal_adi: "Tabiitv"
+    url: "https://ceokzokgtd.erbvr.com/tabiitv/tabiitv.m3u8"
+
+  - tvg_id: "Cine1.tr"
+    kanal_adi: "Cine1"
+    url: "http://195.142.3.105/artidijital_cine1/cine1/playlist.m3u8"
+
+  - tvg_id: "tiviturk.tr"
+    kanal_adi: "tiviturk"
+    url: "https://stream.tiviturk.de/live/tiviturk.m3u8"
+
+  - tvg_id: "tivi6.tr"
+    kanal_adi: "tivi6"
+    url: "http://195.142.3.105/artidijital_tivi6/tivi6/playlist.m3u8"
+
+  - tvg_id: "trthaber.tr"
+    kanal_adi: "trthaber"
+    url: "https://tabiptv.short.gy/trthaber.m3u8"
+
+  - tvg_id: "CnnTurk.tr"
+    kanal_adi: "CnnTurk"
+    url: "http://95.174.71.114:80/TR-CNN-TURK/tracks-v1a1/mono.m3u8"
+
+  - tvg_id: "ekoltv.tr"
+    kanal_adi: "ekoltv"
+    url: "https://ekoltv-live.ercdn.net/ekoltv/ekoltv_720p.m3u8"
+
+  - tvg_id: "BEIN_SPORTS_USA.tr"
+    kanal_adi: "BEIN_SPORTS_USA"
+    url: "https://fl1.moveonjoy.com/BEIN_SPORTS/index.m3u8"
+
+  - tvg_id: "trtspor.tr"
+    kanal_adi: "trtspor"
+    url: "https://trt.daioncdn.net/trtspor/master.m3u8?app=web#"
+
+  - tvg_id: "trtspor*.tr"
+    kanal_adi: "trtspor*"
+    url: "https://trt.daioncdn.net/trtspor-yildiz/master.m3u8?app=web#"
+
   - tvg_id: "sıfır.tr"
     kanal_adi: "Sıfır tv"
     url: "https://github.com/tecotv2025/tecotv/raw/main/playlist/Sifir_Tv.m3u8"
@@ -58,34 +158,6 @@ extra_channels:
   - tvg_id: "Ekol_Spor.tr"
     kanal_adi: "Ekol_Spor"
     url: "https://raw.githubusercontent.com/tecotv2025/tecotv/main/playlist/Ekol_Spor.m3u8"
-
-  - tvg_id: "EuroD.tr"
-    kanal_adi: "EuroD"
-    url: "https://tabiptv.short.gy/eurod.m3u8"
-
-  - tvg_id: "trthaber.tr"
-    kanal_adi: "trthaber"
-    url: "https://tabiptv.short.gy/trthaber.m3u8"
-
-  - tvg_id: "halktv.tr"
-    kanal_adi: "halktv"
-    url: "hhttps://raw.githubusercontent.com/utd2001/tv-no-server/main/m3u8/HALK_TV.m3u8"
-
-  - tvg_id: "natgeo.tr"
-    kanal_adi: "natgeo"
-    url: "https://tabiptv.short.gy/natgeo"
-
-  - tvg_id: "Showturk.tr"
-    kanal_adi: "Showturk"
-    url: "https://raw.githubusercontent.com/ipstreet312/freeiptv/master/ressources/tur/shturk.m3u8"
-
-  - tvg_id: "ekoltv.tr"
-    kanal_adi: "ekoltv"
-    url: "https://ekoltv-live.ercdn.net/ekoltv/ekoltv_720p.m3u8"
-
-  - tvg_id: "fx.tr"
-    kanal_adi: "fx"
-    url: "https://saran-live.ercdn.net/fx/index.m3u8"
 
   - tvg_id: "Tabii Spor.tr"
     kanal_adi: "Tabii Spor"
@@ -115,18 +187,6 @@ extra_channels:
     kanal_adi: "Tabii Spor6"
     url: "https://vbtob9hyq58eiophct5qctxr2.medya.trt.com.tr/master.m3u8"
 
-  - tvg_id: "trtspor.tr"
-    kanal_adi: "trtspor"
-    url: "https://trt.daioncdn.net/trtspor/master.m3u8?app=web#"
-
-  - tvg_id: "trtspor*.tr"
-    kanal_adi: "trtspor*"
-    url: "https://trt.daioncdn.net/trtspor-yildiz/master.m3u8?app=web#"
-
-  - tvg_id: "trt-1.tr"
-    kanal_adi: "trt-1"
-    url: "https://trt.daioncdn.net/trt-1/master.m3u8?app=web"
-
   - tvg_id: "cbcsport.az"
     kanal_adi: "CBC Sport"
     url: "https://raw.githubusercontent.com/megasmartgence90/RESTREAM/refs/heads/main/MEGA-GROUP-AZE/cbcsport.m3u8"
@@ -155,10 +215,6 @@ extra_channels:
     kanal_adi: "Match Planeta"
     url: "https://raw.githubusercontent.com/megasmartgence90/STREAM-php/refs/heads/main/output/matchplaneta.m3u8"
 
-  - tvg_id: "TRT 1"
-    kanal_adi: "TRT 1 HDD"
-    url: "https://tv-trt1-dash.medya.trt.com.tr/master.mpd"
-
   - tvg_id: "matchfutbol1"
     kanal_adi: "Матч! Футбол 1"
     url: "http://tv.ttk.mx:9108"
@@ -175,38 +231,6 @@ extra_channels:
     kanal_adi: "МАТЧ! ФУТБОЛ 3 HD"
     url: "http://tv.ttk.mx:9116"
 
-  - tvg_id: "TLC"
-    kanal_adi: "TLC"
-    url: "https://dogus.daioncdn.net/tlc/tlc.m3u8?app=tlc_web"
-
-  - tvg_id: "DMAX"
-    kanal_adi: "DMAX"
-    url: "https://dogus.daioncdn.net/dmax/dmax.m3u8?app=dmax_web"
-
-  - tvg_id: "TV4"
-    kanal_adi: "TV4"
-    url: "https://turkmedya-live.ercdn.net/tv4/tv4.m3u8"
-
-  - tvg_id: "TELEON"
-    kanal_adi: "TELEON"
-    url: "https://raw.githubusercontent.com/UzunMuhalefet/yayinlar/refs/heads/main/streams/best/teleon.m3u8"
-
-  - tvg_id: "BEYAZ TV"
-    kanal_adi: "BEYAZ TV"
-    url: "https://beyaztv-live.daioncdn.net/beyaztv/beyaztv_720p.m3u8"
-
-  - tvg_id: "FOX"
-    kanal_adi: "FOX"
-    url: "http://95.174.71.114:80/TR-FOX/tracks-v1a1/mono.m3u8"
-
-  - tvg_id: "TEVE_2"
-    kanal_adi: "TEVE_2"
-    url: "https://raw.githubusercontent.com/utd2001/tv/refs/heads/main/m3u8/TEVE2.m3u8"
-
-  - tvg_id: "Kemal_Sunal_Tv"
-    kanal_adi: "Kemal_Sunal_Tv"
-    url: "https://raw.githubusercontent.com/tecotv2025/tecotv/main/playlist/Kemal_Sunal_Tv.m3u8"
-    
   - tvg_id: "dolu1.tr"
     kanal_adi: "beIN Sports 1 HD"
     url: "https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/beIN_Sport_1_HD.m3u8"
@@ -303,47 +327,38 @@ extra_channels:
     kanal_adi: "Tivibu Sport 4 HD"
     url: "https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/Tivibu_Sport_4_HD.m3u8"
 
-  - tvg_id: "terk.tr"
+  - tvg_id: "Tabii.tr"
     kanal_adi: "Tabii HD"
     url: "https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/Tabii_HD.m3u8"
 
-  - tvg_id: "terk1.tr"
+  - tvg_id: "Tabii1.tr"
     kanal_adi: "Tabii 1 HD"
     url: "https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/Tabii_1_HD.m3u8"
 
-  - tvg_id: "terk2.tr"
+  - tvg_id: "Tabii2.tr"
     kanal_adi: "Tabii 2 HD"
     url: "https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/Tabii_2_HD.m3u8"
 
-  - tvg_id: "terk3.tr"
+  - tvg_id: "Tabii3.tr"
     kanal_adi: "Tabii 3 HD"
     url: "https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/Tabii_3_HD.m3u8"
 
-  - tvg_id: "terk4.tr"
+  - tvg_id: "Tabii4.tr"
     kanal_adi: "Tabii 4 HD"
     url: "https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/Tabii_4_HD.m3u8"
 
-  - tvg_id: "terk5.tr"
+  - tvg_id: "Tabii5.tr"
     kanal_adi: "Tabii 5 HD"
     url: "https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/Tabii_5_HD.m3u8"
 
-  - tvg_id: "terk6.tr"
+  - tvg_id: "Tabii6.tr"
     kanal_adi: "Tabii 6 HD"
     url: "https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/Tabii_6_HD.m3u8"
 
-  - tvg_id: "terk7.tr"
+  - tvg_id: "Tabii7.tr"
     kanal_adi: "Tabii 7 HD"
     url: "https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/Tabii_7_HD.m3u8"
 
-  - tvg_id: "terk8.tr"
+  - tvg_id: "Tabii8.tr"
     kanal_adi: "Tabii 8 HD"
     url: "https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/Tabii_8_HD.m3u8"
-
-
-
-
-
-
-
-
-
