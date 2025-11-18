@@ -4,11 +4,9 @@
 #EXTINF:-1,tabii
 https://beert7sqimrk0bfdupfgn6qew.medya.trt.com.tr/master.m3u8
 #EXTINF:-1,nowtv
-https://nowtv.daioncdn.net/nowtv/nowtv.m3u8?ce=3&app=mobile_web&st=bCZcejq29m7ceBmbEKBb5g&e=1763498940
+https://nowtv.daioncdn.net/nowtv/nowtv.m3u8?ce=3&app=mobile_web&st=Z8rKBGAPsM0tfdwqrdkymg&e=1763500441
 #EXTINF:-1,showtv
 https://ciner.daioncdn.net/showtv/showtv.m3u8?ce=3&app=4bc856ef-4c68-4a94-bc87-37dfaaa66558&st=RBzhSuGauna0OGld-DJUVA&e=1664766175&tv=1
-#EXTINF:-1,htspor
-https://ciner.daioncdn.net/ht-spor/ht-spor.m3u8?app=web
 #EXTINF:-1,tv8
 https://tv8-tb-live.ercdn.net/tv8-geo/playlist.m3u8?st=BzpvJLJ9hDX-H3W1sQWquA&e=1639061641
 #EXTINF:-1,kanald
@@ -16,7 +14,7 @@ https://demiroren.daioncdn.net/kanald/kanald.m3u8?app=kanald_web&amp;ce=3
 #EXTINF:-1,teve2
 https://teve2.duhnet.tv/S2/HLS_LIVE/teve2np/playlist.m3u8
 #EXTINF:-1,dmax
-https://dogus.daioncdn.net/dmax/dmax.m3u8?ce=3&app=5a02c599-d17e-4982-9b04-090934d51af7&token=aWdCZVEybUJhT2IydjZ4L1lLSThuaTF6ZVN5aG9weDZ1OTF0amlCYmEvMD0=
+https://dogus.daioncdn.net/dmax/dmax.m3u8?ce=3&app=5a02c599-d17e-4982-9b04-090934d51af7&token=b2hGdEZpdlJrU1Jnc05vSzhsNjdqTDdiUTBMMjc2YVQwdWdWbDJ0dlpDRT0=
 #EXTINF:-1,tv360
 https://turkmedya-live.ercdn.net/tv360/tv360.m3u8
 #EXTINF:-1,beyaztv
@@ -162,6 +160,9 @@ https://dga1op10s1u3lep.eaf7037ecd540a.click/live/selcukbeinsports2/playlist.m3u
 #EXTINF:-1 tvg-id="bein3" tvg-name="BeIN Sports 3" tvg-logo="https://r2.thesportsdb.com/images/media/channel/logo/u3117i1628798857.png" group-title="Spor",BeIN Sports 3
 #EXTVLCOPT:http-referrer=https://www.sporcafe6.xyz/
 https://dga1op10s1u3lep.eaf7037ecd540a.click/live/selcukbeinsports3/playlist.m3u8
+#EXTINF:-1 tvg-id="bein4" tvg-name="BeIN Sports 4" tvg-logo="https://r2.thesportsdb.com/images/media/channel/logo/2ktmcp1628798841.png" group-title="Spor",BeIN Sports 4
+#EXTVLCOPT:http-referrer=https://www.sporcafe6.xyz/
+https://dga1op10s1u3lep.eaf7037ecd540a.click/live/selcukbeinsports4/playlist.m3u8
 #EXTINF:-1 tvg-id="bein5" tvg-name="BeIN Sports 5" tvg-logo="https://r2.thesportsdb.com/images/media/channel/logo/BeIn_Sports_5_US.png" group-title="Spor",BeIN Sports 5
 #EXTVLCOPT:http-referrer=https://www.sporcafe6.xyz/
 https://dga1op10s1u3lep.eaf7037ecd540a.click/live/selcukbeinsports5/playlist.m3u8
@@ -210,8 +211,8 @@ https://dga1op10s1u3lep.eaf7037ecd540a.click/live/selcukeurosport2/playlist.m3u8
 http://89.187.191.41/TRT-1-HD-TR/playlist.m3u8
 #EXTINF:-1 tvg-id="TRT1" tvg-name="TRT 1 HDD",TRT 1 HDD
 https://tv-trt1-dash.medya.trt.com.tr/master.mpd
-#EXTINF:-1 tvg-id="trt-1.tr" tvg-name="trt-1",trt-1
-https://trt.daioncdn.net/trt-1/master.m3u8?app=web
+#EXTINF:-1 tvg-id="Kanal_d.tr" tvg-name="Kanal_d",Kanal_d
+https://live.duhnet.tv/S2/HLS_LIVE/kanalddainp/track_4_1250/playlist.m3u8
 #EXTINF:-1 tvg-id="EuroD.tr" tvg-name="EuroD",EuroD
 https://tabiptv.short.gy/eurod.m3u8
 #EXTINF:-1 tvg-id="Atv.tr" tvg-name="ATV",ATV
