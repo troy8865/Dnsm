@@ -1,42 +1,43 @@
 from yt_dlp import YoutubeDL
 
-# URL → Dosya adı eşleşmeleri
 channels = {
-    "https://www.youtube.com/live/JCSOAmBeXnY?si=J0X3y15T0bBuMzXS": "sıfır tv",
-    "https://www.youtube.com/live/YAsY48Ipkbo?si=vp4Qp7L_7e6XEf9u": "sözcü",
-    "https://www.youtube.com/live/ztmY_cCtUl0?si=QaOpvWJQiRsDE8HX": "haber global",
-    "https://www.youtube.com/live/VBU0QX6brew?si=wJT7enGilUeKfg9q": "tele1",
-    "https://www.youtube.com/live/6N8_r2uwLEc?si=iaP8-tAjcUFKbECt": "halk tv",
-    "https://www.youtube.com/live/JCSOAmBeXnY?si=Pou_eZrdZR8Csr6C": "kanal s",
-    "https://www.youtube.com/live/ytlbCsbKdAQ?si=lf6HejUpxInIvNjx": "krt",
-    "https://www.youtube.com/live/RdpqsTbi_KU?si=oFSNUIfFwnWgBYWd": "ulusal kanal",
-    "https://www.youtube.com/live/ogxgOjWLwj0?si=9hPeOqg5zD97UGsG": "trt haber"
+    "https://www.youtube.com/live/JCSOAmBeXnY?si=J0X3y15T0bBuMzXS": "sifir tv",
+    "https://www.youtube.com/live/YAsY48Ipkbo?si=vp4Qp7L_7e6XEf9u": "sozcü",
+    "https://www.youtube.com/live/ztmY_cCtUl0?si=QaOpvWJQiRsDE8HX": "haber global"
 }
 
 for url, filename in channels.items():
-    ydl_opts = {'format': 'best'}
+
+    ydl_opts = {
+        "quiet": True,
+        "no_warnings": True,
+        "format": "best[ext=mp4]/best"
+    }
+
     with YoutubeDL(ydl_opts) as ydl:
         try:
             info = ydl.extract_info(url, download=False)
 
-            # Stream URL tespiti
+            # canlı linki bulma
+            stream_url = None
+
             if "url" in info:
                 stream_url = info["url"]
             elif "entries" in info and info["entries"]:
-                stream_url = info["entries"][0]["url"]
-            else:
-                stream_url = url
+                stream_url = info["entries"][0].get("url")
 
-            # Dosya adı .m3u
-            m3u_file = f"{filename}.m3u"
+            if not stream_url:
+                print(f"URL alınamadı: {filename}")
+                continue
 
-            # M3U oluştur
-            with open(m3u_file, "w", encoding="utf-8") as f:
+            # dosya oluştur
+            m3u = f"{filename}.m3u"
+            with open(m3u, "w", encoding="utf-8") as f:
                 f.write("#EXTM3U\n")
                 f.write(f"#EXTINF:-1,{filename}\n")
-                f.write(f"{stream_url}\n")
+                f.write(stream_url + "\n")
 
-            print(f"Oluşturuldu: {m3u_file}")
+            print(f"✔ {m3u} güncellendi")
 
         except Exception as e:
-            print(f"Hata oluştu: {url} -> {e}")
+            print(f"Hata: {filename} -> {e}")
