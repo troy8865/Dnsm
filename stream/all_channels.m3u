@@ -1,14 +1,12 @@
 #EXTM3U
 
-# === Web Kaynaklı Kanallar ===
+# === Web Kaynakları ===
 #EXTINF:-1,tabii
 https://beert7sqimrk0bfdupfgn6qew.medya.trt.com.tr/master.m3u8
 #EXTINF:-1,nowtv
-https://nowtv.daioncdn.net/nowtv/nowtv.m3u8?ce=3&app=mobile_web&st=mnv4UchOPSi6J19xZmuFeA&e=1763643785
+https://nowtv.daioncdn.net/nowtv/nowtv.m3u8?ce=3&app=mobile_web&st=BID4PxfAE6bylbbnT9ufmg&e=1763644087
 #EXTINF:-1,showtv
 https://ciner.daioncdn.net/showtv/showtv.m3u8?ce=3&app=4bc856ef-4c68-4a94-bc87-37dfaaa66558&st=RBzhSuGauna0OGld-DJUVA&e=1664766175&tv=1
-#EXTINF:-1,htspor
-https://ciner.daioncdn.net/ht-spor/ht-spor.m3u8?app=web
 #EXTINF:-1,tv8
 https://tv8-tb-live.ercdn.net/tv8-geo/playlist.m3u8?st=BzpvJLJ9hDX-H3W1sQWquA&e=1639061641
 #EXTINF:-1,kanald
@@ -16,7 +14,7 @@ https://demiroren.daioncdn.net/kanald/kanald.m3u8?app=kanald_web&amp;ce=3
 #EXTINF:-1,teve2
 https://teve2.duhnet.tv/S2/HLS_LIVE/teve2np/playlist.m3u8
 #EXTINF:-1,dmax
-https://dogus.daioncdn.net/dmax/dmax.m3u8?ce=3&app=5a02c599-d17e-4982-9b04-090934d51af7&token=dW1aank0VkdxN1lhSE5JL2sxMUxPVUJNZHN3N1ZGSmxqM3VkQWxWVGdCTT0=
+https://dogus.daioncdn.net/dmax/dmax.m3u8?ce=3&app=5a02c599-d17e-4982-9b04-090934d51af7&token=bVBkV2M1U3N0cjdIZ3BXSDNDR3ZlWmIwSFhlY2x5UHF1Y1hLd3RJWU9IOD0=
 #EXTINF:-1,tv360
 https://turkmedya-live.ercdn.net/tv360/tv360.m3u8
 #EXTINF:-1,beyaztv
@@ -25,369 +23,340 @@ https://beyaztv.daioncdn.net/beyaztv/beyaztv.m3u8?app=fcd5c66b-da9d-44ba-a410-4f
 https://dogus.daioncdn.net/ntv/ntv.m3u8?ce=3
 #EXTINF:-1,ekolspor
 https://ekoltv-live.ercdn.net/ekoltv/ekoltv.m3u8
+#EXTINF:-1,halktv
+https://halktv.daioncdn.net/halktv/halktv.m3u8?app=c86957d3-74a7-44da-9ad2-dc358c769609&ce=3
 
 # === TrGoals Kanalları ===
-#EXTINF:-1 tvg-id="BeinSports1.tr" tvg-name="Bein Sports 1 HD (VIP)",Bein Sports 1 HD (VIP)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-#EXTVLCOPT:http-referrer=https://trgoals1451.xyz/
+#EXTINF:-1 tvg-id="BeinSports1.tr" group-title="TrGoals",Bein Sports 1 HD (VIP)
+#EXTVLCOPT:http-referrer=https://trgoals1459.xyz/
 https://eight.04bf112a615942b28.sbs/yayinzirve.m3u8
-#EXTINF:-1 tvg-id="BeinSports1.tr" tvg-name="Bein Sports 1 HD",Bein Sports 1 HD
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-#EXTVLCOPT:http-referrer=https://trgoals1451.xyz/
+#EXTINF:-1 tvg-id="BeinSports1.tr" group-title="TrGoals",Bein Sports 1 HD
+#EXTVLCOPT:http-referrer=https://trgoals1459.xyz/
 https://eight.04bf112a615942b28.sbs/yayin1.m3u8
-#EXTINF:-1 tvg-id="BeinSports2.tr" tvg-name="Bein Sports 2 HD",Bein Sports 2 HD
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-#EXTVLCOPT:http-referrer=https://trgoals1451.xyz/
+#EXTINF:-1 tvg-id="BeinSports2.tr" group-title="TrGoals",Bein Sports 2 HD
+#EXTVLCOPT:http-referrer=https://trgoals1459.xyz/
 https://eight.04bf112a615942b28.sbs/yayinb2.m3u8
-#EXTINF:-1 tvg-id="BeinSports3.tr" tvg-name="Bein Sports 3 HD",Bein Sports 3 HD
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-#EXTVLCOPT:http-referrer=https://trgoals1451.xyz/
+#EXTINF:-1 tvg-id="BeinSports3.tr" group-title="TrGoals",Bein Sports 3 HD
+#EXTVLCOPT:http-referrer=https://trgoals1459.xyz/
 https://eight.04bf112a615942b28.sbs/yayinb3.m3u8
-#EXTINF:-1 tvg-id="BeinSports4.tr" tvg-name="Bein Sports 4 HD",Bein Sports 4 HD
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-#EXTVLCOPT:http-referrer=https://trgoals1451.xyz/
+#EXTINF:-1 tvg-id="BeinSports4.tr" group-title="TrGoals",Bein Sports 4 HD
+#EXTVLCOPT:http-referrer=https://trgoals1459.xyz/
 https://eight.04bf112a615942b28.sbs/yayinb4.m3u8
-#EXTINF:-1 tvg-id="BeinSports5.tr" tvg-name="Bein Sports 5 HD",Bein Sports 5 HD
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-#EXTVLCOPT:http-referrer=https://trgoals1451.xyz/
+#EXTINF:-1 tvg-id="BeinSports5.tr" group-title="TrGoals",Bein Sports 5 HD
+#EXTVLCOPT:http-referrer=https://trgoals1459.xyz/
 https://eight.04bf112a615942b28.sbs/yayinb5.m3u8
-#EXTINF:-1 tvg-id="BeinMax1.tr" tvg-name="Bein Max 1 HD",Bein Max 1 HD
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-#EXTVLCOPT:http-referrer=https://trgoals1451.xyz/
+#EXTINF:-1 tvg-id="BeinMax1.tr" group-title="TrGoals",Bein Max 1 HD
+#EXTVLCOPT:http-referrer=https://trgoals1459.xyz/
 https://eight.04bf112a615942b28.sbs/yayinbm1.m3u8
-#EXTINF:-1 tvg-id="BeinMax2.tr" tvg-name="Bein Max 2 HD",Bein Max 2 HD
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-#EXTVLCOPT:http-referrer=https://trgoals1451.xyz/
+#EXTINF:-1 tvg-id="BeinMax2.tr" group-title="TrGoals",Bein Max 2 HD
+#EXTVLCOPT:http-referrer=https://trgoals1459.xyz/
 https://eight.04bf112a615942b28.sbs/yayinbm2.m3u8
-#EXTINF:-1 tvg-id="SSport1.tr" tvg-name="S Sport 1 HD",S Sport 1 HD
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-#EXTVLCOPT:http-referrer=https://trgoals1451.xyz/
+#EXTINF:-1 tvg-id="SSport1.tr" group-title="TrGoals",S Sport 1 HD
+#EXTVLCOPT:http-referrer=https://trgoals1459.xyz/
 https://eight.04bf112a615942b28.sbs/yayinss.m3u8
-#EXTINF:-1 tvg-id="SSport2.tr" tvg-name="S Sport 2 HD",S Sport 2 HD
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-#EXTVLCOPT:http-referrer=https://trgoals1451.xyz/
+#EXTINF:-1 tvg-id="SSport2.tr" group-title="TrGoals",S Sport 2 HD
+#EXTVLCOPT:http-referrer=https://trgoals1459.xyz/
 https://eight.04bf112a615942b28.sbs/yayinss2.m3u8
-#EXTINF:-1 tvg-id="SSportPlus.tr" tvg-name="S Sport Plus HD",S Sport Plus HD
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-#EXTVLCOPT:http-referrer=https://trgoals1451.xyz/
+#EXTINF:-1 tvg-id="SSportPlus.tr" group-title="TrGoals",S Sport Plus HD
+#EXTVLCOPT:http-referrer=https://trgoals1459.xyz/
 https://eight.04bf112a615942b28.sbs/yayinssp2.m3u8
-#EXTINF:-1 tvg-id="TivibuSpor1.tr" tvg-name="Tivibu Spor 1 HD",Tivibu Spor 1 HD
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-#EXTVLCOPT:http-referrer=https://trgoals1451.xyz/
+#EXTINF:-1 tvg-id="TivibuSpor1.tr" group-title="TrGoals",Tivibu Spor 1 HD
+#EXTVLCOPT:http-referrer=https://trgoals1459.xyz/
 https://eight.04bf112a615942b28.sbs/yayint1.m3u8
-#EXTINF:-1 tvg-id="TivibuSpor2.tr" tvg-name="Tivibu Spor 2 HD",Tivibu Spor 2 HD
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-#EXTVLCOPT:http-referrer=https://trgoals1451.xyz/
+#EXTINF:-1 tvg-id="TivibuSpor2.tr" group-title="TrGoals",Tivibu Spor 2 HD
+#EXTVLCOPT:http-referrer=https://trgoals1459.xyz/
 https://eight.04bf112a615942b28.sbs/yayint2.m3u8
-#EXTINF:-1 tvg-id="TivibuSpor3.tr" tvg-name="Tivibu Spor 3 HD",Tivibu Spor 3 HD
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-#EXTVLCOPT:http-referrer=https://trgoals1451.xyz/
+#EXTINF:-1 tvg-id="TivibuSpor3.tr" group-title="TrGoals",Tivibu Spor 3 HD
+#EXTVLCOPT:http-referrer=https://trgoals1459.xyz/
 https://eight.04bf112a615942b28.sbs/yayint3.m3u8
-#EXTINF:-1 tvg-id="SmartSpor1.tr" tvg-name="Smart Spor 1 HD",Smart Spor 1 HD
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-#EXTVLCOPT:http-referrer=https://trgoals1451.xyz/
+#EXTINF:-1 tvg-id="SmartSpor1.tr" group-title="TrGoals",Smart Spor 1 HD
+#EXTVLCOPT:http-referrer=https://trgoals1459.xyz/
 https://eight.04bf112a615942b28.sbs/yayinsmarts.m3u8
-#EXTINF:-1 tvg-id="SmartSpor2.tr" tvg-name="Smart Spor 2 HD",Smart Spor 2 HD
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-#EXTVLCOPT:http-referrer=https://trgoals1451.xyz/
+#EXTINF:-1 tvg-id="SmartSpor2.tr" group-title="TrGoals",Smart Spor 2 HD
+#EXTVLCOPT:http-referrer=https://trgoals1459.xyz/
 https://eight.04bf112a615942b28.sbs/yayinsms2.m3u8
-#EXTINF:-1 tvg-id="TRTSpor.tr" tvg-name="TRT Spor HD",TRT Spor HD
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-#EXTVLCOPT:http-referrer=https://trgoals1451.xyz/
+#EXTINF:-1 tvg-id="TRTSpor.tr" group-title="TrGoals",TRT Spor HD
+#EXTVLCOPT:http-referrer=https://trgoals1459.xyz/
 https://eight.04bf112a615942b28.sbs/yayintrtspor.m3u8
-#EXTINF:-1 tvg-id="TRTSporYildiz.tr" tvg-name="TRT Spor Yıldız HD",TRT Spor Yıldız HD
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-#EXTVLCOPT:http-referrer=https://trgoals1451.xyz/
+#EXTINF:-1 tvg-id="TRTSporYildiz.tr" group-title="TrGoals",TRT Spor Yıldız HD
+#EXTVLCOPT:http-referrer=https://trgoals1459.xyz/
 https://eight.04bf112a615942b28.sbs/yayintrtspor2.m3u8
-#EXTINF:-1 tvg-id="ASpor.tr" tvg-name="A Spor HD",A Spor HD
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-#EXTVLCOPT:http-referrer=https://trgoals1451.xyz/
+#EXTINF:-1 tvg-id="ASpor.tr" group-title="TrGoals",A Spor HD
+#EXTVLCOPT:http-referrer=https://trgoals1459.xyz/
 https://eight.04bf112a615942b28.sbs/yayinas.m3u8
-#EXTINF:-1 tvg-id="ATV.tr" tvg-name="ATV HD",ATV HD
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-#EXTVLCOPT:http-referrer=https://trgoals1451.xyz/
+#EXTINF:-1 tvg-id="ATV.tr" group-title="TrGoals",ATV HD
+#EXTVLCOPT:http-referrer=https://trgoals1459.xyz/
 https://eight.04bf112a615942b28.sbs/yayinatv.m3u8
-#EXTINF:-1 tvg-id="TV8.tr" tvg-name="TV8 HD",TV8 HD
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-#EXTVLCOPT:http-referrer=https://trgoals1451.xyz/
+#EXTINF:-1 tvg-id="TV8.tr" group-title="TrGoals",TV8 HD
+#EXTVLCOPT:http-referrer=https://trgoals1459.xyz/
 https://eight.04bf112a615942b28.sbs/yayintv8.m3u8
-#EXTINF:-1 tvg-id="TV85.tr" tvg-name="TV8.5 HD",TV8.5 HD
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-#EXTVLCOPT:http-referrer=https://trgoals1451.xyz/
+#EXTINF:-1 tvg-id="TV85.tr" group-title="TrGoals",TV8.5 HD
+#EXTVLCOPT:http-referrer=https://trgoals1459.xyz/
 https://eight.04bf112a615942b28.sbs/yayintv85.m3u8
-#EXTINF:-1 tvg-id="NBATV.tr" tvg-name="NBA TV HD",NBA TV HD
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-#EXTVLCOPT:http-referrer=https://trgoals1451.xyz/
+#EXTINF:-1 tvg-id="NBATV.tr" group-title="TrGoals",NBA TV HD
+#EXTVLCOPT:http-referrer=https://trgoals1459.xyz/
 https://eight.04bf112a615942b28.sbs/yayinnbatv.m3u8
-#EXTINF:-1 tvg-id="ExxenSpor1.tr" tvg-name="Exxen Spor 1 HD",Exxen Spor 1 HD
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-#EXTVLCOPT:http-referrer=https://trgoals1451.xyz/
+#EXTINF:-1 tvg-id="ExxenSpor1.tr" group-title="TrGoals",Exxen Spor 1 HD
+#EXTVLCOPT:http-referrer=https://trgoals1459.xyz/
 https://eight.04bf112a615942b28.sbs/yayinex1.m3u8
-#EXTINF:-1 tvg-id="ExxenSpor2.tr" tvg-name="Exxen Spor 2 HD",Exxen Spor 2 HD
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-#EXTVLCOPT:http-referrer=https://trgoals1451.xyz/
+#EXTINF:-1 tvg-id="ExxenSpor2.tr" group-title="TrGoals",Exxen Spor 2 HD
+#EXTVLCOPT:http-referrer=https://trgoals1459.xyz/
 https://eight.04bf112a615942b28.sbs/yayinex2.m3u8
-#EXTINF:-1 tvg-id="ExxenSpor3.tr" tvg-name="Exxen Spor 3 HD",Exxen Spor 3 HD
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-#EXTVLCOPT:http-referrer=https://trgoals1451.xyz/
+#EXTINF:-1 tvg-id="ExxenSpor3.tr" group-title="TrGoals",Exxen Spor 3 HD
+#EXTVLCOPT:http-referrer=https://trgoals1459.xyz/
 https://eight.04bf112a615942b28.sbs/yayinex3.m3u8
-#EXTINF:-1 tvg-id="ExxenSpor4.tr" tvg-name="Exxen Spor 4 HD",Exxen Spor 4 HD
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-#EXTVLCOPT:http-referrer=https://trgoals1451.xyz/
+#EXTINF:-1 tvg-id="ExxenSpor4.tr" group-title="TrGoals",Exxen Spor 4 HD
+#EXTVLCOPT:http-referrer=https://trgoals1459.xyz/
 https://eight.04bf112a615942b28.sbs/yayinex4.m3u8
-#EXTINF:-1 tvg-id="ExxenSpor5.tr" tvg-name="Exxen Spor 5 HD",Exxen Spor 5 HD
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-#EXTVLCOPT:http-referrer=https://trgoals1451.xyz/
+#EXTINF:-1 tvg-id="ExxenSpor5.tr" group-title="TrGoals",Exxen Spor 5 HD
+#EXTVLCOPT:http-referrer=https://trgoals1459.xyz/
 https://eight.04bf112a615942b28.sbs/yayinex5.m3u8
-#EXTINF:-1 tvg-id="ExxenSpor6.tr" tvg-name="Exxen Spor 6 HD",Exxen Spor 6 HD
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-#EXTVLCOPT:http-referrer=https://trgoals1451.xyz/
+#EXTINF:-1 tvg-id="ExxenSpor6.tr" group-title="TrGoals",Exxen Spor 6 HD
+#EXTVLCOPT:http-referrer=https://trgoals1459.xyz/
 https://eight.04bf112a615942b28.sbs/yayinex6.m3u8
-#EXTINF:-1 tvg-id="ExxenSpor7.tr" tvg-name="Exxen Spor 7 HD",Exxen Spor 7 HD
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-#EXTVLCOPT:http-referrer=https://trgoals1451.xyz/
+#EXTINF:-1 tvg-id="ExxenSpor7.tr" group-title="TrGoals",Exxen Spor 7 HD
+#EXTVLCOPT:http-referrer=https://trgoals1459.xyz/
 https://eight.04bf112a615942b28.sbs/yayinex7.m3u8
-#EXTINF:-1 tvg-id="ExxenSpor8.tr" tvg-name="Exxen Spor 8 HD",Exxen Spor 8 HD
-#EXTVLCOPT:http-user-agent=Mozilla/5.0
-#EXTVLCOPT:http-referrer=https://trgoals1451.xyz/
+#EXTINF:-1 tvg-id="ExxenSpor8.tr" group-title="TrGoals",Exxen Spor 8 HD
+#EXTVLCOPT:http-referrer=https://trgoals1459.xyz/
 https://eight.04bf112a615942b28.sbs/yayinex8.m3u8
 
-# === Sporcafe / SelçukTV Kanalları ===
-#EXTINF:-1 tvg-id="bein1" tvg-name="BeIN Sports 1" tvg-logo="https://r2.thesportsdb.com/images/media/channel/logo/5rhmw31628798883.png" group-title="Spor",BeIN Sports 1
-#EXTVLCOPT:http-referrer=https://www.sporcafe6.xyz/
+# === Selçuk / Sporcafe Kanalları ===
+#EXTINF:-1 tvg-id="bein1" group-title="Selçuk",BeIN Sports 1
+#EXTVLCOPT:http-referrer=https://www.selcuksportshd4f467436d6.xyz
 https://dga1op10s1u3lep.eaf7037ecd540a.click/live/selcukbeinsports1/playlist.m3u8
-#EXTINF:-1 tvg-id="bein2" tvg-name="BeIN Sports 2" tvg-logo="https://r2.thesportsdb.com/images/media/channel/logo/7uv6x71628799003.png" group-title="Spor",BeIN Sports 2
-#EXTVLCOPT:http-referrer=https://www.sporcafe6.xyz/
+#EXTINF:-1 tvg-id="bein2" group-title="Selçuk",BeIN Sports 2
+#EXTVLCOPT:http-referrer=https://www.selcuksportshd4f467436d6.xyz
 https://dga1op10s1u3lep.eaf7037ecd540a.click/live/selcukbeinsports2/playlist.m3u8
-#EXTINF:-1 tvg-id="bein3" tvg-name="BeIN Sports 3" tvg-logo="https://r2.thesportsdb.com/images/media/channel/logo/u3117i1628798857.png" group-title="Spor",BeIN Sports 3
-#EXTVLCOPT:http-referrer=https://www.sporcafe6.xyz/
+#EXTINF:-1 tvg-id="bein3" group-title="Selçuk",BeIN Sports 3
+#EXTVLCOPT:http-referrer=https://www.selcuksportshd4f467436d6.xyz
 https://dga1op10s1u3lep.eaf7037ecd540a.click/live/selcukbeinsports3/playlist.m3u8
-#EXTINF:-1 tvg-id="bein4" tvg-name="BeIN Sports 4" tvg-logo="https://r2.thesportsdb.com/images/media/channel/logo/2ktmcp1628798841.png" group-title="Spor",BeIN Sports 4
-#EXTVLCOPT:http-referrer=https://www.sporcafe6.xyz/
+#EXTINF:-1 tvg-id="bein4" group-title="Selçuk",BeIN Sports 4
+#EXTVLCOPT:http-referrer=https://www.selcuksportshd4f467436d6.xyz
 https://dga1op10s1u3lep.eaf7037ecd540a.click/live/selcukbeinsports4/playlist.m3u8
-#EXTINF:-1 tvg-id="bein5" tvg-name="BeIN Sports 5" tvg-logo="https://r2.thesportsdb.com/images/media/channel/logo/BeIn_Sports_5_US.png" group-title="Spor",BeIN Sports 5
-#EXTVLCOPT:http-referrer=https://www.sporcafe6.xyz/
+#EXTINF:-1 tvg-id="bein5" group-title="Selçuk",BeIN Sports 5
+#EXTVLCOPT:http-referrer=https://www.selcuksportshd4f467436d6.xyz
 https://dga1op10s1u3lep.eaf7037ecd540a.click/live/selcukbeinsports5/playlist.m3u8
-#EXTINF:-1 tvg-id="beinmax1" tvg-name="BeIN Sports Max 1" tvg-logo="https://assets.bein.com/mena/sites/3/2015/06/beIN_SPORTS_MAX1_DIGITAL_Mono.png" group-title="Spor",BeIN Sports Max 1
-#EXTVLCOPT:http-referrer=https://www.sporcafe6.xyz/
+#EXTINF:-1 tvg-id="beinmax1" group-title="Selçuk",BeIN Sports Max 1
+#EXTVLCOPT:http-referrer=https://www.selcuksportshd4f467436d6.xyz
 https://dga1op10s1u3lep.eaf7037ecd540a.click/live/selcukbeinsportsmax1/playlist.m3u8
-#EXTINF:-1 tvg-id="beinmax2" tvg-name="BeIN Sports Max 2" tvg-logo="http://tvprofil.com/img/kanali-logo/beIN_Sports_MAX_2_TR_logo_v2.png?1734011568" group-title="Spor",BeIN Sports Max 2
-#EXTVLCOPT:http-referrer=https://www.sporcafe6.xyz/
+#EXTINF:-1 tvg-id="beinmax2" group-title="Selçuk",BeIN Sports Max 2
+#EXTVLCOPT:http-referrer=https://www.selcuksportshd4f467436d6.xyz
 https://dga1op10s1u3lep.eaf7037ecd540a.click/live/selcukbeinsportsmax2/playlist.m3u8
-#EXTINF:-1 tvg-id="tivibu1" tvg-name="Tivibu Spor 1" tvg-logo="https://r2.thesportsdb.com/images/media/channel/logo/qadnsi1642604437.png" group-title="Spor",Tivibu Spor 1
-#EXTVLCOPT:http-referrer=https://www.sporcafe6.xyz/
+#EXTINF:-1 tvg-id="tivibu1" group-title="Selçuk",Tivibu Spor 1
+#EXTVLCOPT:http-referrer=https://www.selcuksportshd4f467436d6.xyz
 https://dga1op10s1u3lep.eaf7037ecd540a.click/live/selcuktivibuspor1/playlist.m3u8
-#EXTINF:-1 tvg-id="tivibu2" tvg-name="Tivibu Spor 2" tvg-logo="https://r2.thesportsdb.com/images/media/channel/logo/kuasdm1642604455.png" group-title="Spor",Tivibu Spor 2
-#EXTVLCOPT:http-referrer=https://www.sporcafe6.xyz/
+#EXTINF:-1 tvg-id="tivibu2" group-title="Selçuk",Tivibu Spor 2
+#EXTVLCOPT:http-referrer=https://www.selcuksportshd4f467436d6.xyz
 https://dga1op10s1u3lep.eaf7037ecd540a.click/live/selcuktivibuspor2/playlist.m3u8
-#EXTINF:-1 tvg-id="tivibu3" tvg-name="Tivibu Spor 3" tvg-logo="https://r2.thesportsdb.com/images/media/channel/logo/slwrz41642604502.png" group-title="Spor",Tivibu Spor 3
-#EXTVLCOPT:http-referrer=https://www.sporcafe6.xyz/
+#EXTINF:-1 tvg-id="tivibu3" group-title="Selçuk",Tivibu Spor 3
+#EXTVLCOPT:http-referrer=https://www.selcuksportshd4f467436d6.xyz
 https://dga1op10s1u3lep.eaf7037ecd540a.click/live/selcuktivibuspor3/playlist.m3u8
-#EXTINF:-1 tvg-id="tivibu4" tvg-name="Tivibu Spor 4" tvg-logo="https://r2.thesportsdb.com/images/media/channel/logo/59bqi81642604517.png" group-title="Spor",Tivibu Spor 4
-#EXTVLCOPT:http-referrer=https://www.sporcafe6.xyz/
+#EXTINF:-1 tvg-id="tivibu4" group-title="Selçuk",Tivibu Spor 4
+#EXTVLCOPT:http-referrer=https://www.selcuksportshd4f467436d6.xyz
 https://dga1op10s1u3lep.eaf7037ecd540a.click/live/selcuktivibuspor4/playlist.m3u8
-#EXTINF:-1 tvg-id="ssport1" tvg-name="S Sport 1" tvg-logo="https://itv224226.tmp.tivibu.com.tr:6430/images/poster/20230302923239.png" group-title="Spor",S Sport 1
-#EXTVLCOPT:http-referrer=https://www.sporcafe6.xyz/
+#EXTINF:-1 tvg-id="ssport1" group-title="Selçuk",S Sport 1
+#EXTVLCOPT:http-referrer=https://www.selcuksportshd4f467436d6.xyz
 https://dga1op10s1u3lep.eaf7037ecd540a.click/live/selcukssport/playlist.m3u8
-#EXTINF:-1 tvg-id="ssport2" tvg-name="S Sport 2" tvg-logo="https://itv224226.tmp.tivibu.com.tr:6430/images/poster/20230302923321.png" group-title="Spor",S Sport 2
-#EXTVLCOPT:http-referrer=https://www.sporcafe6.xyz/
+#EXTINF:-1 tvg-id="ssport2" group-title="Selçuk",S Sport 2
+#EXTVLCOPT:http-referrer=https://www.selcuksportshd4f467436d6.xyz
 https://dga1op10s1u3lep.eaf7037ecd540a.click/live/selcukssport2/playlist.m3u8
-#EXTINF:-1 tvg-id="smart1" tvg-name="Smart Spor 1" tvg-logo="https://dsmart-static-v2.ercdn.net//resize-width/1920/content/p/el/11909/Thumbnail.png" group-title="Spor",Smart Spor 1
-#EXTVLCOPT:http-referrer=https://www.sporcafe6.xyz/
+#EXTINF:-1 tvg-id="smart1" group-title="Selçuk",Smart Spor 1
+#EXTVLCOPT:http-referrer=https://www.selcuksportshd4f467436d6.xyz
 https://dga1op10s1u3lep.eaf7037ecd540a.click/live/selcuksmartspor/playlist.m3u8
-#EXTINF:-1 tvg-id="smart2" tvg-name="Smart Spor 2" tvg-logo="https://www.dsmart.com.tr/api/v1/public/images/kanallar/SPORSMART2-gri.png" group-title="Spor",Smart Spor 2
-#EXTVLCOPT:http-referrer=https://www.sporcafe6.xyz/
+#EXTINF:-1 tvg-id="smart2" group-title="Selçuk",Smart Spor 2
+#EXTVLCOPT:http-referrer=https://www.selcuksportshd4f467436d6.xyz
 https://dga1op10s1u3lep.eaf7037ecd540a.click/live/selcuksmartspor2/playlist.m3u8
-#EXTINF:-1 tvg-id="aspor" tvg-name="A Spor" tvg-logo="https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/0/0/Vod/HLS/9d28401f-2d4e-4862-85e2-69773f6f45f4.png" group-title="Spor",A Spor
-#EXTVLCOPT:http-referrer=https://www.sporcafe6.xyz/
+#EXTINF:-1 tvg-id="aspor" group-title="Selçuk",A Spor
+#EXTVLCOPT:http-referrer=https://www.selcuksportshd4f467436d6.xyz
 https://dga1op10s1u3lep.eaf7037ecd540a.click/live/selcukaspor/playlist.m3u8
-#EXTINF:-1 tvg-id="eurosport1" tvg-name="Eurosport 1" tvg-logo="https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/0/0/Vod/HLS/54cad412-5f3a-4184-b5fc-d567a5de7160.png" group-title="Spor",Eurosport 1
-#EXTVLCOPT:http-referrer=https://www.sporcafe6.xyz/
+#EXTINF:-1 tvg-id="eurosport1" group-title="Selçuk",Eurosport 1
+#EXTVLCOPT:http-referrer=https://www.selcuksportshd4f467436d6.xyz
 https://dga1op10s1u3lep.eaf7037ecd540a.click/live/selcukeurosport1/playlist.m3u8
-#EXTINF:-1 tvg-id="eurosport2" tvg-name="Eurosport 2" tvg-logo="https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/0/0/Vod/HLS/a4cbdd15-1509-408f-a108-65b8f88f2066.png" group-title="Spor",Eurosport 2
-#EXTVLCOPT:http-referrer=https://www.sporcafe6.xyz/
+#EXTINF:-1 tvg-id="eurosport2" group-title="Selçuk",Eurosport 2
+#EXTVLCOPT:http-referrer=https://www.selcuksportshd4f467436d6.xyz
 https://dga1op10s1u3lep.eaf7037ecd540a.click/live/selcukeurosport2/playlist.m3u8
 
-# === Extra Manuel Kanallar ===
-#EXTINF:-1 tvg-id="TRT1.tr" tvg-name="TRT 1",TRT 1
+# === Manuel Ek Kanallar ===
+#EXTINF:-1 tvg-id="TRT1.tr",TRT 1
 http://89.187.191.41/TRT-1-HD-TR/playlist.m3u8
-#EXTINF:-1 tvg-id="TRT1" tvg-name="TRT 1 HDD",TRT 1 HDD
+#EXTINF:-1 tvg-id="TRT1",TRT 1 HDD
 https://tv-trt1-dash.medya.trt.com.tr/master.mpd
-#EXTINF:-1 tvg-id="Kanal_d.tr" tvg-name="Kanal_d",Kanal_d
+#EXTINF:-1 tvg-id="Kanal_d.tr",Kanal_d
 https://live.duhnet.tv/S2/HLS_LIVE/kanalddainp/track_4_1250/playlist.m3u8
-#EXTINF:-1 tvg-id="EuroD.tr" tvg-name="EuroD",EuroD
+#EXTINF:-1 tvg-id="EuroD.tr",EuroD
 https://tabiptv.short.gy/eurod.m3u8
-#EXTINF:-1 tvg-id="Atv.tr" tvg-name="ATV",ATV
+#EXTINF:-1 tvg-id="Atv.tr",ATV
 http://89.187.191.41:80/ATV-HD-TR/playlist.m3u8
-#EXTINF:-1 tvg-id="Atv1.tr" tvg-name="ATV-1",ATV-1
+#EXTINF:-1 tvg-id="Atv1.tr",ATV-1
 http://95.174.71.114:80/TR-ATV/tracks-v1a1/mono.m3u8
-#EXTINF:-1 tvg-id="FOX" tvg-name="FOX",FOX
+#EXTINF:-1 tvg-id="FOX",FOX
 http://95.174.71.114:80/TR-FOX/tracks-v1a1/mono.m3u8
-#EXTINF:-1 tvg-id="SHOW" tvg-name="SHOW",SHOW
+#EXTINF:-1 tvg-id="SHOW",SHOW
 http://95.174.71.114:80/TR-SHOW/tracks-v1a1/mono.m3u8
-#EXTINF:-1 tvg-id="Showturk.tr" tvg-name="Showturk",Showturk
+#EXTINF:-1 tvg-id="Showturk.tr",Showturk
 https://raw.githubusercontent.com/ipstreet312/freeiptv/master/ressources/tur/shturk.m3u8
-#EXTINF:-1 tvg-id="Star.tr" tvg-name="Star TV",Star TV
+#EXTINF:-1 tvg-id="Star.tr",Star TV
 https://github.com/ipstreet312/freeiptv/raw/master/ressources/tur/star.m3u8
-#EXTINF:-1 tvg-id="TV8.tr" tvg-name="TV8",TV8
+#EXTINF:-1 tvg-id="TV8.tr",TV8
 https://tv8.daioncdn.net/tv8/tv8_720p.m3u8?app=tv8_web
-#EXTINF:-1 tvg-id="TV8-1.tr" tvg-name="TV8-1",TV8-1
+#EXTINF:-1 tvg-id="TV8-1.tr",TV8-1
 http://95.174.71.114:80/TR-TV8/tracks-v1a1/mono.m3u8
-#EXTINF:-1 tvg-id="TV8.5.tr" tvg-name="TV8.5",TV8.5
+#EXTINF:-1 tvg-id="TV8.5.tr",TV8.5
 https://tv8.daioncdn.net/tv8bucuk/tv8bucuk_720p.m3u8?app=tv8bucuk_web
-#EXTINF:-1 tvg-id="BEYAZ TV" tvg-name="BEYAZ TV",BEYAZ TV
+#EXTINF:-1 tvg-id="BEYAZ TV",BEYAZ TV
 https://beyaztv-live.daioncdn.net/beyaztv/beyaztv_720p.m3u8
-#EXTINF:-1 tvg-id="TEVE_2" tvg-name="TEVE_2",TEVE_2
+#EXTINF:-1 tvg-id="TEVE_2",TEVE_2
 https://raw.githubusercontent.com/utd2001/tv/refs/heads/main/m3u8/TEVE2.m3u8
-#EXTINF:-1 tvg-id="A2.tr" tvg-name="A2",A2
+#EXTINF:-1 tvg-id="A2.tr",A2
 http://95.174.71.114:80/TR-A2/tracks-v1a1/mono.m3u8
-#EXTINF:-1 tvg-id="360.tr" tvg-name="360",360
+#EXTINF:-1 tvg-id="360.tr",360
 http://95.174.71.114:80/TR-TV-360/tracks-v1a1/mono.m3u8
-#EXTINF:-1 tvg-id="TV4" tvg-name="TV4",TV4
+#EXTINF:-1 tvg-id="TV4",TV4
 https://turkmedya-live.ercdn.net/tv4/tv4.m3u8
-#EXTINF:-1 tvg-id="TELEON" tvg-name="TELEON",TELEON
+#EXTINF:-1 tvg-id="TELEON",TELEON
 https://raw.githubusercontent.com/UzunMuhalefet/yayinlar/refs/heads/main/streams/best/teleon.m3u8
-#EXTINF:-1 tvg-id="natgeo.tr" tvg-name="natgeo",natgeo
+#EXTINF:-1 tvg-id="natgeo.tr",natgeo
 https://tabiptv.short.gy/natgeo
-#EXTINF:-1 tvg-id="TLC" tvg-name="TLC",TLC
+#EXTINF:-1 tvg-id="TLC",TLC
 https://dogus.daioncdn.net/tlc/tlc.m3u8?app=tlc_web
-#EXTINF:-1 tvg-id="DMAX" tvg-name="DMAX",DMAX
+#EXTINF:-1 tvg-id="DMAX",DMAX
 https://dogus.daioncdn.net/dmax/dmax.m3u8?app=dmax_web
-#EXTINF:-1 tvg-id="fx.tr" tvg-name="fx",fx
+#EXTINF:-1 tvg-id="fx.tr",fx
 https://saran-live.ercdn.net/fx/index.m3u8
-#EXTINF:-1 tvg-id="Yesilcam.tr" tvg-name="Yesilcam",Yesilcam
+#EXTINF:-1 tvg-id="Yesilcam.tr",Yesilcam
 https://raw.githubusercontent.com/tecotv2025/tecotv/main/playlist/Yesilcam_Tv.m3u8
-#EXTINF:-1 tvg-id="yssinema.tr" tvg-name="YS Sinema",YS Sinema
+#EXTINF:-1 tvg-id="yssinema.tr",YS Sinema
 https://raw.githubusercontent.com/megasmartgence90/RESTREAM/refs/heads/main/MEGAKINO/yssinema.m3u8
-#EXTINF:-1 tvg-id="filmscreen.tr" tvg-name="Film Screen",Film Screen
+#EXTINF:-1 tvg-id="filmscreen.tr",Film Screen
 https://edge-e3.evrideo.tv/f2dcbecf-5af0-47db-a82e-032112050a23_1000027346_HLS/manifest.m3u8
-#EXTINF:-1 tvg-id="BEIN BOX OFFICE 1 HD.tr" tvg-name="BEIN BOX OFFICE 1 HD",BEIN BOX OFFICE 1 HD
+#EXTINF:-1 tvg-id="BEIN BOX OFFICE 1 HD.tr",BEIN BOX OFFICE 1 HD
 http://65.108.239.207:80/box1/index.m3u8
-#EXTINF:-1 tvg-id="BEIN BOX OFFICE 2 HD.tr" tvg-name="BEIN BOX OFFICE 2 HD",BEIN BOX OFFICE 2 HD
+#EXTINF:-1 tvg-id="BEIN BOX OFFICE 2 HD.tr",BEIN BOX OFFICE 2 HD
 http://65.108.239.207:80/box2/index.m3u8
-#EXTINF:-1 tvg-id="BEIN BOX OFFICE 3 HD.tr" tvg-name="BEIN BOX OFFICE 3 HD",BEIN BOX OFFICE 3 HD
+#EXTINF:-1 tvg-id="BEIN BOX OFFICE 3 HD.tr",BEIN BOX OFFICE 3 HD
 http://65.108.239.207:80/box3/index.m3u8
-#EXTINF:-1 tvg-id="BEIN MOVIES ACTION HD.tr" tvg-name="BEIN MOVIES ACTION HD",BEIN MOVIES ACTION HD
+#EXTINF:-1 tvg-id="BEIN MOVIES ACTION HD.tr",BEIN MOVIES ACTION HD
 http://65.108.239.207:80/bsaction1/index.m3u8
-#EXTINF:-1 tvg-id="BEIN MOVIES PREMIER HD.tr" tvg-name="BEIN MOVIES PREMIER HD",BEIN MOVIES PREMIER HD
+#EXTINF:-1 tvg-id="BEIN MOVIES PREMIER HD.tr",BEIN MOVIES PREMIER HD
 http://65.108.239.207:80/bspremier1/index.m3u8
-#EXTINF:-1 tvg-id="BEIN MOVIES STARS HD.tr" tvg-name="BEIN MOVIES STARS HD",BEIN MOVIES STARS HD
+#EXTINF:-1 tvg-id="BEIN MOVIES STARS HD.tr",BEIN MOVIES STARS HD
 http://65.108.239.207:80/bsstars/index.m3u8
-#EXTINF:-1 tvg-id="SINEMA TV HD.tr" tvg-name="SINEMA TV HD",SINEMA TV HD
+#EXTINF:-1 tvg-id="SINEMA TV HD.tr",SINEMA TV HD
 http://65.108.239.207:80/sinema/index.m3u8
-#EXTINF:-1 tvg-id="SINEMA TV 2 HD.tr" tvg-name="SINEMA TV 2 HD",SINEMA TV 2 HD
+#EXTINF:-1 tvg-id="SINEMA TV 2 HD.tr",SINEMA TV 2 HD
 http://65.108.239.207:80/sinema2/index.m3u8
-#EXTINF:-1 tvg-id="BEIN_SPORTS_USA.tr" tvg-name="BEIN_SPORTS_USA",BEIN_SPORTS_USA
+#EXTINF:-1 tvg-id="BEIN_SPORTS_USA.tr",BEIN_SPORTS_USA
 https://vizioncore.xyz/static/bs11.m3u8
-#EXTINF:-1 tvg-id="SINEMA TV AKSIYON HD.tr" tvg-name="SINEMA TV AKSIYON HD",SINEMA TV AKSIYON HD
+#EXTINF:-1 tvg-id="SINEMA TV AKSIYON HD.tr",SINEMA TV AKSIYON HD
 http://65.108.239.207:80/sinemaaksiyon/index.m3u8
-#EXTINF:-1 tvg-id="SINEMA TV AKSIYON 2 HD.tr" tvg-name="SINEMA TV AKSIYON 2 HD",SINEMA TV AKSIYON 2 HD
+#EXTINF:-1 tvg-id="SINEMA TV AKSIYON 2 HD.tr",SINEMA TV AKSIYON 2 HD
 http://65.108.239.207:80/sinemaaksiyon2/index.m3u8
-#EXTINF:-1 tvg-id="SINEMA TV AILE HD.tr" tvg-name="SINEMA TV AILE HD",SINEMA TV AILE HD
+#EXTINF:-1 tvg-id="SINEMA TV AILE HD.tr",SINEMA TV AILE HD
 http://65.108.239.207:80/sinemaaile/index.m3u8
-#EXTINF:-1 tvg-id="SINEMA TV KOMEDI HD.tr" tvg-name="SINEMA TV KOMEDI HD",SINEMA TV KOMEDI HD
+#EXTINF:-1 tvg-id="SINEMA TV KOMEDI HD.tr",SINEMA TV KOMEDI HD
 http://65.108.239.207:80/sinemakomedi/index.m3u8
-#EXTINF:-1 tvg-id="SINEMA TV YERLI HD.tr" tvg-name="SINEMA TV YERLI HD",SINEMA TV YERLI HD
+#EXTINF:-1 tvg-id="SINEMA TV YERLI HD.tr",SINEMA TV YERLI HD
 http://65.108.239.207:80/sinemayerli/tracks-v1a1/index.m3u8
-#EXTINF:-1 tvg-id="Tabii Spor.tr" tvg-name="Tabii Spor",Tabii Spor
+#EXTINF:-1 tvg-id="Tabii Spor.tr",Tabii Spor
 https://beert7sqimrk0bfdupfgn6qew.medya.trt.com.tr/master.m3u8
-#EXTINF:-1 tvg-id="Tabii Spor1.tr" tvg-name="Tabii Spor 1",Tabii Spor 1
+#EXTINF:-1 tvg-id="Tabii Spor1.tr",Tabii Spor 1
 https://iaqzu4szhtzeqd0edpsayinle.medya.trt.com.tr/master.m3u8
-#EXTINF:-1 tvg-id="Tabii Spor2" tvg-name="Tabii Spor2",Tabii Spor2
+#EXTINF:-1 tvg-id="Tabii Spor2",Tabii Spor2
 https://klublsslubcgyiz7zqt5bz8il.medya.trt.com.tr/master.m3u8
-#EXTINF:-1 tvg-id="Tabii Spor3.tr" tvg-name="Tabii Spor3",Tabii Spor3
+#EXTINF:-1 tvg-id="Tabii Spor3.tr",Tabii Spor3
 https://ujnf69op16x2fiiywxcnx41q8.medya.trt.com.tr/master.m3u8
-#EXTINF:-1 tvg-id="Tabii Spor4.tr" tvg-name="Tabii Spor4",Tabii Spor4
+#EXTINF:-1 tvg-id="Tabii Spor4.tr",Tabii Spor4
 https://bfxy3jgeydpbphtk8qfqwm3hr.medya.trt.com.tr/master.m3u8
-#EXTINF:-1 tvg-id="Tabii Spor5.tr" tvg-name="Tabii Spor5",Tabii Spor5
+#EXTINF:-1 tvg-id="Tabii Spor5.tr",Tabii Spor5
 https://z3mmimwz148csv0vaxtphqspf.medya.trt.com.tr/master.m3u8
-#EXTINF:-1 tvg-id="Tabii Spor6.tr" tvg-name="Tabii Spor6",Tabii Spor6
+#EXTINF:-1 tvg-id="Tabii Spor6.tr",Tabii Spor6
 https://vbtob9hyq58eiophct5qctxr2.medya.trt.com.tr/master.m3u8
-#EXTINF:-1 tvg-id="cbcsport.az.tr" tvg-name="CBC Sport",CBC Sport
+#EXTINF:-1 tvg-id="cbcsport.az.tr",CBC Sport
 https://raw.githubusercontent.com/megasmartgence90/RESTREAM/refs/heads/main/MEGA-GROUP-AZE/cbcsport.m3u8
-#EXTINF:-1 tvg-id="BBC EARTH HD.tr" tvg-name="BBC EARTH HD",BBC EARTH HD
+#EXTINF:-1 tvg-id="BBC EARTH HD.tr",BBC EARTH HD
 http://65.108.239.207:80/bbc/index.m3u8
-#EXTINF:-1 tvg-id="DISCOVERY CHANNEL HD.tr" tvg-name="DISCOVERY CHANNEL HD",DISCOVERY CHANNEL HD
+#EXTINF:-1 tvg-id="DISCOVERY CHANNEL HD.tr",DISCOVERY CHANNEL HD
 http://65.108.239.207:80/discovery/index.m3u8
-#EXTINF:-1 tvg-id="DISCOVERY SCIENCE HD.tr" tvg-name="DISCOVERY SCIENCE HD",DISCOVERY SCIENCE HD
+#EXTINF:-1 tvg-id="DISCOVERY SCIENCE HD.tr",DISCOVERY SCIENCE HD
 http://65.108.239.207:80/discs/index.m3u8
-#EXTINF:-1 tvg-id="HISTORY CHANNEL HD.tr" tvg-name="HISTORY CHANNEL HD",HISTORY CHANNEL HD
+#EXTINF:-1 tvg-id="HISTORY CHANNEL HD.tr",HISTORY CHANNEL HD
 http://65.108.239.207:80/history/index.m3u8
-#EXTINF:-1 tvg-id="LOVE NATURE HD.tr" tvg-name="LOVE NATURE HD",LOVE NATURE HD
+#EXTINF:-1 tvg-id="LOVE NATURE HD.tr",LOVE NATURE HD
 http://65.108.239.207:80/lovenature/index.m3u8
-#EXTINF:-1 tvg-id="VIASAT HISTORY HD.tr" tvg-name="VIASAT HISTORY HD",VIASAT HISTORY HD
+#EXTINF:-1 tvg-id="VIASAT HISTORY HD.tr",VIASAT HISTORY HD
 http://65.108.239.207:80/viasathistory/index.m3u8
-#EXTINF:-1 tvg-id="KANAL1.tr" tvg-name="KANAL1",KANAL1
+#EXTINF:-1 tvg-id="KANAL1.tr",KANAL1
 https://karpuzmanifestosu.lol/static/bs11.m3u8
-#EXTINF:-1 tvg-id="KANAL2.tr" tvg-name="KANAL2",KANAL2
+#EXTINF:-1 tvg-id="KANAL2.tr",KANAL2
 https://karpuzmanifestosu.lol/static/bs2.m3u8
-#EXTINF:-1 tvg-id="KANAL3.tr" tvg-name="KANAL3",KANAL3
+#EXTINF:-1 tvg-id="KANAL3.tr",KANAL3
 https://karpuzmanifestosu.lol/static/bs3.m3u8
-#EXTINF:-1 tvg-id="KANALss.tr" tvg-name="KANALss",KANALss
+#EXTINF:-1 tvg-id="KANALss.tr",KANALss
 https://karpuzmanifestosu.lol/static/ss11.m3u8
-#EXTINF:-1 tvg-id="dolu1.tr" tvg-name="dolu1",dolu1
+#EXTINF:-1 tvg-id="dolu1.tr",dolu1
 https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/beIN_Sport_1_HD.m3u8
-#EXTINF:-1 tvg-id="dolu2.tr" tvg-name="dolu2",dolu2
+#EXTINF:-1 tvg-id="dolu2.tr",dolu2
 https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/beIN_Sport_2_HD.m3u8
-#EXTINF:-1 tvg-id="dolu3.tr" tvg-name="dolu3",dolu3
+#EXTINF:-1 tvg-id="dolu3.tr",dolu3
 https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/beIN_Sport_3_HD.m3u8
-#EXTINF:-1 tvg-id="dolu4.tr" tvg-name="dolu4",dolu4
+#EXTINF:-1 tvg-id="dolu4.tr",dolu4
 https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/beIN_Sport_4_HD.m3u8
-#EXTINF:-1 tvg-id="dolum1.tr" tvg-name="dolum1",dolum1
+#EXTINF:-1 tvg-id="dolum1.tr",dolum1
 https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/beIN_Sport_Max_1_HD.m3u8
-#EXTINF:-1 tvg-id="dolum2.tr" tvg-name="dolum2",dolum2
+#EXTINF:-1 tvg-id="dolum2.tr",dolum2
 https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/beIN_Sport_Max_2_HD.m3u8
-#EXTINF:-1 tvg-id="dolxax.tr" tvg-name="dolxax",dolxax
+#EXTINF:-1 tvg-id="dolxax.tr",dolxax
 https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/Exxen_HD.m3u8
-#EXTINF:-1 tvg-id="dolxax1.tr" tvg-name="dolxax1",dolxax1
+#EXTINF:-1 tvg-id="dolxax1.tr",dolxax1
 https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/Exxen_1_HD.m3u8
-#EXTINF:-1 tvg-id="dolxax2.tr" tvg-name="dolxax2",dolxax2
+#EXTINF:-1 tvg-id="dolxax2.tr",dolxax2
 https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/Exxen_2_HD.m3u8
-#EXTINF:-1 tvg-id="dolxax3.tr" tvg-name="dolxax3",dolxax3
+#EXTINF:-1 tvg-id="dolxax3.tr",dolxax3
 https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/Exxen_3_HD.m3u8
-#EXTINF:-1 tvg-id="dolxax4.tr" tvg-name="dolxax4",dolxax4
+#EXTINF:-1 tvg-id="dolxax4.tr",dolxax4
 https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/Exxen_4_HD.m3u8
-#EXTINF:-1 tvg-id="dolxax5.tr" tvg-name="dolxax5",dolxax5
+#EXTINF:-1 tvg-id="dolxax5.tr",dolxax5
 https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/Exxen_5_HD.m3u8
-#EXTINF:-1 tvg-id="dolxax6.tr" tvg-name="dolxax6",dolxax6
+#EXTINF:-1 tvg-id="dolxax6.tr",dolxax6
 https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/Exxen_6_HD.m3u8
-#EXTINF:-1 tvg-id="dolxax7.tr" tvg-name="dolxax7",dolxax7
+#EXTINF:-1 tvg-id="dolxax7.tr",dolxax7
 https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/Exxen_7_HD.m3u8
-#EXTINF:-1 tvg-id="dolxax8.tr" tvg-name="dolxax8",dolxax8
+#EXTINF:-1 tvg-id="dolxax8.tr",dolxax8
 https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/Exxen_8_HD.m3u8
-#EXTINF:-1 tvg-id="dolss1.tr" tvg-name="dolss1",dolss1
+#EXTINF:-1 tvg-id="dolss1.tr",dolss1
 https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/S_Sport_1_HD.m3u8
-#EXTINF:-1 tvg-id="dolss2.tr" tvg-name="dolss2",dolss2
+#EXTINF:-1 tvg-id="dolss2.tr",dolss2
 https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/S_Sport_2_HD.m3u8
-#EXTINF:-1 tvg-id="dolsm1.tr" tvg-name="dolsm1",dolsm1
+#EXTINF:-1 tvg-id="dolsm1.tr",dolsm1
 https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/Smart_Sport_1_HD.m3u8
-#EXTINF:-1 tvg-id="dolsm2.tr" tvg-name="dolsm2",dolsm2
+#EXTINF:-1 tvg-id="dolsm2.tr",dolsm2
 https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/Smart_Sport_1_HD.m3u8
-#EXTINF:-1 tvg-id="tvb.tr" tvg-name="Tivibu Sport HD",Tivibu Sport HD
+#EXTINF:-1 tvg-id="tvb.tr",Tivibu Sport HD
 https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/Tivibu_Sport_HD.m3u8
-#EXTINF:-1 tvg-id="dolt1.tr" tvg-name="dolt1",dolt1
+#EXTINF:-1 tvg-id="dolt1.tr",dolt1
 https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/Tivibu_Sport_1_HD.m3u8
-#EXTINF:-1 tvg-id="dolt2.tr" tvg-name="dolt2",dolt2
+#EXTINF:-1 tvg-id="dolt2.tr",dolt2
 https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/Tivibu_Sport_2_HD.m3u8
-#EXTINF:-1 tvg-id="dolt3.tr" tvg-name="dolt3",dolt3
+#EXTINF:-1 tvg-id="dolt3.tr",dolt3
 https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/Tivibu_Sport_3_HD.m3u8
-#EXTINF:-1 tvg-id="dolt4.tr" tvg-name="dolt4",dolt4
+#EXTINF:-1 tvg-id="dolt4.tr",dolt4
 https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/Tivibu_Sport_4_HD.m3u8
-#EXTINF:-1 tvg-id="doltabi.tr" tvg-name="doltabi",doltabi
+#EXTINF:-1 tvg-id="doltabi.tr",doltabi
 https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/Tabii_HD.m3u8
-#EXTINF:-1 tvg-id="doltabi1.tr" tvg-name="doltabi1",doltabi1
+#EXTINF:-1 tvg-id="doltabi1.tr",doltabi1
 https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/Tabii_1_HD.m3u8
-#EXTINF:-1 tvg-id="doltabi2.tr" tvg-name="doltabi2",doltabi2
+#EXTINF:-1 tvg-id="doltabi2.tr",doltabi2
 https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/Tabii_2_HD.m3u8
-#EXTINF:-1 tvg-id="doltabi3.tr" tvg-name="doltabi3",doltabi3
+#EXTINF:-1 tvg-id="doltabi3.tr",doltabi3
 https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/Tabii_3_HD.m3u8
-#EXTINF:-1 tvg-id="doltabi4.tr" tvg-name="doltabi4",doltabi4
+#EXTINF:-1 tvg-id="doltabi4.tr",doltabi4
 https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/Tabii_4_HD.m3u8
-#EXTINF:-1 tvg-id="doltabi5.tr" tvg-name="doltabi5",doltabi5
+#EXTINF:-1 tvg-id="doltabi5.tr",doltabi5
 https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/Tabii_5_HD.m3u8
-#EXTINF:-1 tvg-id="doltabi6.tr" tvg-name="doltabi6",doltabi6
+#EXTINF:-1 tvg-id="doltabi6.tr",doltabi6
 https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/Tabii_6_HD.m3u8
-#EXTINF:-1 tvg-id="doltabi7.tr" tvg-name="doltabi7",doltabi7
+#EXTINF:-1 tvg-id="doltabi7.tr",doltabi7
 https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/Tabii_7_HD.m3u8
-#EXTINF:-1 tvg-id="doltabi8.tr" tvg-name="doltabi8",doltabi8
+#EXTINF:-1 tvg-id="doltabi8.tr",doltabi8
 https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/Tabii_8_HD.m3u8
