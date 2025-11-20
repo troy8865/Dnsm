@@ -19,7 +19,7 @@ extra_yaml_path = "extra_channels.yaml"
 # === Genel ayarlar ===
 HEADERS = {"User-Agent": "Mozilla/5.0"}
 
-# === Web kaynakları (doğrudan sitelerden) ===
+# === Web kaynakları ===
 source_urls = {
     "tabii": "https://www.tabii.com/tr/watch/live/trt1?trackId=150002",
     "nowtv": "https://www.nowtv.com.tr/canli-yayin",
@@ -35,10 +35,10 @@ source_urls = {
     "beyaztv": "https://www.beyaztv.com.tr/canli-yayin",
     "ntv": "https://puhutv.com/ntv-canli-yayin",
     "ekolspor": "https://www.ekoltv.com.tr/canli-yayin",
-    "ulketv": "https://www.ulketv.com/ulke-tv-canli-yayin",
+    "halktv": "https://halktv.com.tr/canli-yayin",
 }
 
-# === TrGoals kanal listesi (tam liste) ===
+# === TrGoals kanal listesi ===
 KANALLAR = [
     {"dosya": "yayinzirve.m3u8", "tvg_id": "BeinSports1.tr", "kanal_adi": "Bein Sports 1 HD (VIP)"},
     {"dosya": "yayin1.m3u8", "tvg_id": "BeinSports1.tr", "kanal_adi": "Bein Sports 1 HD"},
@@ -73,7 +73,7 @@ KANALLAR = [
     {"dosya": "yayinex8.m3u8", "tvg_id": "ExxenSpor8.tr", "kanal_adi": "Exxen Spor 8 HD"},
 ]
 
-# === Sporcafe/SelçukTV kanalları (özet) ===
+# === SelçukTV kanalları ===
 CHANNELS = [
     {"id": "bein1", "source_id": "selcukbeinsports1", "name": "BeIN Sports 1", "logo": "https://r2.thesportsdb.com/images/media/channel/logo/5rhmw31628798883.png", "group": "Spor"},
     {"id": "bein2", "source_id": "selcukbeinsports2", "name": "BeIN Sports 2", "logo": "https://r2.thesportsdb.com/images/media/channel/logo/7uv6x71628799003.png", "group": "Spor"},
@@ -95,33 +95,41 @@ CHANNELS = [
     {"id": "eurosport2", "source_id": "selcukeurosport2", "name": "Eurosport 2", "logo": "https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/0/0/Vod/HLS/a4cbdd15-1509-408f-a108-65b8f88f2066.png", "group": "Spor"},
 ]
 
-# === Klasör temizle ===
-if os.path.exists(stream_folder):
-    shutil.rmtree(stream_folder)
-os.makedirs(stream_folder)
 
-# === Yardımcı fonksiyonlar ===
+# === Yeni Domain Alma Fonksiyonları ===
+def get_trgoals_domain():
+    url = "https://raw.githubusercontent.com/troy8865/domain_1/refs/heads/main/domain.txt"
+    try:
+        r = requests.get(url, timeout=5)
+        if r.status_code == 200:
+            txt = r.text.strip().replace("guncel_domain=", "")
+            return txt.strip()
+    except:
+        pass
+    return None
+
+
+def get_selcuk_domain():
+    url = "https://raw.githubusercontent.com/troy8865/domain_2/refs/heads/main/selcuk_sports_guncel_domain.txt"
+    try:
+        r = requests.get(url, timeout=5)
+        if r.status_code == 200:
+            txt = r.text.strip().replace("guncel_domain=", "")
+            return txt.strip()
+    except:
+        pass
+    return None
+
+
+# === Yardımcı Fonksiyonlar ===
 def extract_m3u8(url):
     try:
         r = requests.get(url, timeout=10)
         matches = re.findall(r'https?://[^\s\'"]+\.m3u8[^\s\'"]*', r.text)
         return matches[0] if matches else None
-    except Exception:
+    except:
         return None
 
-def siteyi_bul():
-    print(f"{YELLOW}[*] TrGoals sitesi aranıyor...{RESET}")
-    for i in range(1400, 2454):
-        url = f"https://trgoals{i}.xyz/"
-        try:
-            r = requests.get(url, timeout=5)
-            if r.status_code == 200 and "channel.html?id=" in r.text:
-                print(f"{GREEN}[✓] Yayın bulundu: {url}{RESET}")
-                return url
-        except:
-            continue
-    print(f"{RED}[X] TrGoals sitesi bulunamadı.{RESET}")
-    return None
 
 def find_baseurl(channel_url):
     try:
@@ -131,38 +139,16 @@ def find_baseurl(channel_url):
     except:
         return None
 
-def load_extra_channels(filepath):
-    if os.path.exists(filepath):
-        with open(filepath, "r", encoding="utf-8") as f:
-            try:
-                data = yaml.safe_load(f)
-                return data.get("extra_channels", [])
-            except:
-                pass
-    return []
-
-# === Sporcafe/SelçukTV ===
-def find_working_domain(start=6, end=100):
-    print(f"{YELLOW}[*] Sporcafe domainleri taranıyor...{RESET}")
-    for i in range(start, end + 1):
-        url = f"https://www.sporcafe{i}.xyz/"
-        try:
-            res = requests.get(url, headers=HEADERS, timeout=5)
-            if res.status_code == 200 and "uxsyplayer" in res.text:
-                print(f"{GREEN}[✓] Aktif Sporcafe domain: {url}{RESET}")
-                return res.text, url
-        except:
-            continue
-    print(f"{RED}[X] Aktif Sporcafe domain bulunamadı.{RESET}")
-    return None, None
 
 def find_stream_domain(html):
     match = re.search(r'https?://(main\.uxsyplayer[0-9a-zA-Z\-]+\.click)', html)
     return f"https://{match.group(1)}" if match else None
 
+
 def extract_base_url(html):
     match = re.search(r'this\.adsBaseUrl\s*=\s*[\'"]([^\'"]+)', html)
     return match.group(1) if match else None
+
 
 def fetch_sporcafe_streams(domain, referer):
     result = []
@@ -179,63 +165,95 @@ def fetch_sporcafe_streams(domain, referer):
             continue
     return result
 
-# === M3U birleştirme ===
+
+def load_extra_channels(filepath):
+    if os.path.exists(filepath):
+        with open(filepath, "r", encoding="utf-8") as f:
+            try:
+                data = yaml.safe_load(f)
+                return data.get("extra_channels", [])
+            except:
+                return []
+    return []
+
+
+# === M3U Birleştirme ===
 def write_combined_m3u8(filepath, web_links, trgoals_base, trgoals_ref, sporcafe_links, sporcafe_ref, extra_channels):
+
     with open(filepath, "w", encoding="utf-8") as f:
         f.write("#EXTM3U\n")
 
-        f.write("\n# === Web Kaynaklı Kanallar ===\n")
+        f.write("\n# === Web Kaynakları ===\n")
         for name, link in web_links.items():
             f.write(f"#EXTINF:-1,{name}\n{link}\n")
 
         f.write("\n# === TrGoals Kanalları ===\n")
         for kanal in KANALLAR:
-            f.write(f'#EXTINF:-1 tvg-id="{kanal["tvg_id"]}" tvg-name="{kanal["kanal_adi"]}",{kanal["kanal_adi"]}\n')
-            f.write(f'#EXTVLCOPT:http-user-agent=Mozilla/5.0\n')
+            f.write(f'#EXTINF:-1 tvg-id="{kanal["tvg_id"]}" group-title="TrGoals",{kanal["kanal_adi"]}\n')
             f.write(f'#EXTVLCOPT:http-referrer={trgoals_ref}\n')
             f.write(trgoals_base + kanal["dosya"] + "\n")
 
-        f.write("\n# === Sporcafe / SelçukTV Kanalları ===\n")
+        f.write("\n# === Selçuk / Sporcafe Kanalları ===\n")
         for ch, url in sporcafe_links:
-            f.write(f'#EXTINF:-1 tvg-id="{ch["id"]}" tvg-name="{ch["name"]}" tvg-logo="{ch["logo"]}" group-title="{ch["group"]}",{ch["name"]}\n')
+            f.write(f'#EXTINF:-1 tvg-id="{ch["id"]}" group-title="Selçuk",{ch["name"]}\n')
             f.write(f'#EXTVLCOPT:http-referrer={sporcafe_ref}\n')
             f.write(url + "\n")
 
-        f.write("\n# === Extra Manuel Kanallar ===\n")
+        f.write("\n# === Manuel Ek Kanallar ===\n")
         for ch in extra_channels:
-            f.write(f'#EXTINF:-1 tvg-id="{ch["tvg_id"]}" tvg-name="{ch["kanal_adi"]}",{ch["kanal_adi"]}\n')
+            f.write(f'#EXTINF:-1 tvg-id="{ch["tvg_id"]}",{ch["kanal_adi"]}\n')
             f.write(ch["url"] + "\n")
 
-    print(f"{GREEN}[✓] Birleştirilmiş M3U oluşturuldu: {filepath}{RESET}")
+    print(f"{GREEN}[✓] M3U dosyası oluşturuldu: {filepath}{RESET}")
 
-# === Ana akış ===
+
+# === ANA AKIŞ ===
 if __name__ == "__main__":
+
+    # Klasörü temizle
+    if os.path.exists(stream_folder):
+        shutil.rmtree(stream_folder)
+    os.makedirs(stream_folder)
+
     print(f"{YELLOW}[*] Web kaynakları taranıyor...{RESET}")
     web_links = {}
     for name, url in source_urls.items():
         link = extract_m3u8(url)
         if link:
             web_links[name] = link
-            print(f"{GREEN}[✓] {name} bulundu.{RESET}")
+            print(f"{GREEN}[✓] {name} bulundu{RESET}")
         else:
-            print(f"{RED}[X] {name} bulunamadı.{RESET}")
+            print(f"{RED}[X] {name} bulunamadı{RESET}")
 
-    print(f"{YELLOW}[*] TrGoals aranıyor...{RESET}")
-    site = siteyi_bul()
-    trgoals_ref, trgoals_base = "", ""
-    if site:
-        trgoals_ref = site
-        trgoals_base = find_baseurl(site + "/channel.html?id=yayinzirve") or ""
+    # === TrGoals Domain Alma ===
+    print(f"{YELLOW}[*] TrGoals domain alınıyor...{RESET}")
+    trgoals_ref = get_trgoals_domain()
+    trgoals_base = ""
 
-    print(f"{YELLOW}[*] Sporcafe/SelçukTV aranıyor...{RESET}")
-    html, referer = find_working_domain()
+    if trgoals_ref:
+        print(f"{GREEN}[✓] TrGoals domain: {trgoals_ref}{RESET}")
+        trgoals_base = find_baseurl(trgoals_ref + "/channel.html?id=yayinzirve") or ""
+    else:
+        print(f"{RED}[X] TrGoals domain bulunamadı!{RESET}")
+
+    # === Selçuk / Sporcafe Domain Alma ===
+    print(f"{YELLOW}[*] Selçuk/Sporcafe domain alınıyor...{RESET}")
+    referer = get_selcuk_domain()
     sporcafe_links = []
-    if html:
-        domain = find_stream_domain(html)
-        if domain:
-            sporcafe_links = fetch_sporcafe_streams(domain, referer)
-        else:
-            print(f"{RED}[X] Yayın domaini bulunamadı.{RESET}")
+
+    if referer:
+        print(f"{GREEN}[✓] Selçuk domain: {referer}{RESET}")
+        try:
+            html = requests.get(referer, headers=HEADERS, timeout=5).text
+            domain = find_stream_domain(html)
+            if domain:
+                sporcafe_links = fetch_sporcafe_streams(domain, referer)
+            else:
+                print(f"{RED}[X] Yayın base domain bulunamadı!{RESET}")
+        except:
+            print(f"{RED}[X] Selçuk domain okunamadı!{RESET}")
+    else:
+        print(f"{RED}[X] Selçuk domain bulunamadı!{RESET}")
 
     extra_channels = load_extra_channels(extra_yaml_path)
 
