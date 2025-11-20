@@ -191,44 +191,44 @@ extra_channels:
     kanal_adi: "CBC Sport"
     url: "https://raw.githubusercontent.com/megasmartgence90/RESTREAM/refs/heads/main/MEGA-GROUP-AZE/cbcsport.m3u8"
 
-  - tvg_id: "viasatsport.tr"
-    kanal_adi: "Viasat Sport"
-    url: "https://raw.githubusercontent.com/megasmartgence90/STREAM-php/refs/heads/main/output/viasatsport.m3u8"
+  - tvg_id: "BBC EARTH HD.tr"
+    kanal_adi: "BBC EARTH HD"
+    url: "http://65.108.239.207:80/bbc/index.m3u8"
 
-  - tvg_id: "setanta_georgia.tr"
-    kanal_adi: "Setanta Georgia"
-    url: "https://raw.githubusercontent.com/megasmartgence90/STREAM-php/refs/heads/main/output/setanta_georgia.m3u8"
+  - tvg_id: "DISCOVERY CHANNEL HD.tr"
+    kanal_adi: "DISCOVERY CHANNEL HD"
+    url: "http://65.108.239.207:80/discovery/index.m3u8"
 
-  - tvg_id: "setanta_sports_3.tr"
-    kanal_adi: "Setanta Sports 3"
-    url: "https://raw.githubusercontent.com/megasmartgence90/STREAM-php/refs/heads/main/output/setanta_sports_3.m3u8"
+  - tvg_id: "DISCOVERY SCIENCE HD.tr"
+    kanal_adi: "DISCOVERY SCIENCE HD"
+    url: "http://65.108.239.207:80/discs/index.m3u8"
 
-  - tvg_id: "setanta_sports_plus_georgia.tr"
-    kanal_adi: "Setanta Sports Plus Georgia"
-    url: "https://raw.githubusercontent.com/megasmartgence90/STREAM-php/refs/heads/main/output/setanta_sports_plus_georgia.m3u8"
+  - tvg_id: "HISTORY CHANNEL HD.tr"
+    kanal_adi: "HISTORY CHANNEL HD"
+    url: "http://65.108.239.207:80/history/index.m3u8"
 
-  - tvg_id: "silk_sport4.tr"
-    kanal_adi: "Silk Sport 4"
-    url: "https://raw.githubusercontent.com/megasmartgence90/STREAM-php/refs/heads/main/output/silk_sport4.m3u8"
+  - tvg_id: "LOVE NATURE HD.tr"
+    kanal_adi: "LOVE NATURE HD"
+    url: "http://65.108.239.207:80/lovenature/index.m3u8"
 
-  - tvg_id: "matchplaneta.tr"
-    kanal_adi: "Match Planeta"
-    url: "https://raw.githubusercontent.com/megasmartgence90/STREAM-php/refs/heads/main/output/matchplaneta.m3u8"
+  - tvg_id: "VIASAT HISTORY HD.tr"
+    kanal_adi: "VIASAT HISTORY HD"
+    url: "http://65.108.239.207:80/viasathistory/index.m3u8"
 
-  - tvg_id: "Rennk1.tr"
-    kanal_adi: "Rennk1"
+  - tvg_id: "KANAL1.tr"
+    kanal_adi: "KANAL1"
     url: "https://karpuzmanifestosu.lol/static/bs11.m3u8"
 
-  - tvg_id: "Rennk2.tr"
-    kanal_adi: "Rennk2"
+  - tvg_id: "KANAL2.tr"
+    kanal_adi: "KANAL2"
     url: "https://karpuzmanifestosu.lol/static/bs2.m3u8"
 
-  - tvg_id: "Rennk3.tr"
-    kanal_adi: "Rennk3"
+  - tvg_id: "KANAL3.tr"
+    kanal_adi: "KANAL3"
     url: "https://karpuzmanifestosu.lol/static/bs3.m3u8"
 
-  - tvg_id: "Rennkss.tr"
-    kanal_adi: "Rennkss"
+  - tvg_id: "KANALss.tr"
+    kanal_adi: "KANALss"
     url: "https://karpuzmanifestosu.lol/static/ss11.m3u8"
 
   - tvg_id: "dolu1.tr"
@@ -362,6 +362,7 @@ extra_channels:
   - tvg_id: "doltabi8.tr"
     kanal_adi: "doltabi8"
     url: "https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/Tabii_8_HD.m3u8"
+
 
 
 
