@@ -103,61 +103,61 @@ extra_channels:
     kanal_adi: "Film Screen"
     url: "https://edge-e3.evrideo.tv/f2dcbecf-5af0-47db-a82e-032112050a23_1000027346_HLS/manifest.m3u8"
 
-  - tvg_id: "Kemal_Sunal_Tv"
-    kanal_adi: "Kemal_Sunal_Tv"
-    url: "https://raw.githubusercontent.com/tecotv2025/tecotv/main/playlist/Kemal_Sunal_Tv.m3u8"
+  - tvg_id: "BEIN BOX OFFICE 1 HD.tr"
+    kanal_adi: "BEIN BOX OFFICE 1 HD"
+    url: "http://65.108.239.207:80/box1/index.m3u8"
 
-  - tvg_id: "TabiiTv.tr"
-    kanal_adi: "Tabiitv"
-    url: "https://ceokzokgtd.erbvr.com/tabiitv/tabiitv.m3u8"
+  - tvg_id: "BEIN BOX OFFICE 2 HD.tr"
+    kanal_adi: "BEIN BOX OFFICE 2 HD"
+    url: "http://65.108.239.207:80/box2/index.m3u8"
 
-  - tvg_id: "Cine1.tr"
-    kanal_adi: "Cine1"
-    url: "http://195.142.3.105/artidijital_cine1/cine1/playlist.m3u8"
+  - tvg_id: "BEIN BOX OFFICE 3 HD.tr"
+    kanal_adi: "BEIN BOX OFFICE 3 HD"
+    url: "http://65.108.239.207:80/box3/index.m3u8"
 
-  - tvg_id: "tiviturk.tr"
-    kanal_adi: "tiviturk"
-    url: "https://stream.tiviturk.de/live/tiviturk.m3u8"
+  - tvg_id: "BEIN MOVIES ACTION HD.tr"
+    kanal_adi: "BEIN MOVIES ACTION HD"
+    url: "http://65.108.239.207:80/bsaction1/index.m3u8"
 
-  - tvg_id: "tivi6.tr"
-    kanal_adi: "tivi6"
-    url: "http://195.142.3.105/artidijital_tivi6/tivi6/playlist.m3u8"
+  - tvg_id: "BEIN MOVIES PREMIER HD.tr"
+    kanal_adi: "BEIN MOVIES PREMIER HD"
+    url: "http://65.108.239.207:80/bspremier1/index.m3u8"
 
-  - tvg_id: "trthaber.tr"
-    kanal_adi: "trthaber"
-    url: "https://tabiptv.short.gy/trthaber.m3u8"
+  - tvg_id: "BEIN MOVIES STARS HD.tr"
+    kanal_adi: "BEIN MOVIES STARS HD"
+    url: "http://65.108.239.207:80/bsstars/index.m3u8"
 
-  - tvg_id: "CnnTurk.tr"
-    kanal_adi: "CnnTurk"
-    url: "http://95.174.71.114:80/TR-CNN-TURK/tracks-v1a1/mono.m3u8"
+  - tvg_id: "SINEMA TV HD.tr"
+    kanal_adi: "SINEMA TV HD"
+    url: "http://65.108.239.207:80/sinema/index.m3u8"
 
-  - tvg_id: "ekoltv.tr"
-    kanal_adi: "ekoltv"
-    url: "https://ekoltv-live.ercdn.net/ekoltv/ekoltv_720p.m3u8"
+  - tvg_id: "SINEMA TV 2 HD.tr"
+    kanal_adi: "SINEMA TV 2 HD"
+    url: "http://65.108.239.207:80/sinema2/index.m3u8"
 
   - tvg_id: "BEIN_SPORTS_USA.tr"
     kanal_adi: "BEIN_SPORTS_USA"
     url: "https://vizioncore.xyz/static/bs11.m3u8"
 
-  - tvg_id: "trtspor.tr"
-    kanal_adi: "trtspor"
-    url: "https://trt.daioncdn.net/trtspor/master.m3u8?app=web#"
+  - tvg_id: "SINEMA TV AKSIYON HD.tr"
+    kanal_adi: "SINEMA TV AKSIYON HD"
+    url: "http://65.108.239.207:80/sinemaaksiyon/index.m3u8"
 
-  - tvg_id: "trtspor*.tr"
-    kanal_adi: "trtspor*"
-    url: "https://trt.daioncdn.net/trtspor-yildiz/master.m3u8?app=web#"
+  - tvg_id: "SINEMA TV AKSIYON 2 HD.tr"
+    kanal_adi: "SINEMA TV AKSIYON 2 HD"
+    url: "http://65.108.239.207:80/sinemaaksiyon2/index.m3u8"
 
-  - tvg_id: "sıfır.tr"
-    kanal_adi: "Sıfır tv"
-    url: "https://github.com/tecotv2025/tecotv/raw/main/playlist/Sifir_Tv.m3u8"
+  - tvg_id: "SINEMA TV AILE HD.tr"
+    kanal_adi: "SINEMA TV AILE HD"
+    url: "http://65.108.239.207:80/sinemaaile/index.m3u8"
 
-  - tvg_id: "Ht_Spor.tr"
-    kanal_adi: "Ht_Spor"
-    url: "https://ciner.daioncdn.net/ht-spor/ht-spor.m3u8?app=web"
+  - tvg_id: "SINEMA TV KOMEDI HD.tr"
+    kanal_adi: "SINEMA TV KOMEDI HD"
+    url: "http://65.108.239.207:80/sinemakomedi/index.m3u8"
 
-  - tvg_id: "Ekol_Spor.tr"
-    kanal_adi: "Ekol_Spor"
-    url: "https://raw.githubusercontent.com/tecotv2025/tecotv/main/playlist/Ekol_Spor.m3u8"
+  - tvg_id: "SINEMA TV YERLI HD.tr"
+    kanal_adi: "SINEMA TV YERLI HD"
+    url: "http://65.108.239.207:80/sinemayerli/tracks-v1a1/index.m3u8"
 
   - tvg_id: "Tabii Spor.tr"
     kanal_adi: "Tabii Spor"
@@ -362,6 +362,7 @@ extra_channels:
   - tvg_id: "doltabi8.tr"
     kanal_adi: "doltabi8"
     url: "https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/Tabii_8_HD.m3u8"
+
 
 
 
