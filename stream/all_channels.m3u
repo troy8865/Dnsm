@@ -4,11 +4,9 @@
 #EXTINF:-1,tabii
 https://beert7sqimrk0bfdupfgn6qew.medya.trt.com.tr/master.m3u8
 #EXTINF:-1,nowtv
-https://nowtv.daioncdn.net/nowtv/nowtv.m3u8?ce=3&app=mobile_web&st=n_7bPVgVKGtKARnOmBMQxg&e=1763634161
+https://nowtv.daioncdn.net/nowtv/nowtv.m3u8?ce=3&app=mobile_web&st=gX4i668HzQDq5LF6p1rbSw&e=1763636265
 #EXTINF:-1,showtv
 https://ciner.daioncdn.net/showtv/showtv.m3u8?ce=3&app=4bc856ef-4c68-4a94-bc87-37dfaaa66558&st=RBzhSuGauna0OGld-DJUVA&e=1664766175&tv=1
-#EXTINF:-1,htspor
-https://ciner.daioncdn.net/ht-spor/ht-spor.m3u8?app=web
 #EXTINF:-1,tv8
 https://tv8-tb-live.ercdn.net/tv8-geo/playlist.m3u8?st=BzpvJLJ9hDX-H3W1sQWquA&e=1639061641
 #EXTINF:-1,kanald
@@ -16,7 +14,7 @@ https://demiroren.daioncdn.net/kanald/kanald.m3u8?app=kanald_web&amp;ce=3
 #EXTINF:-1,teve2
 https://teve2.duhnet.tv/S2/HLS_LIVE/teve2np/playlist.m3u8
 #EXTINF:-1,dmax
-https://dogus.daioncdn.net/dmax/dmax.m3u8?ce=3&app=5a02c599-d17e-4982-9b04-090934d51af7&token=c2hiaVVxNUp0OWtnS3NmTSsrd1NaVkR3dExCeXdSbHJ4OGxPWU1IaGtqND0=
+https://dogus.daioncdn.net/dmax/dmax.m3u8?ce=3&app=5a02c599-d17e-4982-9b04-090934d51af7&token=Sllrc1pqYnRJbVhWMG0zd0tHenhIQmlTSm90RlAzTEc3blN5RVY2ZEJkWT0=
 #EXTINF:-1,tv360
 https://turkmedya-live.ercdn.net/tv360/tv360.m3u8
 #EXTINF:-1,beyaztv
@@ -261,34 +259,34 @@ https://raw.githubusercontent.com/tecotv2025/tecotv/main/playlist/Yesilcam_Tv.m3
 https://raw.githubusercontent.com/megasmartgence90/RESTREAM/refs/heads/main/MEGAKINO/yssinema.m3u8
 #EXTINF:-1 tvg-id="filmscreen.tr" tvg-name="Film Screen",Film Screen
 https://edge-e3.evrideo.tv/f2dcbecf-5af0-47db-a82e-032112050a23_1000027346_HLS/manifest.m3u8
-#EXTINF:-1 tvg-id="Kemal_Sunal_Tv" tvg-name="Kemal_Sunal_Tv",Kemal_Sunal_Tv
-https://raw.githubusercontent.com/tecotv2025/tecotv/main/playlist/Kemal_Sunal_Tv.m3u8
-#EXTINF:-1 tvg-id="TabiiTv.tr" tvg-name="Tabiitv",Tabiitv
-https://ceokzokgtd.erbvr.com/tabiitv/tabiitv.m3u8
-#EXTINF:-1 tvg-id="Cine1.tr" tvg-name="Cine1",Cine1
-http://195.142.3.105/artidijital_cine1/cine1/playlist.m3u8
-#EXTINF:-1 tvg-id="tiviturk.tr" tvg-name="tiviturk",tiviturk
-https://stream.tiviturk.de/live/tiviturk.m3u8
-#EXTINF:-1 tvg-id="tivi6.tr" tvg-name="tivi6",tivi6
-http://195.142.3.105/artidijital_tivi6/tivi6/playlist.m3u8
-#EXTINF:-1 tvg-id="trthaber.tr" tvg-name="trthaber",trthaber
-https://tabiptv.short.gy/trthaber.m3u8
-#EXTINF:-1 tvg-id="CnnTurk.tr" tvg-name="CnnTurk",CnnTurk
-http://95.174.71.114:80/TR-CNN-TURK/tracks-v1a1/mono.m3u8
-#EXTINF:-1 tvg-id="ekoltv.tr" tvg-name="ekoltv",ekoltv
-https://ekoltv-live.ercdn.net/ekoltv/ekoltv_720p.m3u8
+#EXTINF:-1 tvg-id="BEIN BOX OFFICE 1 HD.tr" tvg-name="BEIN BOX OFFICE 1 HD",BEIN BOX OFFICE 1 HD
+http://65.108.239.207:80/box1/index.m3u8
+#EXTINF:-1 tvg-id="BEIN BOX OFFICE 2 HD.tr" tvg-name="BEIN BOX OFFICE 2 HD",BEIN BOX OFFICE 2 HD
+http://65.108.239.207:80/box2/index.m3u8
+#EXTINF:-1 tvg-id="BEIN BOX OFFICE 3 HD.tr" tvg-name="BEIN BOX OFFICE 3 HD",BEIN BOX OFFICE 3 HD
+http://65.108.239.207:80/box3/index.m3u8
+#EXTINF:-1 tvg-id="BEIN MOVIES ACTION HD.tr" tvg-name="BEIN MOVIES ACTION HD",BEIN MOVIES ACTION HD
+http://65.108.239.207:80/bsaction1/index.m3u8
+#EXTINF:-1 tvg-id="BEIN MOVIES PREMIER HD.tr" tvg-name="BEIN MOVIES PREMIER HD",BEIN MOVIES PREMIER HD
+http://65.108.239.207:80/bspremier1/index.m3u8
+#EXTINF:-1 tvg-id="BEIN MOVIES STARS HD.tr" tvg-name="BEIN MOVIES STARS HD",BEIN MOVIES STARS HD
+http://65.108.239.207:80/bsstars/index.m3u8
+#EXTINF:-1 tvg-id="SINEMA TV HD.tr" tvg-name="SINEMA TV HD",SINEMA TV HD
+http://65.108.239.207:80/sinema/index.m3u8
+#EXTINF:-1 tvg-id="SINEMA TV 2 HD.tr" tvg-name="SINEMA TV 2 HD",SINEMA TV 2 HD
+http://65.108.239.207:80/sinema2/index.m3u8
 #EXTINF:-1 tvg-id="BEIN_SPORTS_USA.tr" tvg-name="BEIN_SPORTS_USA",BEIN_SPORTS_USA
 https://vizioncore.xyz/static/bs11.m3u8
-#EXTINF:-1 tvg-id="trtspor.tr" tvg-name="trtspor",trtspor
-https://trt.daioncdn.net/trtspor/master.m3u8?app=web#
-#EXTINF:-1 tvg-id="trtspor*.tr" tvg-name="trtspor*",trtspor*
-https://trt.daioncdn.net/trtspor-yildiz/master.m3u8?app=web#
-#EXTINF:-1 tvg-id="sıfır.tr" tvg-name="Sıfır tv",Sıfır tv
-https://github.com/tecotv2025/tecotv/raw/main/playlist/Sifir_Tv.m3u8
-#EXTINF:-1 tvg-id="Ht_Spor.tr" tvg-name="Ht_Spor",Ht_Spor
-https://ciner.daioncdn.net/ht-spor/ht-spor.m3u8?app=web
-#EXTINF:-1 tvg-id="Ekol_Spor.tr" tvg-name="Ekol_Spor",Ekol_Spor
-https://raw.githubusercontent.com/tecotv2025/tecotv/main/playlist/Ekol_Spor.m3u8
+#EXTINF:-1 tvg-id="SINEMA TV AKSIYON HD.tr" tvg-name="SINEMA TV AKSIYON HD",SINEMA TV AKSIYON HD
+http://65.108.239.207:80/sinemaaksiyon/index.m3u8
+#EXTINF:-1 tvg-id="SINEMA TV AKSIYON 2 HD.tr" tvg-name="SINEMA TV AKSIYON 2 HD",SINEMA TV AKSIYON 2 HD
+http://65.108.239.207:80/sinemaaksiyon2/index.m3u8
+#EXTINF:-1 tvg-id="SINEMA TV AILE HD.tr" tvg-name="SINEMA TV AILE HD",SINEMA TV AILE HD
+http://65.108.239.207:80/sinemaaile/index.m3u8
+#EXTINF:-1 tvg-id="SINEMA TV KOMEDI HD.tr" tvg-name="SINEMA TV KOMEDI HD",SINEMA TV KOMEDI HD
+http://65.108.239.207:80/sinemakomedi/index.m3u8
+#EXTINF:-1 tvg-id="SINEMA TV YERLI HD.tr" tvg-name="SINEMA TV YERLI HD",SINEMA TV YERLI HD
+http://65.108.239.207:80/sinemayerli/tracks-v1a1/index.m3u8
 #EXTINF:-1 tvg-id="Tabii Spor.tr" tvg-name="Tabii Spor",Tabii Spor
 https://beert7sqimrk0bfdupfgn6qew.medya.trt.com.tr/master.m3u8
 #EXTINF:-1 tvg-id="Tabii Spor1.tr" tvg-name="Tabii Spor 1",Tabii Spor 1
@@ -305,25 +303,25 @@ https://z3mmimwz148csv0vaxtphqspf.medya.trt.com.tr/master.m3u8
 https://vbtob9hyq58eiophct5qctxr2.medya.trt.com.tr/master.m3u8
 #EXTINF:-1 tvg-id="cbcsport.az.tr" tvg-name="CBC Sport",CBC Sport
 https://raw.githubusercontent.com/megasmartgence90/RESTREAM/refs/heads/main/MEGA-GROUP-AZE/cbcsport.m3u8
-#EXTINF:-1 tvg-id="viasatsport.tr" tvg-name="Viasat Sport",Viasat Sport
-https://raw.githubusercontent.com/megasmartgence90/STREAM-php/refs/heads/main/output/viasatsport.m3u8
-#EXTINF:-1 tvg-id="setanta_georgia.tr" tvg-name="Setanta Georgia",Setanta Georgia
-https://raw.githubusercontent.com/megasmartgence90/STREAM-php/refs/heads/main/output/setanta_georgia.m3u8
-#EXTINF:-1 tvg-id="setanta_sports_3.tr" tvg-name="Setanta Sports 3",Setanta Sports 3
-https://raw.githubusercontent.com/megasmartgence90/STREAM-php/refs/heads/main/output/setanta_sports_3.m3u8
-#EXTINF:-1 tvg-id="setanta_sports_plus_georgia.tr" tvg-name="Setanta Sports Plus Georgia",Setanta Sports Plus Georgia
-https://raw.githubusercontent.com/megasmartgence90/STREAM-php/refs/heads/main/output/setanta_sports_plus_georgia.m3u8
-#EXTINF:-1 tvg-id="silk_sport4.tr" tvg-name="Silk Sport 4",Silk Sport 4
-https://raw.githubusercontent.com/megasmartgence90/STREAM-php/refs/heads/main/output/silk_sport4.m3u8
-#EXTINF:-1 tvg-id="matchplaneta.tr" tvg-name="Match Planeta",Match Planeta
-https://raw.githubusercontent.com/megasmartgence90/STREAM-php/refs/heads/main/output/matchplaneta.m3u8
-#EXTINF:-1 tvg-id="Rennk1.tr" tvg-name="Rennk1",Rennk1
+#EXTINF:-1 tvg-id="BBC EARTH HD.tr" tvg-name="BBC EARTH HD",BBC EARTH HD
+http://65.108.239.207:80/bbc/index.m3u8
+#EXTINF:-1 tvg-id="DISCOVERY CHANNEL HD.tr" tvg-name="DISCOVERY CHANNEL HD",DISCOVERY CHANNEL HD
+http://65.108.239.207:80/discovery/index.m3u8
+#EXTINF:-1 tvg-id="DISCOVERY SCIENCE HD.tr" tvg-name="DISCOVERY SCIENCE HD",DISCOVERY SCIENCE HD
+http://65.108.239.207:80/discs/index.m3u8
+#EXTINF:-1 tvg-id="HISTORY CHANNEL HD.tr" tvg-name="HISTORY CHANNEL HD",HISTORY CHANNEL HD
+http://65.108.239.207:80/history/index.m3u8
+#EXTINF:-1 tvg-id="LOVE NATURE HD.tr" tvg-name="LOVE NATURE HD",LOVE NATURE HD
+http://65.108.239.207:80/lovenature/index.m3u8
+#EXTINF:-1 tvg-id="VIASAT HISTORY HD.tr" tvg-name="VIASAT HISTORY HD",VIASAT HISTORY HD
+http://65.108.239.207:80/viasathistory/index.m3u8
+#EXTINF:-1 tvg-id="KANAL1.tr" tvg-name="KANAL1",KANAL1
 https://karpuzmanifestosu.lol/static/bs11.m3u8
-#EXTINF:-1 tvg-id="Rennk2.tr" tvg-name="Rennk2",Rennk2
+#EXTINF:-1 tvg-id="KANAL2.tr" tvg-name="KANAL2",KANAL2
 https://karpuzmanifestosu.lol/static/bs2.m3u8
-#EXTINF:-1 tvg-id="Rennk3.tr" tvg-name="Rennk3",Rennk3
+#EXTINF:-1 tvg-id="KANAL3.tr" tvg-name="KANAL3",KANAL3
 https://karpuzmanifestosu.lol/static/bs3.m3u8
-#EXTINF:-1 tvg-id="Rennkss.tr" tvg-name="Rennkss",Rennkss
+#EXTINF:-1 tvg-id="KANALss.tr" tvg-name="KANALss",KANALss
 https://karpuzmanifestosu.lol/static/ss11.m3u8
 #EXTINF:-1 tvg-id="dolu1.tr" tvg-name="dolu1",dolu1
 https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/beIN_Sport_1_HD.m3u8
