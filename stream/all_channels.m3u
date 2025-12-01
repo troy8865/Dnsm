@@ -4,7 +4,7 @@
 #EXTINF:-1,tabii
 https://beert7sqimrk0bfdupfgn6qew.medya.trt.com.tr/master.m3u8
 #EXTINF:-1,nowtv
-https://nowtv.daioncdn.net/nowtv/nowtv.m3u8?ce=3&app=mobile_web&st=EZxmcOplOyXAwLnkHN6SxQ&e=1764632396
+https://nowtv.daioncdn.net/nowtv/nowtv.m3u8?ce=3&app=mobile_web&st=JMI462XPPRx7hdrasaP96w&e=1764634506
 #EXTINF:-1,showtv
 https://ciner.daioncdn.net/showtv/showtv.m3u8?ce=3&app=4bc856ef-4c68-4a94-bc87-37dfaaa66558&st=RBzhSuGauna0OGld-DJUVA&e=1664766175&tv=1
 #EXTINF:-1,htspor
@@ -16,9 +16,11 @@ https://demiroren.daioncdn.net/kanald/kanald.m3u8?app=kanald_web&amp;ce=3
 #EXTINF:-1,teve2
 https://teve2.duhnet.tv/S2/HLS_LIVE/teve2np/playlist.m3u8
 #EXTINF:-1,dmax
-https://dogus.daioncdn.net/dmax/dmax.m3u8?ce=3&app=5a02c599-d17e-4982-9b04-090934d51af7&token=Tks3WlJVQVZWcU43cjJoa2g4MyswOUtCWlFFMy91MTMvWm9waVhzS1pHcz0=
+https://dogus.daioncdn.net/dmax/dmax.m3u8?ce=3&app=5a02c599-d17e-4982-9b04-090934d51af7&token=SVZxaGxISTUwK245VE5WTVBkRk45NElLWnVFS0RnTkpYUWxETTJlOVhGST0=
 #EXTINF:-1,tv360
 https://turkmedya-live.ercdn.net/tv360/tv360.m3u8
+#EXTINF:-1,beyaztv
+https://beyaztv.daioncdn.net/beyaztv/beyaztv.m3u8?app=fcd5c66b-da9d-44ba-a410-4f34805c397d&ce=3
 #EXTINF:-1,ntv
 https://dogus.daioncdn.net/ntv/ntv.m3u8?ce=3
 #EXTINF:-1,ekolspor
@@ -122,9 +124,15 @@ https://eb9.04bf112a615942b41.sbs/yayinex7.m3u8
 https://eb9.04bf112a615942b41.sbs/yayinex8.m3u8
 
 # === Selçuk / Sporcafe Kanalları ===
+#EXTINF:-1 tvg-id="bein1" group-title="Selçuk",BeIN Sports 1
+#EXTVLCOPT:http-referrer=https://www.selcuksportshd4f467436d6.xyz
+https://dga1op10s1u3leo.b2101e1ff539c5.click/live/selcukbeinsports1/playlist.m3u8
 #EXTINF:-1 tvg-id="bein2" group-title="Selçuk",BeIN Sports 2
 #EXTVLCOPT:http-referrer=https://www.selcuksportshd4f467436d6.xyz
 https://dga1op10s1u3leo.b2101e1ff539c5.click/live/selcukbeinsports2/playlist.m3u8
+#EXTINF:-1 tvg-id="bein3" group-title="Selçuk",BeIN Sports 3
+#EXTVLCOPT:http-referrer=https://www.selcuksportshd4f467436d6.xyz
+https://dga1op10s1u3leo.b2101e1ff539c5.click/live/selcukbeinsports3/playlist.m3u8
 #EXTINF:-1 tvg-id="bein4" group-title="Selçuk",BeIN Sports 4
 #EXTVLCOPT:http-referrer=https://www.selcuksportshd4f467436d6.xyz
 https://dga1op10s1u3leo.b2101e1ff539c5.click/live/selcukbeinsports4/playlist.m3u8
