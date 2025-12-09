@@ -1,301 +1,362 @@
-import os
-import shutil
-import requests
-import re
-import sys
-import yaml
+#EXTM3U
 
-# === Terminal renkleri ===
-RED = "\033[91m"
-GREEN = "\033[92m"
-YELLOW = "\033[93m"
-RESET = "\033[0m"
+# === Web Kaynakları ===
+#EXTINF:-1,tabii
+https://beert7sqimrk0bfdupfgn6qew.medya.trt.com.tr/master.m3u8
+#EXTINF:-1,nowtv
+https://nowtv.daioncdn.net/nowtv/nowtv.m3u8?ce=3&app=mobile_web&st=kAp-LXMDY17fh6ax5h92Bw&e=1765296981
+#EXTINF:-1,showtv
+https://ciner.daioncdn.net/showtv/showtv.m3u8?ce=3&app=4bc856ef-4c68-4a94-bc87-37dfaaa66558&st=RBzhSuGauna0OGld-DJUVA&e=1664766175&tv=1
+#EXTINF:-1,tv8
+https://tv8-tb-live.ercdn.net/tv8-geo/playlist.m3u8?st=BzpvJLJ9hDX-H3W1sQWquA&e=1639061641
+#EXTINF:-1,kanald
+https://demiroren.daioncdn.net/kanald/kanald.m3u8?app=kanald_web&amp;ce=3
+#EXTINF:-1,teve2
+https://teve2.duhnet.tv/S2/HLS_LIVE/teve2np/playlist.m3u8
+#EXTINF:-1,dmax
+https://dogus.daioncdn.net/dmax/dmax.m3u8?ce=3&app=5a02c599-d17e-4982-9b04-090934d51af7&token=aFBaZDUzTkJ6WitjTGY2eCt6RmEvTE9MZUhpU1ZrUnh1Vm5FSDFtaVI5QT0=
+#EXTINF:-1,tv360
+https://turkmedya-live.ercdn.net/tv360/tv360.m3u8
+#EXTINF:-1,beyaztv
+https://beyaztv.daioncdn.net/beyaztv/beyaztv.m3u8?app=fcd5c66b-da9d-44ba-a410-4f34805c397d&ce=3
+#EXTINF:-1,ntv
+https://dogus.daioncdn.net/ntv/ntv.m3u8?ce=3
+#EXTINF:-1,ekolspor
+https://ekoltv-live.ercdn.net/ekoltv/ekoltv.m3u8
+#EXTINF:-1,halktv
+https://halktv.daioncdn.net/halktv/halktv.m3u8?app=c86957d3-74a7-44da-9ad2-dc358c769609&ce=3
 
-# === Klasör ve dosya ayarları ===
-stream_folder = "stream"
-output_file = os.path.join(stream_folder, "all_channels.m3u")
-extra_yaml_path = "extra_channels.yaml"
+# === TrGoals Kanalları ===
+#EXTINF:-1 tvg-id="BeinSports1.tr" group-title="TrGoals",Bein Sports 1 HD (VIP)
+#EXTVLCOPT:http-referrer=https://trgoals1480.xyz/
+https://yc4.04bf112a615942b45.sbs/yayinzirve.m3u8
+#EXTINF:-1 tvg-id="BeinSports1.tr" group-title="TrGoals",Bein Sports 1 HD
+#EXTVLCOPT:http-referrer=https://trgoals1480.xyz/
+https://yc4.04bf112a615942b45.sbs/yayin1.m3u8
+#EXTINF:-1 tvg-id="BeinSports2.tr" group-title="TrGoals",Bein Sports 2 HD
+#EXTVLCOPT:http-referrer=https://trgoals1480.xyz/
+https://yc4.04bf112a615942b45.sbs/yayinb2.m3u8
+#EXTINF:-1 tvg-id="BeinSports3.tr" group-title="TrGoals",Bein Sports 3 HD
+#EXTVLCOPT:http-referrer=https://trgoals1480.xyz/
+https://yc4.04bf112a615942b45.sbs/yayinb3.m3u8
+#EXTINF:-1 tvg-id="BeinSports4.tr" group-title="TrGoals",Bein Sports 4 HD
+#EXTVLCOPT:http-referrer=https://trgoals1480.xyz/
+https://yc4.04bf112a615942b45.sbs/yayinb4.m3u8
+#EXTINF:-1 tvg-id="BeinSports5.tr" group-title="TrGoals",Bein Sports 5 HD
+#EXTVLCOPT:http-referrer=https://trgoals1480.xyz/
+https://yc4.04bf112a615942b45.sbs/yayinb5.m3u8
+#EXTINF:-1 tvg-id="BeinMax1.tr" group-title="TrGoals",Bein Max 1 HD
+#EXTVLCOPT:http-referrer=https://trgoals1480.xyz/
+https://yc4.04bf112a615942b45.sbs/yayinbm1.m3u8
+#EXTINF:-1 tvg-id="BeinMax2.tr" group-title="TrGoals",Bein Max 2 HD
+#EXTVLCOPT:http-referrer=https://trgoals1480.xyz/
+https://yc4.04bf112a615942b45.sbs/yayinbm2.m3u8
+#EXTINF:-1 tvg-id="SSport1.tr" group-title="TrGoals",S Sport 1 HD
+#EXTVLCOPT:http-referrer=https://trgoals1480.xyz/
+https://yc4.04bf112a615942b45.sbs/yayinss.m3u8
+#EXTINF:-1 tvg-id="SSport2.tr" group-title="TrGoals",S Sport 2 HD
+#EXTVLCOPT:http-referrer=https://trgoals1480.xyz/
+https://yc4.04bf112a615942b45.sbs/yayinss2.m3u8
+#EXTINF:-1 tvg-id="SSportPlus.tr" group-title="TrGoals",S Sport Plus HD
+#EXTVLCOPT:http-referrer=https://trgoals1480.xyz/
+https://yc4.04bf112a615942b45.sbs/yayinssp2.m3u8
+#EXTINF:-1 tvg-id="TivibuSpor1.tr" group-title="TrGoals",Tivibu Spor 1 HD
+#EXTVLCOPT:http-referrer=https://trgoals1480.xyz/
+https://yc4.04bf112a615942b45.sbs/yayint1.m3u8
+#EXTINF:-1 tvg-id="TivibuSpor2.tr" group-title="TrGoals",Tivibu Spor 2 HD
+#EXTVLCOPT:http-referrer=https://trgoals1480.xyz/
+https://yc4.04bf112a615942b45.sbs/yayint2.m3u8
+#EXTINF:-1 tvg-id="TivibuSpor3.tr" group-title="TrGoals",Tivibu Spor 3 HD
+#EXTVLCOPT:http-referrer=https://trgoals1480.xyz/
+https://yc4.04bf112a615942b45.sbs/yayint3.m3u8
+#EXTINF:-1 tvg-id="SmartSpor1.tr" group-title="TrGoals",Smart Spor 1 HD
+#EXTVLCOPT:http-referrer=https://trgoals1480.xyz/
+https://yc4.04bf112a615942b45.sbs/yayinsmarts.m3u8
+#EXTINF:-1 tvg-id="SmartSpor2.tr" group-title="TrGoals",Smart Spor 2 HD
+#EXTVLCOPT:http-referrer=https://trgoals1480.xyz/
+https://yc4.04bf112a615942b45.sbs/yayinsms2.m3u8
+#EXTINF:-1 tvg-id="TRTSpor.tr" group-title="TrGoals",TRT Spor HD
+#EXTVLCOPT:http-referrer=https://trgoals1480.xyz/
+https://yc4.04bf112a615942b45.sbs/yayintrtspor.m3u8
+#EXTINF:-1 tvg-id="TRTSporYildiz.tr" group-title="TrGoals",TRT Spor Yıldız HD
+#EXTVLCOPT:http-referrer=https://trgoals1480.xyz/
+https://yc4.04bf112a615942b45.sbs/yayintrtspor2.m3u8
+#EXTINF:-1 tvg-id="ASpor.tr" group-title="TrGoals",A Spor HD
+#EXTVLCOPT:http-referrer=https://trgoals1480.xyz/
+https://yc4.04bf112a615942b45.sbs/yayinas.m3u8
+#EXTINF:-1 tvg-id="ATV.tr" group-title="TrGoals",ATV HD
+#EXTVLCOPT:http-referrer=https://trgoals1480.xyz/
+https://yc4.04bf112a615942b45.sbs/yayinatv.m3u8
+#EXTINF:-1 tvg-id="TV8.tr" group-title="TrGoals",TV8 HD
+#EXTVLCOPT:http-referrer=https://trgoals1480.xyz/
+https://yc4.04bf112a615942b45.sbs/yayintv8.m3u8
+#EXTINF:-1 tvg-id="TV85.tr" group-title="TrGoals",TV8.5 HD
+#EXTVLCOPT:http-referrer=https://trgoals1480.xyz/
+https://yc4.04bf112a615942b45.sbs/yayintv85.m3u8
+#EXTINF:-1 tvg-id="NBATV.tr" group-title="TrGoals",NBA TV HD
+#EXTVLCOPT:http-referrer=https://trgoals1480.xyz/
+https://yc4.04bf112a615942b45.sbs/yayinnbatv.m3u8
+#EXTINF:-1 tvg-id="ExxenSpor1.tr" group-title="TrGoals",Exxen Spor 1 HD
+#EXTVLCOPT:http-referrer=https://trgoals1480.xyz/
+https://yc4.04bf112a615942b45.sbs/yayinex1.m3u8
+#EXTINF:-1 tvg-id="ExxenSpor2.tr" group-title="TrGoals",Exxen Spor 2 HD
+#EXTVLCOPT:http-referrer=https://trgoals1480.xyz/
+https://yc4.04bf112a615942b45.sbs/yayinex2.m3u8
+#EXTINF:-1 tvg-id="ExxenSpor3.tr" group-title="TrGoals",Exxen Spor 3 HD
+#EXTVLCOPT:http-referrer=https://trgoals1480.xyz/
+https://yc4.04bf112a615942b45.sbs/yayinex3.m3u8
+#EXTINF:-1 tvg-id="ExxenSpor4.tr" group-title="TrGoals",Exxen Spor 4 HD
+#EXTVLCOPT:http-referrer=https://trgoals1480.xyz/
+https://yc4.04bf112a615942b45.sbs/yayinex4.m3u8
+#EXTINF:-1 tvg-id="ExxenSpor5.tr" group-title="TrGoals",Exxen Spor 5 HD
+#EXTVLCOPT:http-referrer=https://trgoals1480.xyz/
+https://yc4.04bf112a615942b45.sbs/yayinex5.m3u8
+#EXTINF:-1 tvg-id="ExxenSpor6.tr" group-title="TrGoals",Exxen Spor 6 HD
+#EXTVLCOPT:http-referrer=https://trgoals1480.xyz/
+https://yc4.04bf112a615942b45.sbs/yayinex6.m3u8
+#EXTINF:-1 tvg-id="ExxenSpor7.tr" group-title="TrGoals",Exxen Spor 7 HD
+#EXTVLCOPT:http-referrer=https://trgoals1480.xyz/
+https://yc4.04bf112a615942b45.sbs/yayinex7.m3u8
+#EXTINF:-1 tvg-id="ExxenSpor8.tr" group-title="TrGoals",Exxen Spor 8 HD
+#EXTVLCOPT:http-referrer=https://trgoals1480.xyz/
+https://yc4.04bf112a615942b45.sbs/yayinex8.m3u8
 
-# === Genel ayarlar ===
-HEADERS = {"User-Agent": "Mozilla/5.0"}
+# === Selçuk / Sporcafe Kanalları ===
+#EXTINF:-1 tvg-id="bein1" group-title="Selçuk",BeIN Sports 1
+#EXTVLCOPT:http-referrer=https://www.selcuksportshda386a04747.xyz
+https://dga1op10s1u3leo.f6a7d976d724df.click/live/selcukbeinsports1/playlist.m3u8
+#EXTINF:-1 tvg-id="bein2" group-title="Selçuk",BeIN Sports 2
+#EXTVLCOPT:http-referrer=https://www.selcuksportshda386a04747.xyz
+https://dga1op10s1u3leo.f6a7d976d724df.click/live/selcukbeinsports2/playlist.m3u8
+#EXTINF:-1 tvg-id="bein3" group-title="Selçuk",BeIN Sports 3
+#EXTVLCOPT:http-referrer=https://www.selcuksportshda386a04747.xyz
+https://dga1op10s1u3leo.f6a7d976d724df.click/live/selcukbeinsports3/playlist.m3u8
+#EXTINF:-1 tvg-id="bein4" group-title="Selçuk",BeIN Sports 4
+#EXTVLCOPT:http-referrer=https://www.selcuksportshda386a04747.xyz
+https://dga1op10s1u3leo.f6a7d976d724df.click/live/selcukbeinsports4/playlist.m3u8
+#EXTINF:-1 tvg-id="bein5" group-title="Selçuk",BeIN Sports 5
+#EXTVLCOPT:http-referrer=https://www.selcuksportshda386a04747.xyz
+https://dga1op10s1u3leo.f6a7d976d724df.click/live/selcukbeinsports5/playlist.m3u8
+#EXTINF:-1 tvg-id="beinmax1" group-title="Selçuk",BeIN Sports Max 1
+#EXTVLCOPT:http-referrer=https://www.selcuksportshda386a04747.xyz
+https://dga1op10s1u3leo.f6a7d976d724df.click/live/selcukbeinsportsmax1/playlist.m3u8
+#EXTINF:-1 tvg-id="beinmax2" group-title="Selçuk",BeIN Sports Max 2
+#EXTVLCOPT:http-referrer=https://www.selcuksportshda386a04747.xyz
+https://dga1op10s1u3leo.f6a7d976d724df.click/live/selcukbeinsportsmax2/playlist.m3u8
+#EXTINF:-1 tvg-id="tivibu1" group-title="Selçuk",Tivibu Spor 1
+#EXTVLCOPT:http-referrer=https://www.selcuksportshda386a04747.xyz
+https://dga1op10s1u3leo.f6a7d976d724df.click/live/selcuktivibuspor1/playlist.m3u8
+#EXTINF:-1 tvg-id="tivibu2" group-title="Selçuk",Tivibu Spor 2
+#EXTVLCOPT:http-referrer=https://www.selcuksportshda386a04747.xyz
+https://dga1op10s1u3leo.f6a7d976d724df.click/live/selcuktivibuspor2/playlist.m3u8
+#EXTINF:-1 tvg-id="tivibu3" group-title="Selçuk",Tivibu Spor 3
+#EXTVLCOPT:http-referrer=https://www.selcuksportshda386a04747.xyz
+https://dga1op10s1u3leo.f6a7d976d724df.click/live/selcuktivibuspor3/playlist.m3u8
+#EXTINF:-1 tvg-id="tivibu4" group-title="Selçuk",Tivibu Spor 4
+#EXTVLCOPT:http-referrer=https://www.selcuksportshda386a04747.xyz
+https://dga1op10s1u3leo.f6a7d976d724df.click/live/selcuktivibuspor4/playlist.m3u8
+#EXTINF:-1 tvg-id="ssport1" group-title="Selçuk",S Sport 1
+#EXTVLCOPT:http-referrer=https://www.selcuksportshda386a04747.xyz
+https://dga1op10s1u3leo.f6a7d976d724df.click/live/selcukssport/playlist.m3u8
+#EXTINF:-1 tvg-id="ssport2" group-title="Selçuk",S Sport 2
+#EXTVLCOPT:http-referrer=https://www.selcuksportshda386a04747.xyz
+https://dga1op10s1u3leo.f6a7d976d724df.click/live/selcukssport2/playlist.m3u8
+#EXTINF:-1 tvg-id="smart1" group-title="Selçuk",Smart Spor 1
+#EXTVLCOPT:http-referrer=https://www.selcuksportshda386a04747.xyz
+https://dga1op10s1u3leo.f6a7d976d724df.click/live/selcuksmartspor/playlist.m3u8
+#EXTINF:-1 tvg-id="smart2" group-title="Selçuk",Smart Spor 2
+#EXTVLCOPT:http-referrer=https://www.selcuksportshda386a04747.xyz
+https://dga1op10s1u3leo.f6a7d976d724df.click/live/selcuksmartspor2/playlist.m3u8
+#EXTINF:-1 tvg-id="aspor" group-title="Selçuk",A Spor
+#EXTVLCOPT:http-referrer=https://www.selcuksportshda386a04747.xyz
+https://dga1op10s1u3leo.f6a7d976d724df.click/live/selcukaspor/playlist.m3u8
+#EXTINF:-1 tvg-id="eurosport1" group-title="Selçuk",Eurosport 1
+#EXTVLCOPT:http-referrer=https://www.selcuksportshda386a04747.xyz
+https://dga1op10s1u3leo.f6a7d976d724df.click/live/selcukeurosport1/playlist.m3u8
+#EXTINF:-1 tvg-id="eurosport2" group-title="Selçuk",Eurosport 2
+#EXTVLCOPT:http-referrer=https://www.selcuksportshda386a04747.xyz
+https://dga1op10s1u3leo.f6a7d976d724df.click/live/selcukeurosport2/playlist.m3u8
 
-# === Web kaynakları ===
-source_urls = {
-    "tabii": "https://www.tabii.com/tr/watch/live/trt1?trackId=150002",
-    "nowtv": "https://www.nowtv.com.tr/canli-yayin",
-    "showtv": "https://www.showtv.com.tr/canli-yayin",
-    "htspor": "https://www.htspor.com/canli-yayin",
-    "tv8": "https://www.tv8.com.tr/canli-yayin",
-    "tv8bucuk": "https://www.tv8bucuk.com/tv8-5-canli-yayin",
-    "atv": "https://www.atv.com.tr/canli-yayin",
-    "kanald": "https://www.kanald.com.tr/canli-yayin",
-    "teve2": "https://www.teve2.com.tr/canli-yayin",
-    "dmax": "https://www.dmax.com.tr/canli-izle",
-    "tv360": "https://www.tv360.com.tr/canli-yayin",
-    "beyaztv": "https://www.beyaztv.com.tr/canli-yayin",
-    "ntv": "https://puhutv.com/ntv-canli-yayin",
-    "ekolspor": "https://www.ekoltv.com.tr/canli-yayin",
-    "halktv": "https://halktv.com.tr/canli-yayin",
-}
-
-# === TrGoals kanal listesi ===
-KANALLAR = [
-    {"dosya": "yayinzirve.m3u8", "tvg_id": "BeinSports1.tr", "kanal_adi": "Bein Sports 1 HD (VIP)"},
-    {"dosya": "yayin1.m3u8", "tvg_id": "BeinSports1.tr", "kanal_adi": "Bein Sports 1 HD"},
-    {"dosya": "yayinb2.m3u8", "tvg_id": "BeinSports2.tr", "kanal_adi": "Bein Sports 2 HD"},
-    {"dosya": "yayinb3.m3u8", "tvg_id": "BeinSports3.tr", "kanal_adi": "Bein Sports 3 HD"},
-    {"dosya": "yayinb4.m3u8", "tvg_id": "BeinSports4.tr", "kanal_adi": "Bein Sports 4 HD"},
-    {"dosya": "yayinb5.m3u8", "tvg_id": "BeinSports5.tr", "kanal_adi": "Bein Sports 5 HD"},
-    {"dosya": "yayinbm1.m3u8", "tvg_id": "BeinMax1.tr", "kanal_adi": "Bein Max 1 HD"},
-    {"dosya": "yayinbm2.m3u8", "tvg_id": "BeinMax2.tr", "kanal_adi": "Bein Max 2 HD"},
-    {"dosya": "yayinss.m3u8", "tvg_id": "SSport1.tr", "kanal_adi": "S Sport 1 HD"},
-    {"dosya": "yayinss2.m3u8", "tvg_id": "SSport2.tr", "kanal_adi": "S Sport 2 HD"},
-    {"dosya": "yayinssp2.m3u8", "tvg_id": "SSportPlus.tr", "kanal_adi": "S Sport Plus HD"},
-    {"dosya": "yayint1.m3u8", "tvg_id": "TivibuSpor1.tr", "kanal_adi": "Tivibu Spor 1 HD"},
-    {"dosya": "yayint2.m3u8", "tvg_id": "TivibuSpor2.tr", "kanal_adi": "Tivibu Spor 2 HD"},
-    {"dosya": "yayint3.m3u8", "tvg_id": "TivibuSpor3.tr", "kanal_adi": "Tivibu Spor 3 HD"},
-    {"dosya": "yayinsmarts.m3u8", "tvg_id": "SmartSpor1.tr", "kanal_adi": "Smart Spor 1 HD"},
-    {"dosya": "yayinsms2.m3u8", "tvg_id": "SmartSpor2.tr", "kanal_adi": "Smart Spor 2 HD"},
-    {"dosya": "yayintrtspor.m3u8", "tvg_id": "TRTSpor.tr", "kanal_adi": "TRT Spor HD"},
-    {"dosya": "yayintrtspor2.m3u8", "tvg_id": "TRTSporYildiz.tr", "kanal_adi": "TRT Spor Yıldız HD"},
-    {"dosya": "yayinas.m3u8", "tvg_id": "ASpor.tr", "kanal_adi": "A Spor HD"},
-    {"dosya": "yayinatv.m3u8", "tvg_id": "ATV.tr", "kanal_adi": "ATV HD"},
-    {"dosya": "yayintv8.m3u8", "tvg_id": "TV8.tr", "kanal_adi": "TV8 HD"},
-    {"dosya": "yayintv85.m3u8", "tvg_id": "TV85.tr", "kanal_adi": "TV8.5 HD"},
-    {"dosya": "yayinnbatv.m3u8", "tvg_id": "NBATV.tr", "kanal_adi": "NBA TV HD"},
-    {"dosya": "yayinex1.m3u8", "tvg_id": "ExxenSpor1.tr", "kanal_adi": "Exxen Spor 1 HD"},
-    {"dosya": "yayinex2.m3u8", "tvg_id": "ExxenSpor2.tr", "kanal_adi": "Exxen Spor 2 HD"},
-    {"dosya": "yayinex3.m3u8", "tvg_id": "ExxenSpor3.tr", "kanal_adi": "Exxen Spor 3 HD"},
-    {"dosya": "yayinex4.m3u8", "tvg_id": "ExxenSpor4.tr", "kanal_adi": "Exxen Spor 4 HD"},
-    {"dosya": "yayinex5.m3u8", "tvg_id": "ExxenSpor5.tr", "kanal_adi": "Exxen Spor 5 HD"},
-    {"dosya": "yayinex6.m3u8", "tvg_id": "ExxenSpor6.tr", "kanal_adi": "Exxen Spor 6 HD"},
-    {"dosya": "yayinex7.m3u8", "tvg_id": "ExxenSpor7.tr", "kanal_adi": "Exxen Spor 7 HD"},
-    {"dosya": "yayinex8.m3u8", "tvg_id": "ExxenSpor8.tr", "kanal_adi": "Exxen Spor 8 HD"},
-]
-
-# === SelçukTV kanalları ===
-CHANNELS = [
-    {"id": "bein1", "source_id": "selcukbeinsports1", "name": "BeIN Sports 1", "logo": "https://r2.thesportsdb.com/images/media/channel/logo/5rhmw31628798883.png", "group": "Spor"},
-    {"id": "bein2", "source_id": "selcukbeinsports2", "name": "BeIN Sports 2", "logo": "https://r2.thesportsdb.com/images/media/channel/logo/7uv6x71628799003.png", "group": "Spor"},
-    {"id": "bein3", "source_id": "selcukbeinsports3", "name": "BeIN Sports 3", "logo": "https://r2.thesportsdb.com/images/media/channel/logo/u3117i1628798857.png", "group": "Spor"},
-    {"id": "bein4", "source_id": "selcukbeinsports4", "name": "BeIN Sports 4", "logo": "https://r2.thesportsdb.com/images/media/channel/logo/2ktmcp1628798841.png", "group": "Spor"},
-    {"id": "bein5", "source_id": "selcukbeinsports5", "name": "BeIN Sports 5", "logo": "https://r2.thesportsdb.com/images/media/channel/logo/BeIn_Sports_5_US.png", "group": "Spor"},
-    {"id": "beinmax1", "source_id": "selcukbeinsportsmax1", "name": "BeIN Sports Max 1", "logo": "https://assets.bein.com/mena/sites/3/2015/06/beIN_SPORTS_MAX1_DIGITAL_Mono.png", "group": "Spor"},
-    {"id": "beinmax2", "source_id": "selcukbeinsportsmax2", "name": "BeIN Sports Max 2", "logo": "http://tvprofil.com/img/kanali-logo/beIN_Sports_MAX_2_TR_logo_v2.png?1734011568", "group": "Spor"},
-    {"id": "tivibu1", "source_id": "selcuktivibuspor1", "name": "Tivibu Spor 1", "logo": "https://r2.thesportsdb.com/images/media/channel/logo/qadnsi1642604437.png", "group": "Spor"},
-    {"id": "tivibu2", "source_id": "selcuktivibuspor2", "name": "Tivibu Spor 2", "logo": "https://r2.thesportsdb.com/images/media/channel/logo/kuasdm1642604455.png", "group": "Spor"},
-    {"id": "tivibu3", "source_id": "selcuktivibuspor3", "name": "Tivibu Spor 3", "logo": "https://r2.thesportsdb.com/images/media/channel/logo/slwrz41642604502.png", "group": "Spor"},
-    {"id": "tivibu4", "source_id": "selcuktivibuspor4", "name": "Tivibu Spor 4", "logo": "https://r2.thesportsdb.com/images/media/channel/logo/59bqi81642604517.png", "group": "Spor"},
-    {"id": "ssport1", "source_id": "selcukssport", "name": "S Sport 1", "logo": "https://itv224226.tmp.tivibu.com.tr:6430/images/poster/20230302923239.png", "group": "Spor"},
-    {"id": "ssport2", "source_id": "selcukssport2", "name": "S Sport 2", "logo": "https://itv224226.tmp.tivibu.com.tr:6430/images/poster/20230302923321.png", "group": "Spor"},
-    {"id": "smart1", "source_id": "selcuksmartspor", "name": "Smart Spor 1", "logo": "https://dsmart-static-v2.ercdn.net//resize-width/1920/content/p/el/11909/Thumbnail.png", "group": "Spor"},
-    {"id": "smart2", "source_id": "selcuksmartspor2", "name": "Smart Spor 2", "logo": "https://www.dsmart.com.tr/api/v1/public/images/kanallar/SPORSMART2-gri.png", "group": "Spor"},
-    {"id": "aspor", "source_id": "selcukaspor", "name": "A Spor", "logo": "https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/0/0/Vod/HLS/9d28401f-2d4e-4862-85e2-69773f6f45f4.png", "group": "Spor"},
-    {"id": "eurosport1", "source_id": "selcukeurosport1", "name": "Eurosport 1", "logo": "https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/0/0/Vod/HLS/54cad412-5f3a-4184-b5fc-d567a5de7160.png", "group": "Spor"},
-    {"id": "eurosport2", "source_id": "selcukeurosport2", "name": "Eurosport 2", "logo": "https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/0/0/Vod/HLS/a4cbdd15-1509-408f-a108-65b8f88f2066.png", "group": "Spor"},
-    {"id": "ssportplus1", "source_id": "ssportplus1", "name": "ssport plus1", "logo": "https://itv224226.tmp.tivibu.com.tr:6430/images/poster/20230302923239.png", "group": "Spor"},
-    {"id": "ssportplus2", "source_id": "ssportplus2", "name": "ssport plus2", "logo": "https://itv224226.tmp.tivibu.com.tr:6430/images/poster/20230302923321.png", "group": "Spor"},
-    {"id": "ssportplus3", "source_id": "ssportplus3", "name": "ssport plus3", "logo": "https://dsmart-static-v2.ercdn.net//resize-width/1920/content/p/el/11909/Thumbnail.png", "group": "Spor"},
-    {"id": "ssportplus4", "source_id": "ssportplus4", "name": "ssport plus4", "logo": "https://www.dsmart.com.tr/api/v1/public/images/kanallar/SPORSMART2-gri.png", "group": "Spor"},
-    {"id": "ssportplus5", "source_id": "ssportplus5", "name": "ssport plus5", "logo": "https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/0/0/Vod/HLS/9d28401f-2d4e-4862-85e2-69773f6f45f4.png", "group": "Spor"},
-    {"id": "ssportplus6", "source_id": "ssportplus6", "name": "ssport plus6", "logo": "https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/0/0/Vod/HLS/54cad412-5f3a-4184-b5fc-d567a5de7160.png", "group": "Spor"},
-    {"id": "selcuknbatv", "source_id": "selcuknbatv", "name": "nbatv", "logo": "https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/0/0/Vod/HLS/a4cbdd15-1509-408f-a108-65b8f88f2066.png", "group": "Spor"},
-    {"id": "smotorvisiontv", "source_id": "smotorvisiontv", "name": "smotorvisiontv", "logo": "https://itv224226.tmp.tivibu.com.tr:6430/images/poster/20230302923239.png", "group": "Spor"},
-    {"id": "sdazn1", "source_id": "sdazn1", "name": "s dazn1", "logo": "https://itv224226.tmp.tivibu.com.tr:6430/images/poster/20230302923321.png", "group": "Spor"},
-    {"id": "sdazn2", "source_id": "sdazn2", "name": "s dazn2", "logo": "https://dsmart-static-v2.ercdn.net//resize-width/1920/content/p/el/11909/Thumbnail.png", "group": "Spor"},
-    {"id": "selcuktabiispor1", "source_id": "selcuktabiispor1", "name": "selcuktabiispor1", "logo": "https://www.dsmart.com.tr/api/v1/public/images/kanallar/SPORSMART2-gri.png", "group": "Spor"},
-    {"id": "selcuktabiispor2", "source_id": "selcuktabiispor2", "name": "selcuktabiispor2", "logo": "https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/0/0/Vod/HLS/9d28401f-2d4e-4862-85e2-69773f6f45f4.png", "group": "Spor"},
-    {"id": "selcuktabiispor3", "source_id": "selcuktabiispor3", "name": "selcuktabiispor3", "logo": "https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/0/0/Vod/HLS/54cad412-5f3a-4184-b5fc-d567a5de7160.png", "group": "Spor"},
-    {"id": "selcuktabiispor4", "source_id": "selcuktabiispor4", "name": "selcuktabiispor4", "logo": "https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/0/0/Vod/HLS/a4cbdd15-1509-408f-a108-65b8f88f2066.png", "group": "Spor"},
-    {"id": "selcuktabiispor5", "source_id": "selcuktabiispor5", "name": "selcuktabiispor5", "logo": "https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/0/0/Vod/HLS/a4cbdd15-1509-408f-a108-65b8f88f2066.png", "group": "Spor"},
-    {"id": "selcuktabiispor6", "source_id": "selcuktabiispor6", "name": "selcuktabiispor6", "logo": "https://itv224226.tmp.tivibu.com.tr:6430/images/poster/20230302923239.png", "group": "Spor"},
-    {"id": "selcukatv", "source_id": "selcukatv", "name": "atv", "logo": "https://itv224226.tmp.tivibu.com.tr:6430/images/poster/20230302923321.png", "group": "Spor"},
-    {"id": "selcukhtspor", "source_id": "selcukhtspor", "name": "selcukhtspor", "logo": "https://dsmart-static-v2.ercdn.net//resize-width/1920/content/p/el/11909/Thumbnail.png", "group": "Spor"},
-    {"id": "selcuktvv8", "source_id": "selcuktvv8", "name": "selcuktvv8", "logo": "https://www.dsmart.com.tr/api/v1/public/images/kanallar/SPORSMART2-gri.png", "group": "Spor"},
-    {"id": "selcuktrtspor", "source_id": "selcuktrtspor", "name": "selcuktrtspor", "logo": "https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/0/0/Vod/HLS/9d28401f-2d4e-4862-85e2-69773f6f45f4.png", "group": "Spor"},
-    {"id": "selcukkanald", "source_id": "sselcukkanald", "name": "selcukkanald", "logo": "https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/0/0/Vod/HLS/54cad412-5f3a-4184-b5fc-d567a5de7160.png", "group": "Spor"},
-    {"id": "selcukekolspor", "source_id": "selcukekolspor", "name": "selcukekolspor", "logo": "https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/0/0/Vod/HLS/a4cbdd15-1509-408f-a108-65b8f88f2066.png", "group": "Spor"},
-    {"id": "selcuktrtsporyıldız", "source_id": "selcuktrtsporyıldız", "name": "selcuktrtsporyıldız", "logo": "https://www.dsmart.com.tr/api/v1/public/images/kanallar/SPORSMART2-gri.png", "group": "Spor"},
-    {"id": "selcuktrt1", "source_id": "selcuktrt1", "name": "selcuktrt1", "logo": "https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/0/0/Vod/HLS/9d28401f-2d4e-4862-85e2-69773f6f45f4.png", "group": "Spor"},
-    {"id": "selcukexxen", "source_id": "selcukexxen", "name": "selcukexxen", "logo": "https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/0/0/Vod/HLS/54cad412-5f3a-4184-b5fc-d567a5de7160.png", "group": "Spor"},
-    {"id": "selcukexxen1", "source_id": "selcukexxen1", "name": "selcukexxen1", "logo": "https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/0/0/Vod/HLS/a4cbdd15-1509-408f-a108-65b8f88f2066.png", "group": "Spor"},
-    {"id": "selcukexxen2", "source_id": "selcukexxen2", "name": "selcukexxen2", "logo": "https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/0/0/Vod/HLS/a4cbdd15-1509-408f-a108-65b8f88f2066.png", "group": "Spor"},
-    {"id": "selcukexxen3", "source_id": "selcukexxen3", "name": "selcukexxen3", "logo": "https://itv224226.tmp.tivibu.com.tr:6430/images/poster/20230302923239.png", "group": "Spor"},
-    {"id": "selcukexxen4", "source_id": "selcukexxen4", "name": "selcukexxen4", "logo": "https://itv224226.tmp.tivibu.com.tr:6430/images/poster/20230302923321.png", "group": "Spor"},
-    {"id": "selcukexxen5", "source_id": "selcukexxen5", "name": "selcukexxen5", "logo": "https://dsmart-static-v2.ercdn.net//resize-width/1920/content/p/el/11909/Thumbnail.png", "group": "Spor"},
-    {"id": "selcukexxen6", "source_id": "selcukexxen6", "name": "selcukexxen6", "logo": "https://www.dsmart.com.tr/api/v1/public/images/kanallar/SPORSMART2-gri.png", "group": "Spor"},
-    {"id": "selcukexxen7", "source_id": "selcukexxen7", "name": "selcukexxen7", "logo": "https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/0/0/Vod/HLS/9d28401f-2d4e-4862-85e2-69773f6f45f4.png", "group": "Spor"},
-    {"id": "selcukexxen8", "source_id": "selcukexxen8", "name": "selcukexxen8", "logo": "https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/0/0/Vod/HLS/a4cbdd15-1509-408f-a108-65b8f88f2066.png", "group": "Spor"},
-]
-
-
-# === Yeni Domain Alma Fonksiyonları ===
-def get_trgoals_domain():
-    url = "https://raw.githubusercontent.com/troy8865/domain_1/refs/heads/main/domain.txt"
-    try:
-        r = requests.get(url, timeout=5)
-        if r.status_code == 200:
-            txt = r.text.strip().replace("guncel_domain=", "")
-            return txt.strip()
-    except:
-        pass
-    return None
-
-
-def get_selcuk_domain():
-    url = "https://raw.githubusercontent.com/troy8865/domain_2/refs/heads/main/selcuk_sports_guncel_domain.txt"
-    try:
-        r = requests.get(url, timeout=5)
-        if r.status_code == 200:
-            txt = r.text.strip().replace("guncel_domain=", "")
-            return txt.strip()
-    except:
-        pass
-    return None
-
-
-# === Yardımcı Fonksiyonlar ===
-def extract_m3u8(url):
-    try:
-        r = requests.get(url, timeout=10)
-        matches = re.findall(r'https?://[^\s\'"]+\.m3u8[^\s\'"]*', r.text)
-        return matches[0] if matches else None
-    except:
-        return None
-
-
-def find_baseurl(channel_url):
-    try:
-        r = requests.get(channel_url, timeout=10)
-        match = re.search(r'baseurl\s*[:=]\s*["\']([^"\']+)["\']', r.text)
-        return match.group(1) if match else None
-    except:
-        return None
-
-
-def find_stream_domain(html):
-    match = re.search(r'https?://(main\.uxsyplayer[0-9a-zA-Z\-]+\.click)', html)
-    return f"https://{match.group(1)}" if match else None
-
-
-def extract_base_url(html):
-    match = re.search(r'this\.adsBaseUrl\s*=\s*[\'"]([^\'"]+)', html)
-    return match.group(1) if match else None
-
-
-def fetch_sporcafe_streams(domain, referer):
-    result = []
-    for ch in CHANNELS:
-        full_url = f"{domain}/index.php?id={ch['source_id']}"
-        try:
-            r = requests.get(full_url, headers={**HEADERS, "Referer": referer}, timeout=5)
-            if r.status_code == 200:
-                base = extract_base_url(r.text)
-                if base:
-                    stream = f"{base}{ch['source_id']}/playlist.m3u8"
-                    result.append((ch, stream))
-        except:
-            continue
-    return result
-
-
-def load_extra_channels(filepath):
-    if os.path.exists(filepath):
-        with open(filepath, "r", encoding="utf-8") as f:
-            try:
-                data = yaml.safe_load(f)
-                return data.get("extra_channels", [])
-            except:
-                return []
-    return []
-
-
-# === M3U Birleştirme ===
-def write_combined_m3u8(filepath, web_links, trgoals_base, trgoals_ref, sporcafe_links, sporcafe_ref, extra_channels):
-
-    with open(filepath, "w", encoding="utf-8") as f:
-        f.write("#EXTM3U\n")
-
-        f.write("\n# === Web Kaynakları ===\n")
-        for name, link in web_links.items():
-            f.write(f"#EXTINF:-1,{name}\n{link}\n")
-
-        f.write("\n# === TrGoals Kanalları ===\n")
-        for kanal in KANALLAR:
-            f.write(f'#EXTINF:-1 tvg-id="{kanal["tvg_id"]}" group-title="TrGoals",{kanal["kanal_adi"]}\n')
-            f.write(f'#EXTVLCOPT:http-referrer={trgoals_ref}\n')
-            f.write(trgoals_base + kanal["dosya"] + "\n")
-
-        f.write("\n# === Selçuk / Sporcafe Kanalları ===\n")
-        for ch, url in sporcafe_links:
-            f.write(f'#EXTINF:-1 tvg-id="{ch["id"]}" group-title="Selçuk",{ch["name"]}\n')
-            f.write(f'#EXTVLCOPT:http-referrer={sporcafe_ref}\n')
-            f.write(url + "\n")
-
-        f.write("\n# === Manuel Ek Kanallar ===\n")
-        for ch in extra_channels:
-            f.write(f'#EXTINF:-1 tvg-id="{ch["tvg_id"]}",{ch["kanal_adi"]}\n')
-            f.write(ch["url"] + "\n")
-
-    print(f"{GREEN}[✓] M3U dosyası oluşturuldu: {filepath}{RESET}")
-
-
-# === ANA AKIŞ ===
-if __name__ == "__main__":
-
-    # Klasörü temizle
-    if os.path.exists(stream_folder):
-        shutil.rmtree(stream_folder)
-    os.makedirs(stream_folder)
-
-    print(f"{YELLOW}[*] Web kaynakları taranıyor...{RESET}")
-    web_links = {}
-    for name, url in source_urls.items():
-        link = extract_m3u8(url)
-        if link:
-            web_links[name] = link
-            print(f"{GREEN}[✓] {name} bulundu{RESET}")
-        else:
-            print(f"{RED}[X] {name} bulunamadı{RESET}")
-
-    # === TrGoals Domain Alma ===
-    print(f"{YELLOW}[*] TrGoals domain alınıyor...{RESET}")
-    trgoals_ref = get_trgoals_domain()
-    trgoals_base = ""
-
-    if trgoals_ref:
-        print(f"{GREEN}[✓] TrGoals domain: {trgoals_ref}{RESET}")
-        trgoals_base = find_baseurl(trgoals_ref + "/channel.html?id=yayinzirve") or ""
-    else:
-        print(f"{RED}[X] TrGoals domain bulunamadı!{RESET}")
-
-    # === Selçuk / Sporcafe Domain Alma ===
-    print(f"{YELLOW}[*] Selçuk/Sporcafe domain alınıyor...{RESET}")
-    referer = get_selcuk_domain()
-    sporcafe_links = []
-
-    if referer:
-        print(f"{GREEN}[✓] Selçuk domain: {referer}{RESET}")
-        try:
-            html = requests.get(referer, headers=HEADERS, timeout=5).text
-            domain = find_stream_domain(html)
-            if domain:
-                sporcafe_links = fetch_sporcafe_streams(domain, referer)
-            else:
-                print(f"{RED}[X] Yayın base domain bulunamadı!{RESET}")
-        except:
-            print(f"{RED}[X] Selçuk domain okunamadı!{RESET}")
-    else:
-        print(f"{RED}[X] Selçuk domain bulunamadı!{RESET}")
-
-    extra_channels = load_extra_channels(extra_yaml_path)
-
-    write_combined_m3u8(
-        output_file,
-        web_links,
-        trgoals_base,
-        trgoals_ref,
-        sporcafe_links,
-        referer or "",
-        extra_channels
-    )
+# === Manuel Ek Kanallar ===
+#EXTINF:-1 tvg-id="TRT1.tr",TRT 1
+http://89.187.191.41/TRT-1-HD-TR/playlist.m3u8
+#EXTINF:-1 tvg-id="TRT1",TRT 1 HDD
+https://tv-trt1-dash.medya.trt.com.tr/master.mpd
+#EXTINF:-1 tvg-id="Kanal_d.tr",Kanal_d
+https://live.duhnet.tv/S2/HLS_LIVE/kanalddainp/track_4_1250/playlist.m3u8
+#EXTINF:-1 tvg-id="EuroD.tr",EuroD
+https://tabiptv.short.gy/eurod.m3u8
+#EXTINF:-1 tvg-id="Atv.tr",ATV
+http://89.187.191.41:80/ATV-HD-TR/playlist.m3u8
+#EXTINF:-1 tvg-id="Atv1.tr",ATV-1
+http://95.174.71.114:80/TR-ATV/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-id="FOX",FOX
+http://95.174.71.114:80/TR-FOX/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-id="SHOW",SHOW
+http://95.174.71.114:80/TR-SHOW/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-id="Showturk.tr",Showturk
+https://raw.githubusercontent.com/ipstreet312/freeiptv/master/ressources/tur/shturk.m3u8
+#EXTINF:-1 tvg-id="Star.tr",Star TV
+https://github.com/ipstreet312/freeiptv/raw/master/ressources/tur/star.m3u8
+#EXTINF:-1 tvg-id="TV8.tr",TV8
+https://tv8.daioncdn.net/tv8/tv8_720p.m3u8?app=tv8_web
+#EXTINF:-1 tvg-id="TV8-1.tr",TV8-1
+http://95.174.71.114:80/TR-TV8/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-id="TV8.5.tr",TV8.5
+https://tv8.daioncdn.net/tv8bucuk/tv8bucuk_720p.m3u8?app=tv8bucuk_web
+#EXTINF:-1 tvg-id="BEYAZ TV",BEYAZ TV
+https://beyaztv-live.daioncdn.net/beyaztv/beyaztv_720p.m3u8
+#EXTINF:-1 tvg-id="TEVE_2",TEVE_2
+https://raw.githubusercontent.com/utd2001/tv/refs/heads/main/m3u8/TEVE2.m3u8
+#EXTINF:-1 tvg-id="A2.tr",A2
+http://95.174.71.114:80/TR-A2/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-id="360.tr",360
+http://95.174.71.114:80/TR-TV-360/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-id="TV4",TV4
+https://turkmedya-live.ercdn.net/tv4/tv4.m3u8
+#EXTINF:-1 tvg-id="TELEON",TELEON
+https://raw.githubusercontent.com/UzunMuhalefet/yayinlar/refs/heads/main/streams/best/teleon.m3u8
+#EXTINF:-1 tvg-id="natgeo.tr",natgeo
+https://tabiptv.short.gy/natgeo
+#EXTINF:-1 tvg-id="TLC",TLC
+https://dogus.daioncdn.net/tlc/tlc.m3u8?app=tlc_web
+#EXTINF:-1 tvg-id="DMAX",DMAX
+https://dogus.daioncdn.net/dmax/dmax.m3u8?app=dmax_web
+#EXTINF:-1 tvg-id="fx.tr",fx
+https://saran-live.ercdn.net/fx/index.m3u8
+#EXTINF:-1 tvg-id="Yesilcam.tr",Yesilcam
+https://raw.githubusercontent.com/tecotv2025/tecotv/main/playlist/Yesilcam_Tv.m3u8
+#EXTINF:-1 tvg-id="yssinema.tr",YS Sinema
+https://raw.githubusercontent.com/megasmartgence90/RESTREAM/refs/heads/main/MEGAKINO/yssinema.m3u8
+#EXTINF:-1 tvg-id="filmscreen.tr",Film Screen
+https://edge-e3.evrideo.tv/f2dcbecf-5af0-47db-a82e-032112050a23_1000027346_HLS/manifest.m3u8
+#EXTINF:-1 tvg-id="BEIN BOX OFFICE 1 HD.tr",BEIN BOX OFFICE 1 HD
+http://65.108.239.207:80/box1/index.m3u8
+#EXTINF:-1 tvg-id="BEIN BOX OFFICE 2 HD.tr",BEIN BOX OFFICE 2 HD
+http://65.108.239.207:80/box2/index.m3u8
+#EXTINF:-1 tvg-id="BEIN BOX OFFICE 3 HD.tr",BEIN BOX OFFICE 3 HD
+http://65.108.239.207:80/box3/index.m3u8
+#EXTINF:-1 tvg-id="BEIN MOVIES ACTION HD.tr",BEIN MOVIES ACTION HD
+http://65.108.239.207:80/bsaction1/index.m3u8
+#EXTINF:-1 tvg-id="BEIN MOVIES PREMIER HD.tr",BEIN MOVIES PREMIER HD
+http://65.108.239.207:80/bspremier1/index.m3u8
+#EXTINF:-1 tvg-id="BEIN MOVIES STARS HD.tr",BEIN MOVIES STARS HD
+http://65.108.239.207:80/bsstars/index.m3u8
+#EXTINF:-1 tvg-id="SINEMA TV HD.tr",SINEMA TV HD
+http://65.108.239.207:80/sinema/index.m3u8
+#EXTINF:-1 tvg-id="SINEMA TV 2 HD.tr",SINEMA TV 2 HD
+http://65.108.239.207:80/sinema2/index.m3u8
+#EXTINF:-1 tvg-id="BEIN_SPORTS_USA.tr",BEIN_SPORTS_USA
+https://vizioncore.xyz/static/bs11.m3u8
+#EXTINF:-1 tvg-id="SINEMA TV AKSIYON HD.tr",SINEMA TV AKSIYON HD
+http://65.108.239.207:80/sinemaaksiyon/index.m3u8
+#EXTINF:-1 tvg-id="SINEMA TV AKSIYON 2 HD.tr",SINEMA TV AKSIYON 2 HD
+http://65.108.239.207:80/sinemaaksiyon2/index.m3u8
+#EXTINF:-1 tvg-id="SINEMA TV AILE HD.tr",SINEMA TV AILE HD
+http://65.108.239.207:80/sinemaaile/index.m3u8
+#EXTINF:-1 tvg-id="SINEMA TV KOMEDI HD.tr",SINEMA TV KOMEDI HD
+http://65.108.239.207:80/sinemakomedi/index.m3u8
+#EXTINF:-1 tvg-id="SINEMA TV YERLI HD.tr",SINEMA TV YERLI HD
+http://65.108.239.207:80/sinemayerli/tracks-v1a1/index.m3u8
+#EXTINF:-1 tvg-id="Tabii Spor.tr",Tabii Spor
+https://beert7sqimrk0bfdupfgn6qew.medya.trt.com.tr/master.m3u8
+#EXTINF:-1 tvg-id="Tabii Spor1.tr",Tabii Spor 1
+https://iaqzu4szhtzeqd0edpsayinle.medya.trt.com.tr/master.m3u8
+#EXTINF:-1 tvg-id="Tabii Spor2",Tabii Spor2
+https://klublsslubcgyiz7zqt5bz8il.medya.trt.com.tr/master.m3u8
+#EXTINF:-1 tvg-id="Tabii Spor3.tr",Tabii Spor3
+https://ujnf69op16x2fiiywxcnx41q8.medya.trt.com.tr/master.m3u8
+#EXTINF:-1 tvg-id="Tabii Spor4.tr",Tabii Spor4
+https://bfxy3jgeydpbphtk8qfqwm3hr.medya.trt.com.tr/master.m3u8
+#EXTINF:-1 tvg-id="Tabii Spor5.tr",Tabii Spor5
+https://z3mmimwz148csv0vaxtphqspf.medya.trt.com.tr/master.m3u8
+#EXTINF:-1 tvg-id="Tabii Spor6.tr",Tabii Spor6
+https://vbtob9hyq58eiophct5qctxr2.medya.trt.com.tr/master.m3u8
+#EXTINF:-1 tvg-id="cbcsport.az.tr",CBC Sport
+https://raw.githubusercontent.com/megasmartgence90/RESTREAM/refs/heads/main/MEGA-GROUP-AZE/cbcsport.m3u8
+#EXTINF:-1 tvg-id="BBC EARTH HD.tr",BBC EARTH HD
+http://65.108.239.207:80/bbc/index.m3u8
+#EXTINF:-1 tvg-id="DISCOVERY CHANNEL HD.tr",DISCOVERY CHANNEL HD
+http://65.108.239.207:80/discovery/index.m3u8
+#EXTINF:-1 tvg-id="DISCOVERY SCIENCE HD.tr",DISCOVERY SCIENCE HD
+http://65.108.239.207:80/discs/index.m3u8
+#EXTINF:-1 tvg-id="HISTORY CHANNEL HD.tr",HISTORY CHANNEL HD
+http://65.108.239.207:80/history/index.m3u8
+#EXTINF:-1 tvg-id="LOVE NATURE HD.tr",LOVE NATURE HD
+http://65.108.239.207:80/lovenature/index.m3u8
+#EXTINF:-1 tvg-id="VIASAT HISTORY HD.tr",VIASAT HISTORY HD
+http://65.108.239.207:80/viasathistory/index.m3u8
+#EXTINF:-1 tvg-id="KANAL1.tr",KANAL1
+https://karpuzmanifestosu.lol/static/bs11.m3u8
+#EXTINF:-1 tvg-id="KANAL2.tr",KANAL2
+https://karpuzmanifestosu.lol/static/bs2.m3u8
+#EXTINF:-1 tvg-id="KANAL3.tr",KANAL3
+https://karpuzmanifestosu.lol/static/bs3.m3u8
+#EXTINF:-1 tvg-id="KANALss.tr",KANALss
+https://karpuzmanifestosu.lol/static/ss11.m3u8
+#EXTINF:-1 tvg-id="dolu1.tr",dolu1
+https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/beIN_Sport_1_HD.m3u8
+#EXTINF:-1 tvg-id="dolu2.tr",dolu2
+https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/beIN_Sport_2_HD.m3u8
+#EXTINF:-1 tvg-id="dolu3.tr",dolu3
+https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/beIN_Sport_3_HD.m3u8
+#EXTINF:-1 tvg-id="dolu4.tr",dolu4
+https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/beIN_Sport_4_HD.m3u8
+#EXTINF:-1 tvg-id="dolum1.tr",dolum1
+https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/beIN_Sport_Max_1_HD.m3u8
+#EXTINF:-1 tvg-id="dolum2.tr",dolum2
+https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/beIN_Sport_Max_2_HD.m3u8
+#EXTINF:-1 tvg-id="dolxax.tr",dolxax
+https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/Exxen_HD.m3u8
+#EXTINF:-1 tvg-id="dolxax1.tr",dolxax1
+https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/Exxen_1_HD.m3u8
+#EXTINF:-1 tvg-id="dolxax2.tr",dolxax2
+https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/Exxen_2_HD.m3u8
+#EXTINF:-1 tvg-id="dolxax3.tr",dolxax3
+https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/Exxen_3_HD.m3u8
+#EXTINF:-1 tvg-id="dolxax4.tr",dolxax4
+https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/Exxen_4_HD.m3u8
+#EXTINF:-1 tvg-id="dolxax5.tr",dolxax5
+https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/Exxen_5_HD.m3u8
+#EXTINF:-1 tvg-id="dolxax6.tr",dolxax6
+https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/Exxen_6_HD.m3u8
+#EXTINF:-1 tvg-id="dolxax7.tr",dolxax7
+https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/Exxen_7_HD.m3u8
+#EXTINF:-1 tvg-id="dolxax8.tr",dolxax8
+https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/Exxen_8_HD.m3u8
+#EXTINF:-1 tvg-id="dolss1.tr",dolss1
+https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/S_Sport_1_HD.m3u8
+#EXTINF:-1 tvg-id="dolss2.tr",dolss2
+https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/S_Sport_2_HD.m3u8
+#EXTINF:-1 tvg-id="dolsm1.tr",dolsm1
+https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/Smart_Sport_1_HD.m3u8
+#EXTINF:-1 tvg-id="dolsm2.tr",dolsm2
+https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/Smart_Sport_1_HD.m3u8
+#EXTINF:-1 tvg-id="tvb.tr",Tivibu Sport HD
+https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/Tivibu_Sport_HD.m3u8
+#EXTINF:-1 tvg-id="dolt1.tr",dolt1
+https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/Tivibu_Sport_1_HD.m3u8
+#EXTINF:-1 tvg-id="dolt2.tr",dolt2
+https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/Tivibu_Sport_2_HD.m3u8
+#EXTINF:-1 tvg-id="dolt3.tr",dolt3
+https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/Tivibu_Sport_3_HD.m3u8
+#EXTINF:-1 tvg-id="dolt4.tr",dolt4
+https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/Tivibu_Sport_4_HD.m3u8
+#EXTINF:-1 tvg-id="doltabi.tr",doltabi
+https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/Tabii_HD.m3u8
+#EXTINF:-1 tvg-id="doltabi1.tr",doltabi1
+https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/Tabii_1_HD.m3u8
+#EXTINF:-1 tvg-id="doltabi2.tr",doltabi2
+https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/Tabii_2_HD.m3u8
+#EXTINF:-1 tvg-id="doltabi3.tr",doltabi3
+https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/Tabii_3_HD.m3u8
+#EXTINF:-1 tvg-id="doltabi4.tr",doltabi4
+https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/Tabii_4_HD.m3u8
+#EXTINF:-1 tvg-id="doltabi5.tr",doltabi5
+https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/Tabii_5_HD.m3u8
+#EXTINF:-1 tvg-id="doltabi6.tr",doltabi6
+https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/Tabii_6_HD.m3u8
+#EXTINF:-1 tvg-id="doltabi7.tr",doltabi7
+https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/Tabii_7_HD.m3u8
+#EXTINF:-1 tvg-id="doltabi8.tr",doltabi8
+https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/Tabii_8_HD.m3u8
