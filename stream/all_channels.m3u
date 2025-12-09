@@ -4,7 +4,7 @@
 #EXTINF:-1,tabii
 https://beert7sqimrk0bfdupfgn6qew.medya.trt.com.tr/master.m3u8
 #EXTINF:-1,nowtv
-https://nowtv.daioncdn.net/nowtv/nowtv.m3u8?ce=3&app=mobile_web&st=RVzi0NGXP8NIcd6qKZnvGQ&e=1765298184
+https://nowtv.daioncdn.net/nowtv/nowtv.m3u8?ce=3&app=mobile_web&st=M3RMmsZ1-EkE0yQz4mrdag&e=1765300286
 #EXTINF:-1,showtv
 https://ciner.daioncdn.net/showtv/showtv.m3u8?ce=3&app=4bc856ef-4c68-4a94-bc87-37dfaaa66558&st=RBzhSuGauna0OGld-DJUVA&e=1664766175&tv=1
 #EXTINF:-1,htspor
@@ -16,7 +16,7 @@ https://demiroren.daioncdn.net/kanald/kanald.m3u8?app=kanald_web&amp;ce=3
 #EXTINF:-1,teve2
 https://teve2.duhnet.tv/S2/HLS_LIVE/teve2np/playlist.m3u8
 #EXTINF:-1,dmax
-https://dogus.daioncdn.net/dmax/dmax.m3u8?ce=3&app=5a02c599-d17e-4982-9b04-090934d51af7&token=ajBCN2l4VU5iSmdWOGFNOXFkcVd0Ym1sTFUrY1ozd29jdVN5YlhEdS9UMD0=
+https://dogus.daioncdn.net/dmax/dmax.m3u8?ce=3&app=5a02c599-d17e-4982-9b04-090934d51af7&token=aWNwcTRBb2ZJaGZzaTJJNjJwSDFEOXFMUCtUQU1HaEdZNTBXTjhUWFQxMD0=
 #EXTINF:-1,tv360
 https://turkmedya-live.ercdn.net/tv360/tv360.m3u8
 #EXTINF:-1,beyaztv
@@ -127,6 +127,9 @@ https://yc4.04bf112a615942b45.sbs/yayinex8.m3u8
 #EXTINF:-1 tvg-id="bein1" group-title="Selçuk",BeIN Sports 1
 #EXTVLCOPT:http-referrer=https://www.selcuksportshda386a04747.xyz
 https://dga1op10s1u3leo.f6a7d976d724df.click/live/selcukbeinsports1/playlist.m3u8
+#EXTINF:-1 tvg-id="obs1" group-title="Selçuk",obs1
+#EXTVLCOPT:http-referrer=https://www.selcuksportshda386a04747.xyz
+https://dga1op10s1u3leo.f6a7d976d724df.click/live/selcukobs1/playlist.m3u8
 #EXTINF:-1 tvg-id="bein2" group-title="Selçuk",BeIN Sports 2
 #EXTVLCOPT:http-referrer=https://www.selcuksportshda386a04747.xyz
 https://dga1op10s1u3leo.f6a7d976d724df.click/live/selcukbeinsports2/playlist.m3u8
@@ -178,36 +181,24 @@ https://dga1op10s1u3leo.f6a7d976d724df.click/live/selcukeurosport1/playlist.m3u8
 #EXTINF:-1 tvg-id="eurosport2" group-title="Selçuk",Eurosport 2
 #EXTVLCOPT:http-referrer=https://www.selcuksportshda386a04747.xyz
 https://dga1op10s1u3leo.f6a7d976d724df.click/live/selcukeurosport2/playlist.m3u8
-#EXTINF:-1 tvg-id="ssportplus1" group-title="Selçuk",ssport plus1
+#EXTINF:-1 tvg-id="ssportplus1" group-title="Selçuk",S SPORT +1
 #EXTVLCOPT:http-referrer=https://www.selcuksportshda386a04747.xyz
-https://dga1op10s1u3leo.f6a7d976d724df.click/live/ssportplus1/playlist.m3u8
-#EXTINF:-1 tvg-id="ssportplus2" group-title="Selçuk",ssport plus2
+https://dga1op10s1u3leo.f6a7d976d724df.click/live/selcukssportplus1/playlist.m3u8
+#EXTINF:-1 tvg-id="ssportplus2" group-title="Selçuk",S SPORT +2
 #EXTVLCOPT:http-referrer=https://www.selcuksportshda386a04747.xyz
-https://dga1op10s1u3leo.f6a7d976d724df.click/live/ssportplus2/playlist.m3u8
-#EXTINF:-1 tvg-id="ssportplus3" group-title="Selçuk",ssport plus3
+https://dga1op10s1u3leo.f6a7d976d724df.click/live/selcukssportplus2/playlist.m3u8
+#EXTINF:-1 tvg-id="ssportplus3" group-title="Selçuk",S SPORT +3
 #EXTVLCOPT:http-referrer=https://www.selcuksportshda386a04747.xyz
-https://dga1op10s1u3leo.f6a7d976d724df.click/live/ssportplus3/playlist.m3u8
-#EXTINF:-1 tvg-id="ssportplus4" group-title="Selçuk",ssport plus4
+https://dga1op10s1u3leo.f6a7d976d724df.click/live/selcukssportplus3/playlist.m3u8
+#EXTINF:-1 tvg-id="ssportplus4" group-title="Selçuk",S SPORT +4
 #EXTVLCOPT:http-referrer=https://www.selcuksportshda386a04747.xyz
-https://dga1op10s1u3leo.f6a7d976d724df.click/live/ssportplus4/playlist.m3u8
-#EXTINF:-1 tvg-id="ssportplus5" group-title="Selçuk",ssport plus5
+https://dga1op10s1u3leo.f6a7d976d724df.click/live/selcukssportplus4/playlist.m3u8
+#EXTINF:-1 tvg-id="ssportplus5" group-title="Selçuk",S SPORT +5
 #EXTVLCOPT:http-referrer=https://www.selcuksportshda386a04747.xyz
-https://dga1op10s1u3leo.f6a7d976d724df.click/live/ssportplus5/playlist.m3u8
-#EXTINF:-1 tvg-id="ssportplus6" group-title="Selçuk",ssport plus6
+https://dga1op10s1u3leo.f6a7d976d724df.click/live/selcukssportplus5/playlist.m3u8
+#EXTINF:-1 tvg-id="ssportplus6" group-title="Selçuk",S SPORT +6
 #EXTVLCOPT:http-referrer=https://www.selcuksportshda386a04747.xyz
-https://dga1op10s1u3leo.f6a7d976d724df.click/live/ssportplus6/playlist.m3u8
-#EXTINF:-1 tvg-id="selcuknbatv" group-title="Selçuk",nbatv
-#EXTVLCOPT:http-referrer=https://www.selcuksportshda386a04747.xyz
-https://dga1op10s1u3leo.f6a7d976d724df.click/live/selcuknbatv/playlist.m3u8
-#EXTINF:-1 tvg-id="smotorvisiontv" group-title="Selçuk",smotorvisiontv
-#EXTVLCOPT:http-referrer=https://www.selcuksportshda386a04747.xyz
-https://dga1op10s1u3leo.f6a7d976d724df.click/live/smotorvisiontv/playlist.m3u8
-#EXTINF:-1 tvg-id="sdazn1" group-title="Selçuk",s dazn1
-#EXTVLCOPT:http-referrer=https://www.selcuksportshda386a04747.xyz
-https://dga1op10s1u3leo.f6a7d976d724df.click/live/sdazn1/playlist.m3u8
-#EXTINF:-1 tvg-id="sdazn2" group-title="Selçuk",s dazn2
-#EXTVLCOPT:http-referrer=https://www.selcuksportshda386a04747.xyz
-https://dga1op10s1u3leo.f6a7d976d724df.click/live/sdazn2/playlist.m3u8
+https://dga1op10s1u3leo.f6a7d976d724df.click/live/selcukssportplus6/playlist.m3u8
 #EXTINF:-1 tvg-id="selcuktabiispor1" group-title="Selçuk",selcuktabiispor1
 #EXTVLCOPT:http-referrer=https://www.selcuksportshda386a04747.xyz
 https://dga1op10s1u3leo.f6a7d976d724df.click/live/selcuktabiispor1/playlist.m3u8
@@ -229,9 +220,9 @@ https://dga1op10s1u3leo.f6a7d976d724df.click/live/selcuktabiispor6/playlist.m3u8
 #EXTINF:-1 tvg-id="selcukatv" group-title="Selçuk",atv
 #EXTVLCOPT:http-referrer=https://www.selcuksportshda386a04747.xyz
 https://dga1op10s1u3leo.f6a7d976d724df.click/live/selcukatv/playlist.m3u8
-#EXTINF:-1 tvg-id="selcukhtspor" group-title="Selçuk",selcukhtspor
+#EXTINF:-1 tvg-id="selcukbeinsportshaber" group-title="Selçuk",selcukbeinsportshaber
 #EXTVLCOPT:http-referrer=https://www.selcuksportshda386a04747.xyz
-https://dga1op10s1u3leo.f6a7d976d724df.click/live/selcukhtspor/playlist.m3u8
+https://dga1op10s1u3leo.f6a7d976d724df.click/live/selcukbeinsportshaber/playlist.m3u8
 #EXTINF:-1 tvg-id="selcuktvv8" group-title="Selçuk",selcuktvv8
 #EXTVLCOPT:http-referrer=https://www.selcuksportshda386a04747.xyz
 https://dga1op10s1u3leo.f6a7d976d724df.click/live/selcuktvv8/playlist.m3u8
@@ -240,13 +231,10 @@ https://dga1op10s1u3leo.f6a7d976d724df.click/live/selcuktvv8/playlist.m3u8
 https://dga1op10s1u3leo.f6a7d976d724df.click/live/selcuktrtspor/playlist.m3u8
 #EXTINF:-1 tvg-id="selcukkanald" group-title="Selçuk",selcukkanald
 #EXTVLCOPT:http-referrer=https://www.selcuksportshda386a04747.xyz
-https://dga1op10s1u3leo.f6a7d976d724df.click/live/sselcukkanald/playlist.m3u8
-#EXTINF:-1 tvg-id="selcukekolspor" group-title="Selçuk",selcukekolspor
+https://dga1op10s1u3leo.f6a7d976d724df.click/live/selcukkanald/playlist.m3u8
+#EXTINF:-1 tvg-id="selcuktrtspor2" group-title="Selçuk",selcuktrtspor2
 #EXTVLCOPT:http-referrer=https://www.selcuksportshda386a04747.xyz
-https://dga1op10s1u3leo.f6a7d976d724df.click/live/selcukekolspor/playlist.m3u8
-#EXTINF:-1 tvg-id="selcuktrtsporyıldız" group-title="Selçuk",selcuktrtsporyıldız
-#EXTVLCOPT:http-referrer=https://www.selcuksportshda386a04747.xyz
-https://dga1op10s1u3leo.f6a7d976d724df.click/live/selcuktrtsporyıldız/playlist.m3u8
+https://dga1op10s1u3leo.f6a7d976d724df.click/live/selcuktrtspor2/playlist.m3u8
 #EXTINF:-1 tvg-id="selcuktrt1" group-title="Selçuk",selcuktrt1
 #EXTVLCOPT:http-referrer=https://www.selcuksportshda386a04747.xyz
 https://dga1op10s1u3leo.f6a7d976d724df.click/live/selcuktrt1/playlist.m3u8
@@ -265,18 +253,33 @@ https://dga1op10s1u3leo.f6a7d976d724df.click/live/selcukexxen3/playlist.m3u8
 #EXTINF:-1 tvg-id="selcukexxen4" group-title="Selçuk",selcukexxen4
 #EXTVLCOPT:http-referrer=https://www.selcuksportshda386a04747.xyz
 https://dga1op10s1u3leo.f6a7d976d724df.click/live/selcukexxen4/playlist.m3u8
-#EXTINF:-1 tvg-id="selcukexxen5" group-title="Selçuk",selcukexxen5
+#EXTINF:-1 tvg-id="selcuktrtsporyildiz" group-title="Selçuk",selcuktrtsporyildiz
 #EXTVLCOPT:http-referrer=https://www.selcuksportshda386a04747.xyz
-https://dga1op10s1u3leo.f6a7d976d724df.click/live/selcukexxen5/playlist.m3u8
-#EXTINF:-1 tvg-id="selcukexxen6" group-title="Selçuk",selcukexxen6
+https://dga1op10s1u3leo.f6a7d976d724df.click/live/selcuktrtsporyildiz/playlist.m3u8
+#EXTINF:-1 tvg-id="selcuknbatv" group-title="Selçuk",nbatv
 #EXTVLCOPT:http-referrer=https://www.selcuksportshda386a04747.xyz
-https://dga1op10s1u3leo.f6a7d976d724df.click/live/selcukexxen6/playlist.m3u8
-#EXTINF:-1 tvg-id="selcukexxen7" group-title="Selçuk",selcukexxen7
+https://dga1op10s1u3leo.f6a7d976d724df.click/live/selcuknbatv/playlist.m3u8
+#EXTINF:-1 tvg-id="smotorvisiontv" group-title="Selçuk",smotorvisiontv
 #EXTVLCOPT:http-referrer=https://www.selcuksportshda386a04747.xyz
-https://dga1op10s1u3leo.f6a7d976d724df.click/live/selcukexxen7/playlist.m3u8
-#EXTINF:-1 tvg-id="selcukexxen8" group-title="Selçuk",selcukexxen8
+https://dga1op10s1u3leo.f6a7d976d724df.click/live/smotorvisiontv/playlist.m3u8
+#EXTINF:-1 tvg-id="sdazn1" group-title="Selçuk",s dazn1
 #EXTVLCOPT:http-referrer=https://www.selcuksportshda386a04747.xyz
-https://dga1op10s1u3leo.f6a7d976d724df.click/live/selcukexxen8/playlist.m3u8
+https://dga1op10s1u3leo.f6a7d976d724df.click/live/sdazn1/playlist.m3u8
+#EXTINF:-1 tvg-id="sdazn2" group-title="Selçuk",s dazn2
+#EXTVLCOPT:http-referrer=https://www.selcuksportshda386a04747.xyz
+https://dga1op10s1u3leo.f6a7d976d724df.click/live/sdazn2/playlist.m3u8
+#EXTINF:-1 tvg-id="selcuksf1" group-title="Selçuk",selcuksf1
+#EXTVLCOPT:http-referrer=https://www.selcuksportshda386a04747.xyz
+https://dga1op10s1u3leo.f6a7d976d724df.click/live/selcuksf1/playlist.m3u8
+#EXTINF:-1 tvg-id="sskysportsf1de" group-title="Selçuk",sskysportsf1de
+#EXTVLCOPT:http-referrer=https://www.selcuksportshda386a04747.xyz
+https://dga1op10s1u3leo.f6a7d976d724df.click/live/sskysportsf1de/playlist.m3u8
+#EXTINF:-1 tvg-id="nflchannel" group-title="Selçuk",nflchannel
+#EXTVLCOPT:http-referrer=https://www.selcuksportshda386a04747.xyz
+https://dga1op10s1u3leo.f6a7d976d724df.click/live/nflchannel/playlist.m3u8
+#EXTINF:-1 tvg-id="sufcfightpass" group-title="Selçuk",sufcfightpass
+#EXTVLCOPT:http-referrer=https://www.selcuksportshda386a04747.xyz
+https://dga1op10s1u3leo.f6a7d976d724df.click/live/sufcfightpass/playlist.m3u8
 
 # === Manuel Ek Kanallar ===
 #EXTINF:-1 tvg-id="TRT1.tr",TRT 1
