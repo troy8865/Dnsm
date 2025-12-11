@@ -107,7 +107,6 @@ CHANNELS = [
     {"id": "selcuktabiispor5", "source_id": "selcuktabiispor5", "name": "TABİİ SPOR 5", "logo": "https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/0/0/Vod/HLS/a4cbdd15-1509-408f-a108-65b8f88f2066.png", "group": "Spor"},
     {"id": "selcuktabiispor6", "source_id": "selcuktabiispor6", "name": "TABİİ SPOR 6", "logo": "https://itv224226.tmp.tivibu.com.tr:6430/images/poster/20230302923239.png", "group": "Spor"},
     {"id": "selcukatv", "source_id": "selcukatv", "name": "ATV", "logo": "https://itv224226.tmp.tivibu.com.tr:6430/images/poster/20230302923321.png", "group": "Spor"},
-    {"id": "selcukbeinsportshaber", "source_id": "selcukbeinsportshaber", "name": "selcukbeinsportshaber", "logo": "https://dsmart-static-v2.ercdn.net//resize-width/1920/content/p/el/11909/Thumbnail.png", "group": "Spor"},
     {"id": "selcuktvv8", "source_id": "selcuktvv8", "name": "TV8", "logo": "https://www.dsmart.com.tr/api/v1/public/images/kanallar/SPORSMART2-gri.png", "group": "Spor"},
     {"id": "selcuktrtspor", "source_id": "selcuktrtspor", "name": "TRTSPOR", "logo": "https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/0/0/Vod/HLS/9d28401f-2d4e-4862-85e2-69773f6f45f4.png", "group": "Spor"},
     {"id": "selcukkanald", "source_id": "selcukkanald", "name": "KANALD", "logo": "https://feo.kablowebtv.com/resize/168A635D265A4328C2883FB4CD8FF/0/0/Vod/HLS/54cad412-5f3a-4184-b5fc-d567a5de7160.png", "group": "Spor"},
