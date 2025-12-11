@@ -16,7 +16,7 @@ https://demiroren.daioncdn.net/kanald/kanald.m3u8?app=kanald_web&amp;ce=3
 #EXTINF:-1,teve2
 https://teve2.duhnet.tv/S2/HLS_LIVE/teve2np/playlist.m3u8
 #EXTINF:-1,dmax
-https://dogus.daioncdn.net/dmax/dmax.m3u8?ce=3&app=5a02c599-d17e-4982-9b04-090934d51af7&token=T2JEZTBENnMyVzNYeFFROENyNWtTbHlhd281b1ZuenFYREZMN3k2VUtxOD0=
+https://dogus.daioncdn.net/dmax/dmax.m3u8?ce=3&app=5a02c599-d17e-4982-9b04-090934d51af7&token=VFZDT2oycG5nV3B2M0VrODRDVmZKYUx1NllFK3JkSmRLaFVGVUM3aG0yTT0=
 #EXTINF:-1,tv360
 https://turkmedya-live.ercdn.net/tv360/tv360.m3u8
 #EXTINF:-1,beyaztv
@@ -220,9 +220,6 @@ https://dga1op10s1u3leo.f6a7d976d724df.click/live/selcuktabiispor6/playlist.m3u8
 #EXTINF:-1 tvg-id="selcukatv" group-title="Selçuk",ATV
 #EXTVLCOPT:http-referrer=https://www.selcuksportshd20e67587b1.xyz
 https://dga1op10s1u3leo.f6a7d976d724df.click/live/selcukatv/playlist.m3u8
-#EXTINF:-1 tvg-id="selcukbeinsportshaber" group-title="Selçuk",selcukbeinsportshaber
-#EXTVLCOPT:http-referrer=https://www.selcuksportshd20e67587b1.xyz
-https://dga1op10s1u3leo.f6a7d976d724df.click/live/selcukbeinsportshaber/playlist.m3u8
 #EXTINF:-1 tvg-id="selcuktvv8" group-title="Selçuk",TV8
 #EXTVLCOPT:http-referrer=https://www.selcuksportshd20e67587b1.xyz
 https://dga1op10s1u3leo.f6a7d976d724df.click/live/selcuktvv8/playlist.m3u8
