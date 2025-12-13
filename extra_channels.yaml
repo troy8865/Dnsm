@@ -232,99 +232,99 @@ extra_channels:
     url: "https://karpuzmanifestosu.lol/static/ss11.m3u8"
 
   - tvg_id: "dolu1.tr"
-    kanal_adi: "dolu1"
+    kanal_adi: "bs1"
     url: "https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/beIN_Sport_1_HD.m3u8"
 
   - tvg_id: "dolu2.tr"
-    kanal_adi: "dolu2"
+    kanal_adi: "bs2"
     url: "https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/beIN_Sport_2_HD.m3u8"
 
   - tvg_id: "dolu3.tr"
-    kanal_adi: "dolu3"
+    kanal_adi: "bs3"
     url: "https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/beIN_Sport_3_HD.m3u8"
 
   - tvg_id: "dolu4.tr"
-    kanal_adi: "dolu4"
+    kanal_adi: "bs4"
     url: "https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/beIN_Sport_4_HD.m3u8"
 
   - tvg_id: "dolum1.tr"
-    kanal_adi: "dolum1"
+    kanal_adi: "bm1"
     url: "https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/beIN_Sport_Max_1_HD.m3u8"
 
   - tvg_id: "dolum2.tr"
-    kanal_adi: "dolum2"
+    kanal_adi: "bm2"
     url: "https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/beIN_Sport_Max_2_HD.m3u8"
 
   - tvg_id: "dolxax.tr"
-    kanal_adi: "dolxax"
+    kanal_adi: "ex"
     url: "https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/Exxen_HD.m3u8"
 
   - tvg_id: "dolxax1.tr"
-    kanal_adi: "dolxax1"
+    kanal_adi: "ex1"
     url: "https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/Exxen_1_HD.m3u8"
 
   - tvg_id: "dolxax2.tr"
-    kanal_adi: "dolxax2"
+    kanal_adi: "ex2"
     url: "https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/Exxen_2_HD.m3u8"
 
   - tvg_id: "dolxax3.tr"
-    kanal_adi: "dolxax3"
+    kanal_adi: "ex3"
     url: "https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/Exxen_3_HD.m3u8"
 
   - tvg_id: "dolxax4.tr"
-    kanal_adi: "dolxax4"
+    kanal_adi: "ex4"
     url: "https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/Exxen_4_HD.m3u8"
 
   - tvg_id: "dolxax5.tr"
-    kanal_adi: "dolxax5"
+    kanal_adi: "ex5"
     url: "https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/Exxen_5_HD.m3u8"
 
   - tvg_id: "dolxax6.tr"
-    kanal_adi: "dolxax6"
+    kanal_adi: "ex6"
     url: "https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/Exxen_6_HD.m3u8"
 
   - tvg_id: "dolxax7.tr"
-    kanal_adi: "dolxax7"
+    kanal_adi: "ex7"
     url: "https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/Exxen_7_HD.m3u8"
 
   - tvg_id: "dolxax8.tr"
-    kanal_adi: "dolxax8"
+    kanal_adi: "ex8"
     url: "https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/Exxen_8_HD.m3u8"
 
   - tvg_id: "dolss1.tr"
-    kanal_adi: "dolss1"
+    kanal_adi: "ss1"
     url: "https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/S_Sport_1_HD.m3u8"
 
   - tvg_id: "dolss2.tr"
-    kanal_adi: "dolss2"
+    kanal_adi: "ss2"
     url: "https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/S_Sport_2_HD.m3u8"
 
   - tvg_id: "dolsm1.tr"
-    kanal_adi: "dolsm1"
+    kanal_adi: "sm1"
     url: "https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/Smart_Sport_1_HD.m3u8"
 
   - tvg_id: "dolsm2.tr"
-    kanal_adi: "dolsm2"
+    kanal_adi: "sm2"
     url: "https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/Smart_Sport_1_HD.m3u8"
 
   - tvg_id: "tvb.tr"
-    kanal_adi: "Tivibu Sport HD"
+    kanal_adi: "Tivibu"
     url: "https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/Tivibu_Sport_HD.m3u8"
 
   - tvg_id: "dolt1.tr"
-    kanal_adi: "dolt1"
+    kanal_adi: "Tivibu1"
     url: "https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/Tivibu_Sport_1_HD.m3u8"
 
   - tvg_id: "dolt2.tr"
-    kanal_adi: "dolt2"
+    kanal_adi: "Tivibu2"
     url: "https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/Tivibu_Sport_2_HD.m3u8"
 
   - tvg_id: "dolt3.tr"
-    kanal_adi: "dolt3"
+    kanal_adi: "Tivibu3"
     url: "https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/Tivibu_Sport_3_HD.m3u8"
 
   - tvg_id: "dolt4.tr"
-    kanal_adi: "dolt4"
+    kanal_adi: "Tivibu4"
     url: "https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/Tivibu_Sport_4_HD.m3u8"
 
   - tvg_id: "doltabi.tr"
@@ -332,36 +332,37 @@ extra_channels:
     url: "https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/Tabii_HD.m3u8"
 
   - tvg_id: "doltabi1.tr"
-    kanal_adi: "doltabi1"
+    kanal_adi: "tabi1"
     url: "https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/Tabii_1_HD.m3u8"
 
   - tvg_id: "doltabi2.tr"
-    kanal_adi: "doltabi2"
+    kanal_adi: "tabi2"
     url: "https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/Tabii_2_HD.m3u8"
 
   - tvg_id: "doltabi3.tr"
-    kanal_adi: "doltabi3"
+    kanal_adi: "tabi3"
     url: "https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/Tabii_3_HD.m3u8"
 
   - tvg_id: "doltabi4.tr"
-    kanal_adi: "doltabi4"
+    kanal_adi: "tabi4"
     url: "https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/Tabii_4_HD.m3u8"
 
   - tvg_id: "doltabi5.tr"
-    kanal_adi: "doltabi5"
+    kanal_adi: "tabi5"
     url: "https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/Tabii_5_HD.m3u8"
 
   - tvg_id: "doltabi6.tr"
-    kanal_adi: "doltabi6"
+    kanal_adi: "tabi6"
     url: "https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/Tabii_6_HD.m3u8"
 
   - tvg_id: "doltabi7.tr"
-    kanal_adi: "doltabi7"
+    kanal_adi: "tabi7"
     url: "https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/Tabii_7_HD.m3u8"
 
   - tvg_id: "doltabi8.tr"
-    kanal_adi: "doltabi8"
+    kanal_adi: "tabi8"
     url: "https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/Tabii_8_HD.m3u8"
+
 
 
 
