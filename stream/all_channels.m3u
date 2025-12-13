@@ -4,9 +4,11 @@
 #EXTINF:-1,tabii
 https://beert7sqimrk0bfdupfgn6qew.medya.trt.com.tr/master.m3u8
 #EXTINF:-1,nowtv
-https://nowtv.daioncdn.net/nowtv/nowtv.m3u8?ce=3&app=mobile_web&st=zZ5loAHtf0b6PLs3-_zcXQ&e=1765646432
+https://nowtv.daioncdn.net/nowtv/nowtv.m3u8?ce=3&app=mobile_web&st=LdT1MACu2T6iIOQToKIb-Q&e=1765647637
 #EXTINF:-1,showtv
 https://ciner.daioncdn.net/showtv/showtv.m3u8?ce=3&app=4bc856ef-4c68-4a94-bc87-37dfaaa66558&st=RBzhSuGauna0OGld-DJUVA&e=1664766175&tv=1
+#EXTINF:-1,htspor
+https://ciner.daioncdn.net/ht-spor/ht-spor.m3u8?app=web
 #EXTINF:-1,tv8
 https://tv8-tb-live.ercdn.net/tv8-geo/playlist.m3u8?st=BzpvJLJ9hDX-H3W1sQWquA&e=1639061641
 #EXTINF:-1,kanald
@@ -14,7 +16,7 @@ https://demiroren.daioncdn.net/kanald/kanald.m3u8?app=kanald_web&amp;ce=3
 #EXTINF:-1,teve2
 https://teve2.duhnet.tv/S2/HLS_LIVE/teve2np/playlist.m3u8
 #EXTINF:-1,dmax
-https://dogus.daioncdn.net/dmax/dmax.m3u8?ce=3&app=5a02c599-d17e-4982-9b04-090934d51af7&token=OXhTZkVMS3EyOVNYR3JXWFE4K2JVYnBuT2NVNC90WU9qTmpYWXkxU2NRYz0=
+https://dogus.daioncdn.net/dmax/dmax.m3u8?ce=3&app=5a02c599-d17e-4982-9b04-090934d51af7&token=VGpFdE5sUEtJUXl1T3JvMVZRNnFLKzJxV0o4Z2JxQWkrU21IYm1CRkVLQT0=
 #EXTINF:-1,tv360
 https://turkmedya-live.ercdn.net/tv360/tv360.m3u8
 #EXTINF:-1,beyaztv
@@ -393,69 +395,69 @@ https://karpuzmanifestosu.lol/static/bs2.m3u8
 https://karpuzmanifestosu.lol/static/bs3.m3u8
 #EXTINF:-1 tvg-id="KANALss.tr",KANALss
 https://karpuzmanifestosu.lol/static/ss11.m3u8
-#EXTINF:-1 tvg-id="dolu1.tr",dolu1
+#EXTINF:-1 tvg-id="dolu1.tr",bs1
 https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/beIN_Sport_1_HD.m3u8
-#EXTINF:-1 tvg-id="dolu2.tr",dolu2
+#EXTINF:-1 tvg-id="dolu2.tr",bs2
 https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/beIN_Sport_2_HD.m3u8
-#EXTINF:-1 tvg-id="dolu3.tr",dolu3
+#EXTINF:-1 tvg-id="dolu3.tr",bs3
 https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/beIN_Sport_3_HD.m3u8
-#EXTINF:-1 tvg-id="dolu4.tr",dolu4
+#EXTINF:-1 tvg-id="dolu4.tr",bs4
 https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/beIN_Sport_4_HD.m3u8
-#EXTINF:-1 tvg-id="dolum1.tr",dolum1
+#EXTINF:-1 tvg-id="dolum1.tr",bm1
 https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/beIN_Sport_Max_1_HD.m3u8
-#EXTINF:-1 tvg-id="dolum2.tr",dolum2
+#EXTINF:-1 tvg-id="dolum2.tr",bm2
 https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/beIN_Sport_Max_2_HD.m3u8
-#EXTINF:-1 tvg-id="dolxax.tr",dolxax
+#EXTINF:-1 tvg-id="dolxax.tr",ex
 https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/Exxen_HD.m3u8
-#EXTINF:-1 tvg-id="dolxax1.tr",dolxax1
+#EXTINF:-1 tvg-id="dolxax1.tr",ex1
 https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/Exxen_1_HD.m3u8
-#EXTINF:-1 tvg-id="dolxax2.tr",dolxax2
+#EXTINF:-1 tvg-id="dolxax2.tr",ex2
 https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/Exxen_2_HD.m3u8
-#EXTINF:-1 tvg-id="dolxax3.tr",dolxax3
+#EXTINF:-1 tvg-id="dolxax3.tr",ex3
 https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/Exxen_3_HD.m3u8
-#EXTINF:-1 tvg-id="dolxax4.tr",dolxax4
+#EXTINF:-1 tvg-id="dolxax4.tr",ex4
 https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/Exxen_4_HD.m3u8
-#EXTINF:-1 tvg-id="dolxax5.tr",dolxax5
+#EXTINF:-1 tvg-id="dolxax5.tr",ex5
 https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/Exxen_5_HD.m3u8
-#EXTINF:-1 tvg-id="dolxax6.tr",dolxax6
+#EXTINF:-1 tvg-id="dolxax6.tr",ex6
 https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/Exxen_6_HD.m3u8
-#EXTINF:-1 tvg-id="dolxax7.tr",dolxax7
+#EXTINF:-1 tvg-id="dolxax7.tr",ex7
 https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/Exxen_7_HD.m3u8
-#EXTINF:-1 tvg-id="dolxax8.tr",dolxax8
+#EXTINF:-1 tvg-id="dolxax8.tr",ex8
 https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/Exxen_8_HD.m3u8
-#EXTINF:-1 tvg-id="dolss1.tr",dolss1
+#EXTINF:-1 tvg-id="dolss1.tr",ss1
 https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/S_Sport_1_HD.m3u8
-#EXTINF:-1 tvg-id="dolss2.tr",dolss2
+#EXTINF:-1 tvg-id="dolss2.tr",ss2
 https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/S_Sport_2_HD.m3u8
-#EXTINF:-1 tvg-id="dolsm1.tr",dolsm1
+#EXTINF:-1 tvg-id="dolsm1.tr",sm1
 https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/Smart_Sport_1_HD.m3u8
-#EXTINF:-1 tvg-id="dolsm2.tr",dolsm2
+#EXTINF:-1 tvg-id="dolsm2.tr",sm2
 https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/Smart_Sport_1_HD.m3u8
-#EXTINF:-1 tvg-id="tvb.tr",Tivibu Sport HD
+#EXTINF:-1 tvg-id="tvb.tr",Tivibu
 https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/Tivibu_Sport_HD.m3u8
-#EXTINF:-1 tvg-id="dolt1.tr",dolt1
+#EXTINF:-1 tvg-id="dolt1.tr",Tivibu1
 https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/Tivibu_Sport_1_HD.m3u8
-#EXTINF:-1 tvg-id="dolt2.tr",dolt2
+#EXTINF:-1 tvg-id="dolt2.tr",Tivibu2
 https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/Tivibu_Sport_2_HD.m3u8
-#EXTINF:-1 tvg-id="dolt3.tr",dolt3
+#EXTINF:-1 tvg-id="dolt3.tr",Tivibu3
 https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/Tivibu_Sport_3_HD.m3u8
-#EXTINF:-1 tvg-id="dolt4.tr",dolt4
+#EXTINF:-1 tvg-id="dolt4.tr",Tivibu4
 https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/Tivibu_Sport_4_HD.m3u8
 #EXTINF:-1 tvg-id="doltabi.tr",doltabi
 https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/Tabii_HD.m3u8
-#EXTINF:-1 tvg-id="doltabi1.tr",doltabi1
+#EXTINF:-1 tvg-id="doltabi1.tr",tabi1
 https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/Tabii_1_HD.m3u8
-#EXTINF:-1 tvg-id="doltabi2.tr",doltabi2
+#EXTINF:-1 tvg-id="doltabi2.tr",tabi2
 https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/Tabii_2_HD.m3u8
-#EXTINF:-1 tvg-id="doltabi3.tr",doltabi3
+#EXTINF:-1 tvg-id="doltabi3.tr",tabi3
 https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/Tabii_3_HD.m3u8
-#EXTINF:-1 tvg-id="doltabi4.tr",doltabi4
+#EXTINF:-1 tvg-id="doltabi4.tr",tabi4
 https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/Tabii_4_HD.m3u8
-#EXTINF:-1 tvg-id="doltabi5.tr",doltabi5
+#EXTINF:-1 tvg-id="doltabi5.tr",tabi5
 https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/Tabii_5_HD.m3u8
-#EXTINF:-1 tvg-id="doltabi6.tr",doltabi6
+#EXTINF:-1 tvg-id="doltabi6.tr",tabi6
 https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/Tabii_6_HD.m3u8
-#EXTINF:-1 tvg-id="doltabi7.tr",doltabi7
+#EXTINF:-1 tvg-id="doltabi7.tr",tabi7
 https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/Tabii_7_HD.m3u8
-#EXTINF:-1 tvg-id="doltabi8.tr",doltabi8
+#EXTINF:-1 tvg-id="doltabi8.tr",tabi8
 https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/Tabii_8_HD.m3u8
