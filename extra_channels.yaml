@@ -217,19 +217,19 @@ extra_channels:
 
   - tvg_id: "KANAL1.tr"
     kanal_adi: "KANAL1"
-    url: "https://karpuzmanifestosu.lol/static/bs11.m3u8"
+    url: "http://freshot.karamehmet.workers.dev/?ID=beINSPORTS1TR"
 
   - tvg_id: "KANAL2.tr"
     kanal_adi: "KANAL2"
-    url: "https://karpuzmanifestosu.lol/static/bs2.m3u8"
+    url: "http://freshot.karamehmet.workers.dev/?ID=beINSPORTS2TR"
 
   - tvg_id: "KANAL3.tr"
     kanal_adi: "KANAL3"
-    url: "https://karpuzmanifestosu.lol/static/bs3.m3u8"
+    url: "http://freshot.karamehmet.workers.dev/?ID=beINSPORTS3TR"
 
-  - tvg_id: "KANALss.tr"
-    kanal_adi: "KANALss"
-    url: "https://karpuzmanifestosu.lol/static/ss11.m3u8"
+  - tvg_id: "KANAL4.tr"
+    kanal_adi: "KANAL4"
+    url: "http://freshot.karamehmet.workers.dev/?ID=beINSPORTS4TR"
 
   - tvg_id: "dolu1.tr"
     kanal_adi: "bs1"
@@ -362,6 +362,7 @@ extra_channels:
   - tvg_id: "doltabi8.tr"
     kanal_adi: "tabi8"
     url: "https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/Tabii_8_HD.m3u8"
+
 
 
 
