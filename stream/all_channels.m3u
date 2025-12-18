@@ -4,11 +4,9 @@
 #EXTINF:-1,tabii
 https://beert7sqimrk0bfdupfgn6qew.medya.trt.com.tr/master.m3u8
 #EXTINF:-1,nowtv
-https://nowtv.daioncdn.net/nowtv/nowtv.m3u8?ce=3&app=mobile_web&st=662LHnrUlygEQ6JmrcN2eg&e=1766075851
+https://nowtv.daioncdn.net/nowtv/nowtv.m3u8?ce=3&app=mobile_web&st=-PZL658naj5zKMlhN-y5uQ&e=1766079164
 #EXTINF:-1,showtv
 https://ciner.daioncdn.net/showtv/showtv.m3u8?ce=3&app=4bc856ef-4c68-4a94-bc87-37dfaaa66558&st=RBzhSuGauna0OGld-DJUVA&e=1664766175&tv=1
-#EXTINF:-1,htspor
-https://ciner.daioncdn.net/ht-spor/ht-spor.m3u8?app=web
 #EXTINF:-1,tv8
 https://tv8-tb-live.ercdn.net/tv8-geo/playlist.m3u8?st=BzpvJLJ9hDX-H3W1sQWquA&e=1639061641
 #EXTINF:-1,kanald
@@ -16,7 +14,7 @@ https://demiroren.daioncdn.net/kanald/kanald.m3u8?app=kanald_web&amp;ce=3
 #EXTINF:-1,teve2
 https://teve2.duhnet.tv/S2/HLS_LIVE/teve2np/playlist.m3u8
 #EXTINF:-1,dmax
-https://dogus.daioncdn.net/dmax/dmax.m3u8?ce=3&app=5a02c599-d17e-4982-9b04-090934d51af7&token=N2JtbDZDYjRXcTJ5eVp4RE51OXl4czRRUHQrU281MUpvdUVrbGVPN09VUT0=
+https://dogus.daioncdn.net/dmax/dmax.m3u8?ce=3&app=5a02c599-d17e-4982-9b04-090934d51af7&token=Zm93cUZzR1drTDRwd1hVS0QwL3VjaE5RSTA2WjlVTGxEYi9hZEdKNDhBND0=
 #EXTINF:-1,tv360
 https://turkmedya-live.ercdn.net/tv360/tv360.m3u8
 #EXTINF:-1,beyaztv
@@ -388,13 +386,13 @@ http://65.108.239.207:80/lovenature/index.m3u8
 #EXTINF:-1 tvg-id="VIASAT HISTORY HD.tr",VIASAT HISTORY HD
 http://65.108.239.207:80/viasathistory/index.m3u8
 #EXTINF:-1 tvg-id="KANAL1.tr",KANAL1
-https://karpuzmanifestosu.lol/static/bs11.m3u8
+http://freshot.karamehmet.workers.dev/?ID=beINSPORTS1TR
 #EXTINF:-1 tvg-id="KANAL2.tr",KANAL2
-https://karpuzmanifestosu.lol/static/bs2.m3u8
+http://freshot.karamehmet.workers.dev/?ID=beINSPORTS2TR
 #EXTINF:-1 tvg-id="KANAL3.tr",KANAL3
-https://karpuzmanifestosu.lol/static/bs3.m3u8
-#EXTINF:-1 tvg-id="KANALss.tr",KANALss
-https://karpuzmanifestosu.lol/static/ss11.m3u8
+http://freshot.karamehmet.workers.dev/?ID=beINSPORTS3TR
+#EXTINF:-1 tvg-id="KANAL4.tr",KANAL4
+http://freshot.karamehmet.workers.dev/?ID=beINSPORTS4TR
 #EXTINF:-1 tvg-id="dolu1.tr",bs1
 https://raw.githubusercontent.com/megasmartgence90/ANDROID-IPTV/refs/heads/main/channels/beIN_Sport_1_HD.m3u8
 #EXTINF:-1 tvg-id="dolu2.tr",bs2
