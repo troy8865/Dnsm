@@ -4,7 +4,7 @@
 #EXTINF:-1,tabii
 https://beert7sqimrk0bfdupfgn6qew.medya.trt.com.tr/master.m3u8
 #EXTINF:-1,nowtv
-https://nowtv.daioncdn.net/nowtv/nowtv.m3u8?ce=3&app=mobile_web&st=oXuIqD1y2wQobrWIXJc5NA&e=1766179999
+https://nowtv.daioncdn.net/nowtv/nowtv.m3u8?ce=3&app=mobile_web&st=871pOWDlOXQ8YH2k8NLicA&e=1766183005
 #EXTINF:-1,showtv
 https://ciner.daioncdn.net/showtv/showtv.m3u8?ce=3&app=4bc856ef-4c68-4a94-bc87-37dfaaa66558&st=RBzhSuGauna0OGld-DJUVA&e=1664766175&tv=1
 #EXTINF:-1,htspor
@@ -16,7 +16,7 @@ https://demiroren.daioncdn.net/kanald/kanald.m3u8?app=kanald_web&amp;ce=3
 #EXTINF:-1,teve2
 https://teve2.duhnet.tv/S2/HLS_LIVE/teve2np/playlist.m3u8
 #EXTINF:-1,dmax
-https://dogus.daioncdn.net/dmax/dmax.m3u8?ce=3&app=5a02c599-d17e-4982-9b04-090934d51af7&token=SWRqNStoQXdPM2lZRWRXSUxQY3dQb3NNWkV1bFNGWjRObVgwRnpacEk5dz0=
+https://dogus.daioncdn.net/dmax/dmax.m3u8?ce=3&app=5a02c599-d17e-4982-9b04-090934d51af7&token=dlVCS3dKUnozL3FaL0JyL3ZuSHZxN1pTSUdHYlBONU5zRGtDZE1RYWFhaz0=
 #EXTINF:-1,tv360
 https://turkmedya-live.ercdn.net/tv360/tv360.m3u8
 #EXTINF:-1,beyaztv
@@ -30,98 +30,98 @@ https://halktv.daioncdn.net/halktv/halktv.m3u8?app=c86957d3-74a7-44da-9ad2-dc358
 
 # === TrGoals Kanalları ===
 #EXTINF:-1 tvg-id="BeinSports1.tr" group-title="TrGoals",Bein Sports 1 HD (VIP)
-#EXTVLCOPT:http-referrer=https://trgoals1488.xyz/
-https://pqy.d72577a9dd0ec0.sbs/yayinzirve.m3u8
+#EXTVLCOPT:http-referrer=https://trgoals1489.xyz/
+https://gpx.d72577a9dd0ec1.sbs/yayinzirve.m3u8
 #EXTINF:-1 tvg-id="BeinSports1.tr" group-title="TrGoals",Bein Sports 1 HD
-#EXTVLCOPT:http-referrer=https://trgoals1488.xyz/
-https://pqy.d72577a9dd0ec0.sbs/yayin1.m3u8
+#EXTVLCOPT:http-referrer=https://trgoals1489.xyz/
+https://gpx.d72577a9dd0ec1.sbs/yayin1.m3u8
 #EXTINF:-1 tvg-id="BeinSports2.tr" group-title="TrGoals",Bein Sports 2 HD
-#EXTVLCOPT:http-referrer=https://trgoals1488.xyz/
-https://pqy.d72577a9dd0ec0.sbs/yayinb2.m3u8
+#EXTVLCOPT:http-referrer=https://trgoals1489.xyz/
+https://gpx.d72577a9dd0ec1.sbs/yayinb2.m3u8
 #EXTINF:-1 tvg-id="BeinSports3.tr" group-title="TrGoals",Bein Sports 3 HD
-#EXTVLCOPT:http-referrer=https://trgoals1488.xyz/
-https://pqy.d72577a9dd0ec0.sbs/yayinb3.m3u8
+#EXTVLCOPT:http-referrer=https://trgoals1489.xyz/
+https://gpx.d72577a9dd0ec1.sbs/yayinb3.m3u8
 #EXTINF:-1 tvg-id="BeinSports4.tr" group-title="TrGoals",Bein Sports 4 HD
-#EXTVLCOPT:http-referrer=https://trgoals1488.xyz/
-https://pqy.d72577a9dd0ec0.sbs/yayinb4.m3u8
+#EXTVLCOPT:http-referrer=https://trgoals1489.xyz/
+https://gpx.d72577a9dd0ec1.sbs/yayinb4.m3u8
 #EXTINF:-1 tvg-id="BeinSports5.tr" group-title="TrGoals",Bein Sports 5 HD
-#EXTVLCOPT:http-referrer=https://trgoals1488.xyz/
-https://pqy.d72577a9dd0ec0.sbs/yayinb5.m3u8
+#EXTVLCOPT:http-referrer=https://trgoals1489.xyz/
+https://gpx.d72577a9dd0ec1.sbs/yayinb5.m3u8
 #EXTINF:-1 tvg-id="BeinMax1.tr" group-title="TrGoals",Bein Max 1 HD
-#EXTVLCOPT:http-referrer=https://trgoals1488.xyz/
-https://pqy.d72577a9dd0ec0.sbs/yayinbm1.m3u8
+#EXTVLCOPT:http-referrer=https://trgoals1489.xyz/
+https://gpx.d72577a9dd0ec1.sbs/yayinbm1.m3u8
 #EXTINF:-1 tvg-id="BeinMax2.tr" group-title="TrGoals",Bein Max 2 HD
-#EXTVLCOPT:http-referrer=https://trgoals1488.xyz/
-https://pqy.d72577a9dd0ec0.sbs/yayinbm2.m3u8
+#EXTVLCOPT:http-referrer=https://trgoals1489.xyz/
+https://gpx.d72577a9dd0ec1.sbs/yayinbm2.m3u8
 #EXTINF:-1 tvg-id="SSport1.tr" group-title="TrGoals",S Sport 1 HD
-#EXTVLCOPT:http-referrer=https://trgoals1488.xyz/
-https://pqy.d72577a9dd0ec0.sbs/yayinss.m3u8
+#EXTVLCOPT:http-referrer=https://trgoals1489.xyz/
+https://gpx.d72577a9dd0ec1.sbs/yayinss.m3u8
 #EXTINF:-1 tvg-id="SSport2.tr" group-title="TrGoals",S Sport 2 HD
-#EXTVLCOPT:http-referrer=https://trgoals1488.xyz/
-https://pqy.d72577a9dd0ec0.sbs/yayinss2.m3u8
+#EXTVLCOPT:http-referrer=https://trgoals1489.xyz/
+https://gpx.d72577a9dd0ec1.sbs/yayinss2.m3u8
 #EXTINF:-1 tvg-id="SSportPlus.tr" group-title="TrGoals",S Sport Plus HD
-#EXTVLCOPT:http-referrer=https://trgoals1488.xyz/
-https://pqy.d72577a9dd0ec0.sbs/yayinssp2.m3u8
+#EXTVLCOPT:http-referrer=https://trgoals1489.xyz/
+https://gpx.d72577a9dd0ec1.sbs/yayinssp2.m3u8
 #EXTINF:-1 tvg-id="TivibuSpor1.tr" group-title="TrGoals",Tivibu Spor 1 HD
-#EXTVLCOPT:http-referrer=https://trgoals1488.xyz/
-https://pqy.d72577a9dd0ec0.sbs/yayint1.m3u8
+#EXTVLCOPT:http-referrer=https://trgoals1489.xyz/
+https://gpx.d72577a9dd0ec1.sbs/yayint1.m3u8
 #EXTINF:-1 tvg-id="TivibuSpor2.tr" group-title="TrGoals",Tivibu Spor 2 HD
-#EXTVLCOPT:http-referrer=https://trgoals1488.xyz/
-https://pqy.d72577a9dd0ec0.sbs/yayint2.m3u8
+#EXTVLCOPT:http-referrer=https://trgoals1489.xyz/
+https://gpx.d72577a9dd0ec1.sbs/yayint2.m3u8
 #EXTINF:-1 tvg-id="TivibuSpor3.tr" group-title="TrGoals",Tivibu Spor 3 HD
-#EXTVLCOPT:http-referrer=https://trgoals1488.xyz/
-https://pqy.d72577a9dd0ec0.sbs/yayint3.m3u8
+#EXTVLCOPT:http-referrer=https://trgoals1489.xyz/
+https://gpx.d72577a9dd0ec1.sbs/yayint3.m3u8
 #EXTINF:-1 tvg-id="SmartSpor1.tr" group-title="TrGoals",Smart Spor 1 HD
-#EXTVLCOPT:http-referrer=https://trgoals1488.xyz/
-https://pqy.d72577a9dd0ec0.sbs/yayinsmarts.m3u8
+#EXTVLCOPT:http-referrer=https://trgoals1489.xyz/
+https://gpx.d72577a9dd0ec1.sbs/yayinsmarts.m3u8
 #EXTINF:-1 tvg-id="SmartSpor2.tr" group-title="TrGoals",Smart Spor 2 HD
-#EXTVLCOPT:http-referrer=https://trgoals1488.xyz/
-https://pqy.d72577a9dd0ec0.sbs/yayinsms2.m3u8
+#EXTVLCOPT:http-referrer=https://trgoals1489.xyz/
+https://gpx.d72577a9dd0ec1.sbs/yayinsms2.m3u8
 #EXTINF:-1 tvg-id="TRTSpor.tr" group-title="TrGoals",TRT Spor HD
-#EXTVLCOPT:http-referrer=https://trgoals1488.xyz/
-https://pqy.d72577a9dd0ec0.sbs/yayintrtspor.m3u8
+#EXTVLCOPT:http-referrer=https://trgoals1489.xyz/
+https://gpx.d72577a9dd0ec1.sbs/yayintrtspor.m3u8
 #EXTINF:-1 tvg-id="TRTSporYildiz.tr" group-title="TrGoals",TRT Spor Yıldız HD
-#EXTVLCOPT:http-referrer=https://trgoals1488.xyz/
-https://pqy.d72577a9dd0ec0.sbs/yayintrtspor2.m3u8
+#EXTVLCOPT:http-referrer=https://trgoals1489.xyz/
+https://gpx.d72577a9dd0ec1.sbs/yayintrtspor2.m3u8
 #EXTINF:-1 tvg-id="ASpor.tr" group-title="TrGoals",A Spor HD
-#EXTVLCOPT:http-referrer=https://trgoals1488.xyz/
-https://pqy.d72577a9dd0ec0.sbs/yayinas.m3u8
+#EXTVLCOPT:http-referrer=https://trgoals1489.xyz/
+https://gpx.d72577a9dd0ec1.sbs/yayinas.m3u8
 #EXTINF:-1 tvg-id="ATV.tr" group-title="TrGoals",ATV HD
-#EXTVLCOPT:http-referrer=https://trgoals1488.xyz/
-https://pqy.d72577a9dd0ec0.sbs/yayinatv.m3u8
+#EXTVLCOPT:http-referrer=https://trgoals1489.xyz/
+https://gpx.d72577a9dd0ec1.sbs/yayinatv.m3u8
 #EXTINF:-1 tvg-id="TV8.tr" group-title="TrGoals",TV8 HD
-#EXTVLCOPT:http-referrer=https://trgoals1488.xyz/
-https://pqy.d72577a9dd0ec0.sbs/yayintv8.m3u8
+#EXTVLCOPT:http-referrer=https://trgoals1489.xyz/
+https://gpx.d72577a9dd0ec1.sbs/yayintv8.m3u8
 #EXTINF:-1 tvg-id="TV85.tr" group-title="TrGoals",TV8.5 HD
-#EXTVLCOPT:http-referrer=https://trgoals1488.xyz/
-https://pqy.d72577a9dd0ec0.sbs/yayintv85.m3u8
+#EXTVLCOPT:http-referrer=https://trgoals1489.xyz/
+https://gpx.d72577a9dd0ec1.sbs/yayintv85.m3u8
 #EXTINF:-1 tvg-id="NBATV.tr" group-title="TrGoals",NBA TV HD
-#EXTVLCOPT:http-referrer=https://trgoals1488.xyz/
-https://pqy.d72577a9dd0ec0.sbs/yayinnbatv.m3u8
+#EXTVLCOPT:http-referrer=https://trgoals1489.xyz/
+https://gpx.d72577a9dd0ec1.sbs/yayinnbatv.m3u8
 #EXTINF:-1 tvg-id="ExxenSpor1.tr" group-title="TrGoals",Exxen Spor 1 HD
-#EXTVLCOPT:http-referrer=https://trgoals1488.xyz/
-https://pqy.d72577a9dd0ec0.sbs/yayinex1.m3u8
+#EXTVLCOPT:http-referrer=https://trgoals1489.xyz/
+https://gpx.d72577a9dd0ec1.sbs/yayinex1.m3u8
 #EXTINF:-1 tvg-id="ExxenSpor2.tr" group-title="TrGoals",Exxen Spor 2 HD
-#EXTVLCOPT:http-referrer=https://trgoals1488.xyz/
-https://pqy.d72577a9dd0ec0.sbs/yayinex2.m3u8
+#EXTVLCOPT:http-referrer=https://trgoals1489.xyz/
+https://gpx.d72577a9dd0ec1.sbs/yayinex2.m3u8
 #EXTINF:-1 tvg-id="ExxenSpor3.tr" group-title="TrGoals",Exxen Spor 3 HD
-#EXTVLCOPT:http-referrer=https://trgoals1488.xyz/
-https://pqy.d72577a9dd0ec0.sbs/yayinex3.m3u8
+#EXTVLCOPT:http-referrer=https://trgoals1489.xyz/
+https://gpx.d72577a9dd0ec1.sbs/yayinex3.m3u8
 #EXTINF:-1 tvg-id="ExxenSpor4.tr" group-title="TrGoals",Exxen Spor 4 HD
-#EXTVLCOPT:http-referrer=https://trgoals1488.xyz/
-https://pqy.d72577a9dd0ec0.sbs/yayinex4.m3u8
+#EXTVLCOPT:http-referrer=https://trgoals1489.xyz/
+https://gpx.d72577a9dd0ec1.sbs/yayinex4.m3u8
 #EXTINF:-1 tvg-id="ExxenSpor5.tr" group-title="TrGoals",Exxen Spor 5 HD
-#EXTVLCOPT:http-referrer=https://trgoals1488.xyz/
-https://pqy.d72577a9dd0ec0.sbs/yayinex5.m3u8
+#EXTVLCOPT:http-referrer=https://trgoals1489.xyz/
+https://gpx.d72577a9dd0ec1.sbs/yayinex5.m3u8
 #EXTINF:-1 tvg-id="ExxenSpor6.tr" group-title="TrGoals",Exxen Spor 6 HD
-#EXTVLCOPT:http-referrer=https://trgoals1488.xyz/
-https://pqy.d72577a9dd0ec0.sbs/yayinex6.m3u8
+#EXTVLCOPT:http-referrer=https://trgoals1489.xyz/
+https://gpx.d72577a9dd0ec1.sbs/yayinex6.m3u8
 #EXTINF:-1 tvg-id="ExxenSpor7.tr" group-title="TrGoals",Exxen Spor 7 HD
-#EXTVLCOPT:http-referrer=https://trgoals1488.xyz/
-https://pqy.d72577a9dd0ec0.sbs/yayinex7.m3u8
+#EXTVLCOPT:http-referrer=https://trgoals1489.xyz/
+https://gpx.d72577a9dd0ec1.sbs/yayinex7.m3u8
 #EXTINF:-1 tvg-id="ExxenSpor8.tr" group-title="TrGoals",Exxen Spor 8 HD
-#EXTVLCOPT:http-referrer=https://trgoals1488.xyz/
-https://pqy.d72577a9dd0ec0.sbs/yayinex8.m3u8
+#EXTVLCOPT:http-referrer=https://trgoals1489.xyz/
+https://gpx.d72577a9dd0ec1.sbs/yayinex8.m3u8
 
 # === Selçuk / Sporcafe Kanalları ===
 #EXTINF:-1 tvg-id="bein1" group-title="Selçuk",BEıN SPORT 1
