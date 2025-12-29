@@ -2,7 +2,7 @@ name: 📺 Otomatik M3U Güncelleme
 
 on:
   schedule:
-    - cron: '*/30 * * * *'  # Her 50 dakikada bir (UTC)
+     - cron: '0 */6 * * *'
   workflow_dispatch:      # Elle tetikleme desteği
 
 jobs:
@@ -34,5 +34,6 @@ jobs:
           git add stream/all_channels.m3u
           git commit -m "🎧 Otomatik güncellenmiş M3U playlist" || echo "Değişiklik yok"
           git push
+
 
 
